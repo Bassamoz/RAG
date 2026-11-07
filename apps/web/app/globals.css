@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #f8f8f8;
+  --color-ink: #363638;
+  --color-accent: #b9f1e4;
+  --color-danger: #b42318;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: system-ui, sans-serif;
+}
+main {
+  max-width: 52rem;
+  margin: 12vh auto;
+  padding: 2rem;
+}
+.brand {
+  font-weight: 700;
+}
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.4;
+  margin-block: 2rem 1rem;
+}
+p {
+  line-height: 1.8;
+}
+.status {
+  border-inline-start: 0.25rem solid var(--color-ink);
+  background: var(--color-accent);
+  padding: 1rem;
+  margin-block-start: 2rem;
+}

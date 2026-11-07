@@ -1,0 +1,9 @@
+{
+  "command": "pnpm.exe build",
+  "exit_code": 0,
+  "time": "2026-11-06T20:59:45.551851+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/build-web.txt",
+  "output_sha256": "a7fb27d0bf0ebf845596da572a18346521a8c091f05022e0f11af950e8d33798"
+}

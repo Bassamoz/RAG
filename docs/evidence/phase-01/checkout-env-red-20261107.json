@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit/test_verification_environment.py -q",
+  "exit_code": 1,
+  "time": "2026-11-07T19:38:54.878513+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/checkout-env-red-20261107.txt",
+  "output_sha256": "bd0cd232e770accff012f6cb0b177e336adf6875f9c4843f7550a11d687e4149"
+}

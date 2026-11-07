@@ -1,0 +1,8 @@
+packages:
+  - apps/web
+  - packages/api-client
+
+onlyBuiltDependencies:
+  - sharp
+  - esbuild
+  - supabase

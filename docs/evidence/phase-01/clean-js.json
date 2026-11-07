@@ -1,0 +1,9 @@
+{
+  "command": "pnpm.exe --dir tmp/phase01-clean-source install --frozen-lockfile --offline",
+  "exit_code": 0,
+  "time": "2026-11-06T20:59:50.946874+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/clean-js.txt",
+  "output_sha256": "9613936ce703496780425a402a233c97270dcd887ce99b7666c5b616d555b17d"
+}

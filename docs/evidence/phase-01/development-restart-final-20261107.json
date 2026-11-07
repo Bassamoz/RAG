@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_development.py",
+  "exit_code": 0,
+  "time": "2026-11-07T20:41:15.009098+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/development-restart-final-20261107.txt",
+  "output_sha256": "c3afb21ea5af5f4bc5d7e342e281204d14a4bb5d6bcaa9639ea07064918f5d4e"
+}

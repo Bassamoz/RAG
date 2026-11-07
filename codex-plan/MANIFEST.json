@@ -1,0 +1,125 @@
+{
+  "package_version": "1.0",
+  "prepared_on": "2026-11-05",
+  "source_pdf": {
+    "path": "references/research.pdf",
+    "sha256": "1392e040e6eafd7b06b194bbb1b46dd3fbe1f28f4712834ddea24cb2b1684481",
+    "pages": 106
+  },
+  "phases": [
+    {
+      "number": 0,
+      "file": "00_research_and_plan.md",
+      "title": "تدقيق البحث والمستودع وخطة التنفيذ",
+      "requirements": "R01، R02، R44، R47"
+    },
+    {
+      "number": 1,
+      "file": "01_foundation.md",
+      "title": "المستودع والبيئة وقاعدة البيانات والعقود",
+      "requirements": "R02، R03، R07، R47"
+    },
+    {
+      "number": 2,
+      "file": "02_identity_tenancy.md",
+      "title": "البريد برمز تحقق والجلسات والصلاحيات والعزل",
+      "requirements": "R04، R05، R06، R07، R47"
+    },
+    {
+      "number": 3,
+      "file": "03_design_onboarding.md",
+      "title": "نظام التصميم والواجهات والإعداد الأول",
+      "requirements": "R08، R09، R47"
+    },
+    {
+      "number": 4,
+      "file": "04_catalog_policies.md",
+      "title": "الكتالوج والمتغيرات والسياسات والاستيراد",
+      "requirements": "R10، R11، R40، R47"
+    },
+    {
+      "number": 5,
+      "file": "05_store_connectors.md",
+      "title": "الربط مع سلة وزد والمتجر الخاص والمزامنة",
+      "requirements": "R12، R13، R14، R15، R25، R47"
+    },
+    {
+      "number": 6,
+      "file": "06_knowledge_ingestion.md",
+      "title": "مصادر المعرفة والاستخراج والتقسيم والإصدارات",
+      "requirements": "R14، R16، R17، R18، R47"
+    },
+    {
+      "number": 7,
+      "file": "07_retrieval_algorithms.md",
+      "title": "BM25 والبحث الدلالي وFAISS والدمج وإعادة الترتيب",
+      "requirements": "R18، R19، R20، R21، R22، R47"
+    },
+    {
+      "number": 8,
+      "file": "08_assistant_guardrails.md",
+      "title": "تنسيق RAG والأدوات والإجابة المسندة",
+      "requirements": "R23، R24، R25، R26، R29، R47"
+    },
+    {
+      "number": 9,
+      "file": "09_widget_conversations.md",
+      "title": "نافذة المحادثة والسياق والتحويل وتوقيت الرد",
+      "requirements": "R27، R28، R29، R47"
+    },
+    {
+      "number": 10,
+      "file": "10_whatsapp_phone.md",
+      "title": "WhatsApp Business والتحقق من رقم الاتصال",
+      "requirements": "R30، R31، R32، R47"
+    },
+    {
+      "number": 11,
+      "file": "11_support_operations.md",
+      "title": "مساحة الموظف والتذاكر والتنبيهات والإدارة",
+      "requirements": "R28، R33، R34، R47"
+    },
+    {
+      "number": 12,
+      "file": "12_analytics_reports.md",
+      "title": "التحليلات والتقارير والتقييم والاستهلاك",
+      "requirements": "R35، R36، R47"
+    },
+    {
+      "number": 13,
+      "file": "13_lifecycle_recovery.md",
+      "title": "دورة الحياة والحذف والاسترجاع والنسخ الاحتياطي",
+      "requirements": "R18، R37، R38، R39، R47"
+    },
+    {
+      "number": 14,
+      "file": "14_research_evaluation.md",
+      "title": "بيانات البحث والمقارنة العلمية وجودة RAG",
+      "requirements": "R19، R20، R21، R22، R29، R40، R41، R47"
+    },
+    {
+      "number": 15,
+      "file": "15_system_tests.md",
+      "title": "الاختبارات الشاملة والحمل والتزامن والتعافي",
+      "requirements": "R03، R07، R42، R43، R47"
+    },
+    {
+      "number": 16,
+      "file": "16_security_audit.md",
+      "title": "مراجعة الأمان وإصلاح الثغرات وإعادة الاختبار",
+      "requirements": "R04، R05، R06، R07، R24، R38، R44، R45، R47"
+    },
+    {
+      "number": 17,
+      "file": "17_deployment_docs.md",
+      "title": "النشر والمراقبة والتوثيق والتراجع",
+      "requirements": "R03، R39، R46، R47"
+    },
+    {
+      "number": 18,
+      "file": "18_release_gate.md",
+      "title": "بوابة الإصدار والتدقيق النهائي",
+      "requirements": "R01–R48"
+    }
+  ]
+}

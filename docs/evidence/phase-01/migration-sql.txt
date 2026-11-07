@@ -1,0 +1,109 @@
+BEGIN;
+
+CREATE SCHEMA IF NOT EXISTS app;
+
+CREATE TABLE app.alembic_version (
+    version_num VARCHAR(32) NOT NULL, 
+    CONSTRAINT alembic_version_pkc PRIMARY KEY (version_num)
+);
+
+-- Running upgrade  -> 0001
+
+CREATE SCHEMA IF NOT EXISTS extensions;
+
+CREATE EXTENSION IF NOT EXISTS vector WITH SCHEMA extensions;
+
+DO $$ BEGIN
+      IF NOT EXISTS (SELECT 1 FROM pg_roles WHERE rolname='app_runtime') THEN
+        CREATE ROLE app_runtime NOLOGIN NOSUPERUSER NOCREATEDB NOCREATEROLE
+          NOINHERIT NOBYPASSRLS NOREPLICATION;
+      ELSIF EXISTS (
+        SELECT 1 FROM pg_roles WHERE rolname='app_runtime' AND
+          (rolsuper OR rolcreatedb OR rolcreaterole OR rolinherit OR rolbypassrls OR rolreplication)
+      ) OR EXISTS (
+        SELECT 1 FROM pg_auth_members m JOIN pg_roles r ON r.oid=m.member
+        WHERE r.rolname='app_runtime'
+      ) THEN
+        RAISE EXCEPTION 'Existing app_runtime role is not restricted; manual review required';
+      END IF;
+    END $$;
+
+REVOKE ALL ON SCHEMA app FROM PUBLIC;
+
+GRANT USAGE ON SCHEMA app TO app_runtime;
+
+CREATE TABLE app.users (
+    id UUID NOT NULL, 
+    auth_subject UUID NOT NULL, 
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+    PRIMARY KEY (id), 
+    UNIQUE (auth_subject)
+);
+
+CREATE TABLE app.tenants (
+    id UUID NOT NULL, 
+    name VARCHAR(160) NOT NULL, 
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE app.memberships (
+    tenant_id UUID NOT NULL, 
+    user_id UUID NOT NULL, 
+    role VARCHAR(32) NOT NULL, 
+    status VARCHAR(16) DEFAULT 'active' NOT NULL, 
+    PRIMARY KEY (tenant_id, user_id), 
+    CHECK (role IN ('tenant_owner','tenant_admin','support_agent','analyst')), 
+    CHECK (status IN ('active','suspended')), 
+    FOREIGN KEY(tenant_id) REFERENCES app.tenants (id), 
+    FOREIGN KEY(user_id) REFERENCES app.users (id)
+);
+
+CREATE TABLE app.stores (
+    id UUID NOT NULL, 
+    tenant_id UUID NOT NULL, 
+    name VARCHAR(160) NOT NULL, 
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL, 
+    PRIMARY KEY (id), 
+    UNIQUE (tenant_id, id), 
+    FOREIGN KEY(tenant_id) REFERENCES app.tenants (id)
+);
+
+ALTER TABLE app.users ENABLE ROW LEVEL SECURITY;
+
+ALTER TABLE app.users FORCE ROW LEVEL SECURITY;
+
+CREATE POLICY runtime_read ON app.users FOR SELECT TO app_runtime USING (id = NULLIF(current_setting('app.user_id', true), '')::uuid);
+
+GRANT SELECT ON app.users TO app_runtime;
+
+ALTER TABLE app.tenants ENABLE ROW LEVEL SECURITY;
+
+ALTER TABLE app.tenants FORCE ROW LEVEL SECURITY;
+
+CREATE POLICY runtime_read ON app.tenants FOR SELECT TO app_runtime USING (id = NULLIF(current_setting('app.tenant_id', true), '')::uuid);
+
+GRANT SELECT ON app.tenants TO app_runtime;
+
+ALTER TABLE app.memberships ENABLE ROW LEVEL SECURITY;
+
+ALTER TABLE app.memberships FORCE ROW LEVEL SECURITY;
+
+CREATE POLICY runtime_read ON app.memberships FOR SELECT TO app_runtime USING (tenant_id = NULLIF(current_setting('app.tenant_id', true), '')::uuid AND user_id = NULLIF(current_setting('app.user_id', true), '')::uuid);
+
+GRANT SELECT ON app.memberships TO app_runtime;
+
+ALTER TABLE app.stores ENABLE ROW LEVEL SECURITY;
+
+ALTER TABLE app.stores FORCE ROW LEVEL SECURITY;
+
+CREATE POLICY runtime_read ON app.stores FOR SELECT TO app_runtime USING (tenant_id = NULLIF(current_setting('app.tenant_id', true), '')::uuid AND (NULLIF(current_setting('app.store_id', true), '') IS NULL OR id = NULLIF(current_setting('app.store_id', true), '')::uuid));
+
+GRANT SELECT ON app.stores TO app_runtime;
+
+GRANT SELECT ON app.alembic_version TO app_runtime;
+
+INSERT INTO app.alembic_version (version_num) VALUES ('0001') RETURNING app.alembic_version.version_num;
+
+COMMIT;
+

@@ -1,0 +1,281 @@
+Local runtime login configured
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.47kB done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from api.Dockerfile
+#2 transferring dockerfile: 575B done
+#2 DONE 0.0s
+
+#3 [web internal] load build definition from web.Dockerfile
+#3 transferring dockerfile: 545B done
+#3 DONE 0.1s
+
+#4 [worker internal] load metadata for docker.io/library/python:3.13-slim
+#4 DONE 0.0s
+
+#5 [worker internal] load metadata for ghcr.io/astral-sh/uv:0.13.7
+#5 DONE 0.8s
+
+#6 [api internal] load .dockerignore
+#6 transferring context: 145B done
+#6 DONE 0.0s
+
+#7 [worker uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#7 DONE 0.0s
+
+#8 [worker stage-1 1/9] FROM docker.io/library/python:3.13-slim
+#8 DONE 0.0s
+
+#9 [worker internal] load build context
+#9 transferring context: 961B done
+#9 DONE 0.0s
+
+#10 [api stage-1 2/9] COPY --from=uv /uv /usr/local/bin/uv
+#10 CACHED
+
+#11 [api stage-1 8/9] COPY apps/api/alembic.ini ./
+#11 CACHED
+
+#12 [api stage-1 5/9] RUN uv sync --frozen --no-dev --no-install-project
+#12 CACHED
+
+#13 [api stage-1 3/9] WORKDIR /app
+#13 CACHED
+
+#14 [api stage-1 7/9] COPY apps/api/migrations ./migrations
+#14 CACHED
+
+#15 [api stage-1 6/9] COPY apps/api/src ./src
+#15 CACHED
+
+#16 [api stage-1 4/9] COPY apps/api/pyproject.toml apps/api/uv.lock ./
+#16 CACHED
+
+#17 [api stage-1 9/9] RUN uv sync --frozen --no-dev && useradd --uid 10001 --create-home app
+#17 CACHED
+
+#18 [worker] exporting to image
+#18 exporting layers done
+#18 writing image sha256:964128d2195a22413df4377e535dc94a59a3c2647477307bd3a198e34d62838a
+#18 writing image sha256:964128d2195a22413df4377e535dc94a59a3c2647477307bd3a198e34d62838a 0.0s done
+#18 naming to docker.io/library/store-advisor-worker 0.0s done
+#18 DONE 0.0s
+
+#19 [api] exporting to image
+#19 exporting layers done
+#19 writing image sha256:073de6d04386ea17019073c62b7f14d87234bf70629e858d3f94f4e57a172932 0.0s done
+#19 naming to docker.io/library/store-advisor-api done
+#19 DONE 0.0s
+
+#20 [web internal] load metadata for docker.io/library/node:24-slim
+#20 DONE 1.2s
+
+#6 [web internal] load .dockerignore
+#6 transferring context: 145B done
+#6 DONE 0.0s
+
+#21 [web  1/10] FROM docker.io/library/node:24-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9
+#21 DONE 0.0s
+
+#22 [web internal] load build context
+#22 transferring context: 334.86kB 0.0s done
+#22 DONE 0.1s
+
+#23 [web  3/10] RUN npm install --global pnpm@12.18.0
+#23 CACHED
+
+#24 [web  9/10] COPY packages/api-client ./packages/api-client
+#24 CACHED
+
+#25 [web  2/10] WORKDIR /app
+#25 CACHED
+
+#26 [web  6/10] COPY packages/api-client/package.json ./packages/api-client/package.json
+#26 CACHED
+
+#27 [web  4/10] COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+#27 CACHED
+
+#28 [web  5/10] COPY apps/web/package.json ./apps/web/package.json
+#28 CACHED
+
+#29 [web  7/10] RUN pnpm install --frozen-lockfile
+#29 CACHED
+
+#30 [web  8/10] COPY apps/web ./apps/web
+#30 CACHED
+
+#31 [web 10/10] RUN pnpm build
+#31 CACHED
+
+#32 [worker] resolving provenance for metadata file
+#32 DONE 0.0s
+
+#33 [web] exporting to image
+#33 exporting layers done
+#33 writing image sha256:0a72722c0a5c002ba5f8dee621fa410129383eb02fcd85298f3633007841832d 0.0s done
+#33 naming to docker.io/library/store-advisor-web 0.0s done
+#33 DONE 0.0s
+
+#34 [api] resolving provenance for metadata file
+#34 DONE 0.0s
+
+#35 [web] resolving provenance for metadata file
+#35 DONE 0.0s
+Local services started. Open http://127.0.0.1:3000. No demo data was seeded.
+Local runtime login configured
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.47kB done
+#1 DONE 0.0s
+
+#2 [api internal] load build definition from api.Dockerfile
+#2 transferring dockerfile: 575B done
+#2 DONE 0.0s
+
+#3 [web internal] load build definition from web.Dockerfile
+#3 transferring dockerfile: 545B done
+#3 DONE 0.1s
+
+#4 [api internal] load metadata for docker.io/library/python:3.13-slim
+#4 DONE 0.0s
+
+#5 [worker internal] load metadata for ghcr.io/astral-sh/uv:0.13.7
+#5 DONE 0.4s
+
+#6 [web internal] load .dockerignore
+#6 transferring context: 145B done
+#6 DONE 0.0s
+
+#7 [api uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#7 DONE 0.0s
+
+#8 [api stage-1 1/9] FROM docker.io/library/python:3.13-slim
+#8 DONE 0.0s
+
+#9 [web internal] load metadata for docker.io/library/node:24-slim
+#9 DONE 0.5s
+
+#10 [web  1/10] FROM docker.io/library/node:24-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9
+#10 DONE 0.0s
+
+#11 [api internal] load build context
+#11 transferring context: 961B done
+#11 DONE 0.0s
+
+#12 [web internal] load build context
+#12 transferring context: 1.08kB done
+#12 DONE 0.1s
+
+#13 [worker stage-1 5/9] RUN uv sync --frozen --no-dev --no-install-project
+#13 CACHED
+
+#14 [worker stage-1 8/9] COPY apps/api/alembic.ini ./
+#14 CACHED
+
+#15 [worker stage-1 6/9] COPY apps/api/src ./src
+#15 CACHED
+
+#16 [worker stage-1 7/9] COPY apps/api/migrations ./migrations
+#16 CACHED
+
+#17 [worker stage-1 2/9] COPY --from=uv /uv /usr/local/bin/uv
+#17 CACHED
+
+#18 [worker stage-1 4/9] COPY apps/api/pyproject.toml apps/api/uv.lock ./
+#18 CACHED
+
+#19 [worker stage-1 3/9] WORKDIR /app
+#19 CACHED
+
+#20 [worker stage-1 9/9] RUN uv sync --frozen --no-dev && useradd --uid 10001 --create-home app
+#20 CACHED
+
+#21 [web  5/10] COPY apps/web/package.json ./apps/web/package.json
+#21 CACHED
+
+#22 [web  4/10] COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+#22 CACHED
+
+#23 [web  2/10] WORKDIR /app
+#23 CACHED
+
+#24 [web  3/10] RUN npm install --global pnpm@12.18.0
+#24 CACHED
+
+#25 [web  8/10] COPY apps/web ./apps/web
+#25 CACHED
+
+#26 [web  6/10] COPY packages/api-client/package.json ./packages/api-client/package.json
+#26 CACHED
+
+#27 [web  9/10] COPY packages/api-client ./packages/api-client
+#27 CACHED
+
+#28 [web  7/10] RUN pnpm install --frozen-lockfile
+#28 CACHED
+
+#29 [web 10/10] RUN pnpm build
+#29 CACHED
+
+#30 [api] exporting to image
+#30 exporting layers done
+#30 writing image sha256:073de6d04386ea17019073c62b7f14d87234bf70629e858d3f94f4e57a172932 0.0s done
+#30 naming to docker.io/library/store-advisor-api 0.0s done
+#30 DONE 0.1s
+
+#31 [web] exporting to image
+#31 exporting layers done
+#31 writing image sha256:0a72722c0a5c002ba5f8dee621fa410129383eb02fcd85298f3633007841832d
+#31 writing image sha256:0a72722c0a5c002ba5f8dee621fa410129383eb02fcd85298f3633007841832d done
+#31 naming to docker.io/library/store-advisor-web 0.0s done
+#31 DONE 0.1s
+
+#32 [worker] exporting to image
+#32 exporting layers done
+#32 writing image sha256:964128d2195a22413df4377e535dc94a59a3c2647477307bd3a198e34d62838a 0.0s done
+#32 naming to docker.io/library/store-advisor-worker done
+#32 DONE 0.1s
+
+#33 [api] resolving provenance for metadata file
+#33 DONE 0.1s
+
+#34 [worker] resolving provenance for metadata file
+#34 DONE 0.1s
+
+#35 [web] resolving provenance for metadata file
+#35 DONE 0.0s
+Local services started. Open http://127.0.0.1:3000. No demo data was seeded.
+{"event": "development_restart_verified", "starts": 2, "health": 200, "readiness": 200, "web": 200, "celery_roundtrip": "passed", "foundation_rows_preserved": true, "pre_first_start_snapshot": "verified", "preservation_scope": "both_starts", "snapshot": {"users": {"rows": 0, "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"}, "tenants": {"rows": 1, "sha256": "e5dc0a1b22c0caa5dcfa8a600dc26be49317d7a12938cca146e68dc724cb5c1b"}, "memberships": {"rows": 0, "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"}, "stores": {"rows": 0, "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"}}}
+ Image store-advisor-api Building 
+ Image store-advisor-worker Building 
+ Image store-advisor-web Building 
+ Image store-advisor-worker Built 
+ Image store-advisor-api Built 
+ Image store-advisor-web Built 
+ Container store-advisor-worker-1 Running 
+ Container store-advisor-web-1 Running 
+ Container store-advisor-redis-1 Running 
+ Container store-advisor-api-1 Running 
+ Container store-advisor-redis-1 Waiting 
+ Container store-advisor-redis-1 Waiting 
+ Container store-advisor-redis-1 Healthy 
+ Container store-advisor-redis-1 Healthy 
+ Container store-advisor-api-1 Waiting 
+ Container store-advisor-api-1 Healthy 
+ Image store-advisor-api Building 
+ Image store-advisor-worker Building 
+ Image store-advisor-web Building 
+ Image store-advisor-api Built 
+ Image store-advisor-web Built 
+ Image store-advisor-worker Built 
+ Container store-advisor-api-1 Running 
+ Container store-advisor-worker-1 Running 
+ Container store-advisor-web-1 Running 
+ Container store-advisor-redis-1 Running 
+ Container store-advisor-redis-1 Waiting 
+ Container store-advisor-redis-1 Waiting 
+ Container store-advisor-redis-1 Healthy 
+ Container store-advisor-redis-1 Healthy 
+ Container store-advisor-api-1 Waiting 
+ Container store-advisor-api-1 Healthy 

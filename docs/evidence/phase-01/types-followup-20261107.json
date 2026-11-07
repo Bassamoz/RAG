@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/mypy.exe --config-file apps/api/pyproject.toml apps/api/src/store_advisor",
+  "exit_code": 0,
+  "time": "2026-11-07T19:27:06.112476+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/types-followup-20261107.txt",
+  "output_sha256": "f645b10e21546f038559fbaaffb91f957d61ada15bed410cfd1fd85e15524598"
+}

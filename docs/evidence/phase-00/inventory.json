@@ -1,0 +1,22 @@
+{
+  "time": "2026-11-06T20:06:16.158554+00:00",
+  "initial_workspace": {
+    "y.py_bytes": 0,
+    "directories": [
+      ".zencoder/workflows (empty)",
+      ".zenflow/workflows (empty)"
+    ],
+    "git_status": {
+      "command": "git status --short",
+      "exit_code": 128,
+      "output": "fatal: not a git repository (or any of the parent directories): .git"
+    },
+    "dependencies": [],
+    "migrations": [],
+    "tests": [],
+    "agent_instructions": []
+  },
+  "preserved_y_py_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "pdf_pages": 106,
+  "notes": "Inventory records observed initial state, before extracting package and writing planning artifacts."
+}

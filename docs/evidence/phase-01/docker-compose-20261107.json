@@ -1,0 +1,9 @@
+{
+  "command": "docker compose version",
+  "exit_code": 0,
+  "time": "2026-11-07T18:40:43.449801+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/docker-compose-20261107.txt",
+  "output_sha256": "ebbb20c2e03752d965fb85dc16402270205c3f570a383bd3ace0c149c2ce5def"
+}

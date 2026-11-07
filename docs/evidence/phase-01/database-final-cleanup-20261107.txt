@@ -1,0 +1,4 @@
+  File "<string>", line 8
+    result={'foundation_rows_after_cleanup':counts,'alembic_revision':c.execute(text('SELECT version_num FROM app.alembic_version')).scalar_one(),'pgvector_version':c.execute(text(SELECT
+                                                                                                                                                                                   ^
+SyntaxError: '(' was never closed

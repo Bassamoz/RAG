@@ -1,0 +1,16 @@
+3.13-slim: Pulling from library/python
+37fb86c2a767: Pulling fs layer
+0069ea31add0: Pulling fs layer
+faa890a31e98: Pulling fs layer
+f7a79299dedd: Pulling fs layer
+sha256:f7a79299dedd5c817d47e3f61cf6eecae73b92cb193a1ef52180a46b0161c50a: Waiting
+sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565: Waiting
+sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41: Waiting
+sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498: Waiting
+sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41: Pull complete
+sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498: Pull complete
+sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565: Pull complete
+sha256:f7a79299dedd5c817d47e3f61cf6eecae73b92cb193a1ef52180a46b0161c50a: Pull complete
+Digest: sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+Status: Downloaded newer image for python:3.13-slim
+docker.io/library/python:3.13-slim

@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit/test_foundation.py -k malformed_dsn -q",
+  "exit_code": 1,
+  "time": "2026-11-06T20:39:23.985861+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/red-config-url.txt",
+  "output_sha256": "b71171b75e4271cc7f6f78014e2cf23bd4886f1b59f371d510d13536cabef21d"
+}

@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/ci-integration.py",
+  "exit_code": 1,
+  "time": "2026-11-06T20:45:05.018817+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/integration-launch.txt",
+  "output_sha256": "fe9310c468af7b602bd85269cb5d9dd4e1dd50fe7538a6feb030babe6a9e25c5"
+}

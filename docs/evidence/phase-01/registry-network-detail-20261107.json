@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/python.exe -X utf8 tmp/probe_registry.py",
+  "exit_code": 0,
+  "time": "2026-11-07T19:27:56.780754+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/registry-network-detail-20261107.txt",
+  "output_sha256": "c13756dcc2ad10e3e3e649fbaf78f37ad6a5cf0fe340f63c3cff753551582771"
+}

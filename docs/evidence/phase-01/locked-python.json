@@ -1,0 +1,9 @@
+{
+  "command": ".venv/Scripts/uv.exe sync --project apps/api --frozen --offline",
+  "exit_code": 0,
+  "time": "2026-11-06T20:37:49.864326+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/locked-python.txt",
+  "output_sha256": "dca9b32a53e55bd513f79ccc38bc44fd2e20049e0a041438682ddab1781f234b"
+}

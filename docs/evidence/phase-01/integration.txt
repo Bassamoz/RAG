@@ -1,0 +1,30 @@
+EE                                                                       [100%]
+=================================== ERRORS ====================================
+________ ERROR at setup of test_schema_migration_rerun_and_runtime_rls ________
+
+    @pytest.fixture(scope="session")
+    def databases():
+        if os.environ.get("APP_ENV") != "test":
+>           pytest.fail("Integration requires APP_ENV=test and an isolated *_test database")
+E           Failed: Integration requires APP_ENV=test and an isolated *_test database
+
+tests\integration\conftest.py:16: Failed
+________ ERROR at setup of test_actual_worker_roundtrip_and_readiness _________
+
+    @pytest.fixture(scope="session")
+    def databases():
+        if os.environ.get("APP_ENV") != "test":
+>           pytest.fail("Integration requires APP_ENV=test and an isolated *_test database")
+E           Failed: Integration requires APP_ENV=test and an isolated *_test database
+
+tests\integration\conftest.py:16: Failed
+============================== warnings summary ===============================
+apps\api\.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\ComputerWorld\Downloads\RAG\apps\api\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+ERROR apps\api\test_services.py::test_schema_migration_rerun_and_runtime_rls
+ERROR apps\api\test_services.py::test_actual_worker_roundtrip_and_readiness
+1 warning, 2 errors in 0.89s

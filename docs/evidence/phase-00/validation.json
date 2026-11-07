@@ -1,0 +1,11 @@
+{
+  "command": "python -X utf8 scripts/validate_phase00.py",
+  "exit_code": 0,
+  "time": "2026-11-06T20:06:17.178679+00:00",
+  "environment": "Windows 11; Python 3.14.2",
+  "commit": null,
+  "scope": "documentation integrity only; no application/provider tests",
+  "errors": [],
+  "result": "passed",
+  "validator_sha256": "8d1aa0755561072e37d871f515e64c87ea6eb093de383e0338319af770b98e45"
+}

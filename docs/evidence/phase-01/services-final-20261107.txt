@@ -1,0 +1,10 @@
+store-advisor-web-1 | Up 2 minutes | 127.0.0.1:3000->3000/tcp
+store-advisor-api-1 | Up 3 minutes (healthy) | 127.0.0.1:8000->8000/tcp
+store-advisor-worker-1 | Up 3 minutes | 8000/tcp
+store-advisor-redis-1 | Up 3 minutes (healthy) | 127.0.0.1:6379->6379/tcp
+supabase_storage_store-advisor-local | Up 4 minutes (healthy) | 5000/tcp
+supabase_rest_store-advisor-local | Up 4 minutes | 3000/tcp
+supabase_inbucket_store-advisor-local | Up 4 minutes (healthy) | 0.0.0.0:54324->8025/tcp, [::]:54324->8025/tcp
+supabase_auth_store-advisor-local | Up 4 minutes (healthy) | 9999/tcp
+supabase_kong_store-advisor-local | Up 4 minutes (healthy) | 0.0.0.0:54321->8000/tcp, [::]:54321->8000/tcp
+supabase_db_store-advisor-local | Up 4 minutes (healthy) | 0.0.0.0:54322->5432/tcp, [::]:54322->5432/tcp

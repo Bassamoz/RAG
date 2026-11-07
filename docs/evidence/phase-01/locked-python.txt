@@ -1,0 +1,6 @@
+   Building store-advisor-api @ file:///C:/Users/ComputerWorld/Downloads/RAG/apps/api
+      Built store-advisor-api @ file:///C:/Users/ComputerWorld/Downloads/RAG/apps/api
+Prepared 1 package in 805ms
+Uninstalled 1 package in 2ms
+Installed 1 package in 7ms
+ ~ store-advisor-api==0.1.0 (from file:///C:/Users/ComputerWorld/Downloads/RAG/apps/api)

@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit/test_migration_scope.py -k migration_startup -q",
+  "exit_code": 1,
+  "time": "2026-11-06T20:42:42.337348+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/red-migration-url.txt",
+  "output_sha256": "4c2ce3e57d7e7bb8d54d31767a871c31a921cf6faeef0f2036af8b5562f6f3dc"
+}

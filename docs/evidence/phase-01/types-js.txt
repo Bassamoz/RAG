@@ -1,0 +1,5 @@
+Generating route types...
+✓ Types generated successfully
+$ pnpm -r typecheck
+$ tsc --noEmit
+$ next typegen && tsc --noEmit

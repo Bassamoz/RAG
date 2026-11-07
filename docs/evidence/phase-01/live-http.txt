@@ -1,0 +1,1 @@
+{"results": {"api": {"status": 200, "expected": 200, "passed": true}, "readiness": {"status": 503, "expected": 503, "passed": true}, "web": {"status": 200, "expected": 200, "passed": true}}, "scope": "live API/Next loopback HTTP with unavailable dependencies; no visual QA"}

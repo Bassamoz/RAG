@@ -1,0 +1,147 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+_ test_malformed_dsn_fails_safely_during_settings_load[DATABASE_URL-postgresql+psycopg://user:sensitive-port] _
+
+settings = Settings(app_env='test', app_profile='production', database_url=SecretStr('**********'), redis_url=SecretStr('**********'), max_body_bytes=1048576)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000019B27D7BE10>
+field = 'DATABASE_URL', value = 'postgresql+psycopg://user:sensitive-port'
+
+    @pytest.mark.parametrize("field,value", [
+        ("DATABASE_URL", "postgresql+psycopg://user:sensitive-port"),
+        ("REDIS_URL", "redis://localhost:sensitive-port/0"),
+    ])
+    def test_malformed_dsn_fails_safely_during_settings_load(settings, monkeypatch, field, value):
+        monkeypatch.setenv(field, value)
+        with pytest.raises(ConfigurationError) as error:
+>           create_app(load_settings())
+
+tests\unit\test_foundation.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+apps\api\src\store_advisor\main.py:35: in create_app
+    engine = make_engine(settings)
+             ^^^^^^^^^^^^^^^^^^^^^
+apps\api\src\store_advisor\db.py:14: in make_engine
+    return create_engine(
+<string>:2: in create_engine
+    ???
+apps\api\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py:281: in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+apps\api\.venv\Lib\site-packages\sqlalchemy\engine\create.py:564: in create_engine
+    u = _url.make_url(url)
+        ^^^^^^^^^^^^^^^^^^
+apps\api\.venv\Lib\site-packages\sqlalchemy\engine\url.py:857: in make_url
+    return _parse_url(name_or_url)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'postgresql+psycopg'
+
+    def _parse_url(name: str) -> URL:
+        pattern = re.compile(
+            r"""
+                (?P<name>[\w\+]+)://
+                (?:
+                    (?P<username>[^:/]*)
+                    (?::(?P<password>[^@]*))?
+                @)?
+                (?:
+                    (?:
+                        \[(?P<ipv6host>[^/\?]+)\] |
+                        (?P<ipv4host>[^/:\?]+)
+                    )?
+                    (?::(?P<port>[^/\?]*))?
+                )?
+                (?:/(?P<database>[^\?]*))?
+                (?:\?(?P<query>.*))?
+                """,
+            re.X,
+        )
+    
+        m = pattern.match(name)
+        if m is not None:
+            components = m.groupdict()
+            query: Optional[Dict[str, Union[str, List[str]]]]
+            if components["query"] is not None:
+                query = {}
+    
+                for key, value in parse_qsl(components["query"]):
+                    if key in query:
+                        query[key] = util.to_list(query[key])
+                        cast("List[str]", query[key]).append(value)
+                    else:
+                        query[key] = value
+            else:
+                query = None
+            components["query"] = query
+    
+            if components["username"] is not None:
+                components["username"] = unquote(components["username"])
+    
+            if components["password"] is not None:
+                components["password"] = unquote(components["password"])
+    
+            ipv4host = components.pop("ipv4host")
+            ipv6host = components.pop("ipv6host")
+            components["host"] = ipv4host or ipv6host
+            name = components.pop("name")
+    
+            if components["port"]:
+>               components["port"] = int(components["port"])
+                                     ^^^^^^^^^^^^^^^^^^^^^^^
+E               ValueError: invalid literal for int() with base 10: 'sensitive-port'
+
+apps\api\.venv\Lib\site-packages\sqlalchemy\engine\url.py:918: ValueError
+_ test_malformed_dsn_fails_safely_during_settings_load[REDIS_URL-redis://localhost:sensitive-port/0] _
+
+settings = Settings(app_env='test', app_profile='production', database_url=SecretStr('**********'), redis_url=SecretStr('**********'), max_body_bytes=1048576)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000019B27CB9A70>
+field = 'REDIS_URL', value = 'redis://localhost:sensitive-port/0'
+
+    @pytest.mark.parametrize("field,value", [
+        ("DATABASE_URL", "postgresql+psycopg://user:sensitive-port"),
+        ("REDIS_URL", "redis://localhost:sensitive-port/0"),
+    ])
+    def test_malformed_dsn_fails_safely_during_settings_load(settings, monkeypatch, field, value):
+        monkeypatch.setenv(field, value)
+        with pytest.raises(ConfigurationError) as error:
+>           create_app(load_settings())
+
+tests\unit\test_foundation.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+apps\api\src\store_advisor\main.py:36: in create_app
+    redis = Redis.from_url(
+apps\api\.venv\Lib\site-packages\redis\client.py:170: in from_url
+    connection_pool = ConnectionPool.from_url(url, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+apps\api\.venv\Lib\site-packages\redis\connection.py:1371: in from_url
+    url_options = parse_url(url)
+                  ^^^^^^^^^^^^^^
+apps\api\.venv\Lib\site-packages\redis\connection.py:1295: in parse_url
+    if url.port:
+       ^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = ParseResult(scheme='redis', netloc='localhost:sensitive-port', path='/0', params='', query='', fragment='')
+
+    @property
+    def port(self):
+        port = self._hostinfo[1]
+        if port is not None:
+            if port.isdigit() and port.isascii():
+                port = int(port)
+            else:
+>               raise ValueError(f"Port could not be cast to integer value as {port!r}")
+E               ValueError: Port could not be cast to integer value as 'sensitive-port'
+
+..\..\AppData\Local\Programs\Python\Python313\Lib\urllib\parse.py:182: ValueError
+============================== warnings summary ===============================
+apps\api\.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\ComputerWorld\Downloads\RAG\apps\api\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED apps\api::test_malformed_dsn_fails_safely_during_settings_load[DATABASE_URL-postgresql+psycopg://user:sensitive-port]
+FAILED apps\api::test_malformed_dsn_fails_safely_during_settings_load[REDIS_URL-redis://localhost:sensitive-port/0]
+2 failed, 5 deselected, 1 warning in 1.35s

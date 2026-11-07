@@ -1,0 +1,143 @@
+Initialized empty Git repository in C:/Users/ComputerWorld/Downloads/RAG/tmp/foundation-checkout-551c2fed66/source/.git/
+[foundation-test (root-commit) c6e6fe7] Snapshot foundation source for clean-checkout verification
+ 64 files changed, 8841 insertions(+)
+ create mode 100644 .dockerignore
+ create mode 100644 .env.example
+ create mode 100644 .github/workflows/ci.yml
+ create mode 100644 .gitignore
+ create mode 100644 .prettierignore
+ create mode 100644 AGENTS.md
+ create mode 100644 README.md
+ create mode 100644 apps/api/.python-version
+ create mode 100644 apps/api/alembic.ini
+ create mode 100644 apps/api/migrations/env.py
+ create mode 100644 apps/api/migrations/versions/0001_foundation.py
+ create mode 100644 apps/api/pyproject.toml
+ create mode 100644 apps/api/src/store_advisor/__init__.py
+ create mode 100644 apps/api/src/store_advisor/celery_app.py
+ create mode 100644 apps/api/src/store_advisor/config.py
+ create mode 100644 apps/api/src/store_advisor/db.py
+ create mode 100644 apps/api/src/store_advisor/http.py
+ create mode 100644 apps/api/src/store_advisor/main.py
+ create mode 100644 apps/api/src/store_advisor/migration_scope.py
+ create mode 100644 apps/api/src/store_advisor/models.py
+ create mode 100644 apps/api/src/store_advisor/worker.py
+ create mode 100644 apps/api/uv.lock
+ create mode 100644 apps/web/app/globals.css
+ create mode 100644 apps/web/app/layout.tsx
+ create mode 100644 apps/web/app/page.tsx
+ create mode 100644 apps/web/instrumentation.ts
+ create mode 100644 apps/web/next-env.d.ts
+ create mode 100644 apps/web/next.config.ts
+ create mode 100644 apps/web/package.json
+ create mode 100644 apps/web/postcss.config.mjs
+ create mode 100644 apps/web/src/config.ts
+ create mode 100644 apps/web/tsconfig.json
+ create mode 100644 eslint.config.mjs
+ create mode 100644 infra/api.Dockerfile
+ create mode 100644 infra/compose.test.yaml
+ create mode 100644 infra/compose.yaml
+ create mode 100644 infra/web.Dockerfile
+ create mode 100644 package.json
+ create mode 100644 packages/api-client/openapi.json
+ create mode 100644 packages/api-client/package.json
+ create mode 100644 packages/api-client/src/index.ts
+ create mode 100644 packages/api-client/src/schema.d.ts
+ create mode 100644 packages/api-client/tsconfig.json
+ create mode 100644 pnpm-lock.yaml
+ create mode 100644 pnpm-workspace.yaml
+ create mode 100644 scripts/check-contract.mjs
+ create mode 100644 scripts/ci-integration.py
+ create mode 100644 scripts/dev.py
+ create mode 100644 scripts/diagnose_runtime.py
+ create mode 100644 scripts/export_openapi.py
+ create mode 100644 scripts/provision_runtime.py
+ create mode 100644 scripts/record_check.py
+ create mode 100644 scripts/smoke_local_http.py
+ create mode 100644 scripts/validate_phase00.py
+ create mode 100644 scripts/verify_clean_checkout.py
+ create mode 100644 scripts/verify_development.py
+ create mode 100644 supabase/config.toml
+ create mode 100644 tests/integration/conftest.py
+ create mode 100644 tests/integration/test_services.py
+ create mode 100644 tests/smoke/test_http.py
+ create mode 100644 tests/unit/test_foundation.py
+ create mode 100644 tests/unit/test_migration_scope.py
+ create mode 100644 tests/web/client.test.ts
+ create mode 100644 vitest.config.mts
+c6e6fe7708f16ce3a6c217d675d730839b625f08
+warning: in the working copy of '.dockerignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.env.example', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.prettierignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/.python-version', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/alembic.ini', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/migrations/env.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/migrations/versions/0001_foundation.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/pyproject.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/__init__.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/celery_app.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/config.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/db.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/http.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/main.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/migration_scope.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/models.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/src/store_advisor/worker.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/api/uv.lock', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/app/globals.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/app/layout.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/app/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/instrumentation.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/next-env.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/next.config.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/postcss.config.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/src/config.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'apps/web/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'eslint.config.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'infra/api.Dockerfile', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'infra/compose.test.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'infra/compose.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'infra/web.Dockerfile', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'packages/api-client/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'packages/api-client/src/index.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'packages/api-client/src/schema.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'packages/api-client/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pnpm-lock.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pnpm-workspace.yaml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/check-contract.mjs', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/ci-integration.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/dev.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/diagnose_runtime.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/export_openapi.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/provision_runtime.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/record_check.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/smoke_local_http.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/validate_phase00.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/verify_clean_checkout.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/verify_development.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'supabase/config.toml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/integration/conftest.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/integration/test_services.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/smoke/test_http.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/unit/test_foundation.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/unit/test_migration_scope.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/web/client.test.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'vitest.config.mts', LF will be replaced by CRLF the next time Git touches it
+Cloning into 'C:\Users\ComputerWorld\Downloads\RAG\tmp\foundation-checkout-551c2fed66\checkout'...
+Traceback (most recent call last):
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_clean_checkout.py", line 117, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_clean_checkout.py", line 75, in main
+    assert all(
+           ~~~^
+        hashlib.sha256((checkout / name).read_bytes()).hexdigest() == value
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        for name, value in digests.items()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+AssertionError

@@ -1,0 +1,82 @@
+{
+  "phase": "01",
+  "status": "verified_local",
+  "verified_at": "2026-11-07T23:49:10.776286+03:00",
+  "source_snapshot_sha256": "e735fe25df9c7af61c00f30becb84028b692577a25657e47f03146226abbbfb4",
+  "source_files": 65,
+  "root_commit": null,
+  "temporary_checkout_commit": "2d9df46f78e71133e36495cf847f07f32468ac32",
+  "checks": [
+    "docs/evidence/phase-01/runtime-identity-host-20261107.json",
+    "docs/evidence/phase-01/integration-live-fixed-20261107.json",
+    "docs/evidence/phase-01/clean-checkout-final-isolated-20261107.json",
+    "docs/evidence/phase-01/container-api-build-20261107.json",
+    "docs/evidence/phase-01/container-web-build-20261107.json",
+    "docs/evidence/phase-01/container-images-20261107.json",
+    "docs/evidence/phase-01/development-restart-final-20261107.json",
+    "docs/evidence/phase-01/database-cleanup-verified-20261107.json",
+    "docs/evidence/phase-01/services-final-20261107.json",
+    "docs/evidence/phase-01/lint-final-20261107.json",
+    "docs/evidence/phase-01/format-final-20261107.json",
+    "docs/evidence/phase-01/types-followup-20261107.json",
+    "docs/evidence/phase-01/openapi-export-final-20261107.json",
+    "docs/evidence/phase-01/contract-after-export-20261107.json",
+    "docs/evidence/phase-01/phase00-final-20261107.json"
+  ],
+  "test_cases": {
+    "python_unit_and_http_smoke": 16,
+    "real_integration": 4,
+    "typescript": 5
+  },
+  "development": {
+    "event": "development_restart_verified",
+    "starts": 2,
+    "health": 200,
+    "readiness": 200,
+    "web": 200,
+    "celery_roundtrip": "passed",
+    "foundation_rows_preserved": true,
+    "pre_first_start_snapshot": "verified",
+    "preservation_scope": "both_starts",
+    "snapshot": {
+      "users": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tenants": {
+        "rows": 1,
+        "sha256": "e5dc0a1b22c0caa5dcfa8a600dc26be49317d7a12938cca146e68dc724cb5c1b"
+      },
+      "memberships": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "stores": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  },
+  "cleanup": {
+    "foundation_rows_after_cleanup": {
+      "users": 0,
+      "tenants": 0,
+      "memberships": 0,
+      "stores": 0
+    },
+    "alembic_revision": "0001",
+    "pgvector_version": "0.8.2",
+    "provider_schemas": [
+      "auth",
+      "storage"
+    ]
+  },
+  "phase_02_started": false,
+  "production_ready": false,
+  "limits": [
+    "Local foundation only",
+    "No remote CI run or older released DB snapshot",
+    "No external provider accounts, identity flows or visual browser verification",
+    "Moderate development-lint advisory remains open"
+  ]
+}

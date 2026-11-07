@@ -1,0 +1,28 @@
+{
+  "name": "store-advisor",
+  "private": true,
+  "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @store/web dev",
+    "build": "pnpm --filter @store/web build",
+    "lint": "eslint apps/web packages/api-client scripts/*.mjs && prettier --check apps/web packages/api-client package.json pnpm-workspace.yaml",
+    "format": "prettier --write apps/web packages/api-client package.json pnpm-workspace.yaml",
+    "typecheck": "pnpm -r typecheck",
+    "test": "vitest run",
+    "contract:generate": "openapi-typescript packages/api-client/openapi.json -o packages/api-client/src/schema.d.ts",
+    "contract:check": "node scripts/check-contract.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.4.5",
+    "openapi-typescript": "^7.10.0",
+    "prettier": "^3.6.0",
+    "supabase": "3.0.0",
+    "typescript": "^5.9.0",
+    "vitest": "^4.0.0"
+  }
+}

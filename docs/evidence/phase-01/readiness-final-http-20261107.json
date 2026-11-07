@@ -1,0 +1,9 @@
+{
+  "command": "curl.exe --fail --silent --show-error --max-time 10 --output NUL --write-out http_status=%{http_code} http://127.0.0.1:8000/api/v1/ready",
+  "exit_code": 0,
+  "time": "2026-11-07T20:50:07.319780+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/readiness-final-http-20261107.txt",
+  "output_sha256": "3ba3aa875b141f9f0bab057a3a1a2a7e3c03aa7c2ce385f7ea26982fb6f43a82"
+}

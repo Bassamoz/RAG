@@ -1,0 +1,212 @@
+Initialized empty Git repository in C:/Users/ComputerWorld/Downloads/RAG/tmp/foundation-checkout-9fa9823b57/source/.git/
+[foundation-test (root-commit) 0cd8b5a] Snapshot foundation source for clean-checkout verification
+ 65 files changed, 8960 insertions(+)
+ create mode 100644 .dockerignore
+ create mode 100644 .env.example
+ create mode 100644 .github/workflows/ci.yml
+ create mode 100644 .gitignore
+ create mode 100644 .prettierignore
+ create mode 100644 AGENTS.md
+ create mode 100644 README.md
+ create mode 100644 apps/api/.python-version
+ create mode 100644 apps/api/alembic.ini
+ create mode 100644 apps/api/migrations/env.py
+ create mode 100644 apps/api/migrations/versions/0001_foundation.py
+ create mode 100644 apps/api/pyproject.toml
+ create mode 100644 apps/api/src/store_advisor/__init__.py
+ create mode 100644 apps/api/src/store_advisor/celery_app.py
+ create mode 100644 apps/api/src/store_advisor/config.py
+ create mode 100644 apps/api/src/store_advisor/db.py
+ create mode 100644 apps/api/src/store_advisor/http.py
+ create mode 100644 apps/api/src/store_advisor/main.py
+ create mode 100644 apps/api/src/store_advisor/migration_scope.py
+ create mode 100644 apps/api/src/store_advisor/models.py
+ create mode 100644 apps/api/src/store_advisor/worker.py
+ create mode 100644 apps/api/uv.lock
+ create mode 100644 apps/web/app/globals.css
+ create mode 100644 apps/web/app/layout.tsx
+ create mode 100644 apps/web/app/page.tsx
+ create mode 100644 apps/web/instrumentation.ts
+ create mode 100644 apps/web/next-env.d.ts
+ create mode 100644 apps/web/next.config.ts
+ create mode 100644 apps/web/package.json
+ create mode 100644 apps/web/postcss.config.mjs
+ create mode 100644 apps/web/src/config.ts
+ create mode 100644 apps/web/tsconfig.json
+ create mode 100644 eslint.config.mjs
+ create mode 100644 infra/api.Dockerfile
+ create mode 100644 infra/compose.test.yaml
+ create mode 100644 infra/compose.yaml
+ create mode 100644 infra/web.Dockerfile
+ create mode 100644 package.json
+ create mode 100644 packages/api-client/openapi.json
+ create mode 100644 packages/api-client/package.json
+ create mode 100644 packages/api-client/src/index.ts
+ create mode 100644 packages/api-client/src/schema.d.ts
+ create mode 100644 packages/api-client/tsconfig.json
+ create mode 100644 pnpm-lock.yaml
+ create mode 100644 pnpm-workspace.yaml
+ create mode 100644 scripts/check-contract.mjs
+ create mode 100644 scripts/ci-integration.py
+ create mode 100644 scripts/dev.py
+ create mode 100644 scripts/diagnose_runtime.py
+ create mode 100644 scripts/export_openapi.py
+ create mode 100644 scripts/provision_runtime.py
+ create mode 100644 scripts/record_check.py
+ create mode 100644 scripts/smoke_local_http.py
+ create mode 100644 scripts/validate_phase00.py
+ create mode 100644 scripts/verify_clean_checkout.py
+ create mode 100644 scripts/verify_development.py
+ create mode 100644 supabase/config.toml
+ create mode 100644 tests/integration/conftest.py
+ create mode 100644 tests/integration/test_services.py
+ create mode 100644 tests/smoke/test_http.py
+ create mode 100644 tests/unit/test_foundation.py
+ create mode 100644 tests/unit/test_migration_scope.py
+ create mode 100644 tests/unit/test_verification_environment.py
+ create mode 100644 tests/web/client.test.ts
+ create mode 100644 vitest.config.mts
+0cd8b5ae76b0a7b3c0eb93effef6ebb0752166b8
+Scope: all 3 workspace projects
+✓ Lockfile passes supply-chain policies (verified 22h ago)
+Lockfile is up to date, resolution step is skipped
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: C:\Users\ComputerWorld\AppData\Local\pnpm\store\v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 81, reused 81, downloaded 0, added 70
+Progress: resolved 119, reused 119, downloaded 0, added 108
+Progress: resolved 149, reused 149, downloaded 0, added 138
+Progress: resolved 170, reused 170, downloaded 0, added 159
+Progress: resolved 204, reused 204, downloaded 0, added 193
+Progress: resolved 247, reused 247, downloaded 0, added 236
+Progress: resolved 274, reused 274, downloaded 0, added 263
+Progress: resolved 311, reused 311, downloaded 0, added 300
+Progress: resolved 366, reused 366, downloaded 0, added 354
+Progress: resolved 388, reused 388, downloaded 0, added 378
+Progress: resolved 409, reused 409, downloaded 0, added 401
+Progress: resolved 415, reused 415, downloaded 0, added 410
+Progress: resolved 416, reused 416, downloaded 0, added 412
+Packages: +419
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 419, reused 419, downloaded 0, added 419, done
+
+devDependencies:
++ @types/node 24.19.2
++ eslint 9.39.5
++ eslint-config-next 16.4.5
++ openapi-typescript 7.13.0
++ prettier 3.9.10
++ supabase 3.0.0
++ typescript 5.9.3
++ vitest 4.1.12
+
+Done in 22s using pnpm v12.18.0
+Cloning into 'C:\Users\ComputerWorld\Downloads\RAG\tmp\foundation-checkout-9fa9823b57\checkout'...
+Using CPython 3.13.1 interpreter at: C:\Users\ComputerWorld\AppData\Local\Programs\Python\Python313\python.exe
+Creating virtual environment at: apps\api\.venv
+   Building store-advisor-api @ file:///C:/Users/ComputerWorld/Downloads/RAG/tmp/foundation-checkout-9fa9823b57/checkout/apps/api
+      Built store-advisor-api @ file:///C:/Users/ComputerWorld/Downloads/RAG/tmp/foundation-checkout-9fa9823b57/checkout/apps/api
+Prepared 1 package in 2.79s
+Installed 78 packages in 3.08s
+ + alembic==1.20.1
+ + amqp==5.4.2
+ + annotated-doc==0.0.5
+ + annotated-types==0.8.0
+ + anyio==4.16.0
+ + billiard==4.3.2
+ + boolean-py==5.0
+ + cachecontrol==0.14.4
+ + celery==5.7.0
+ + celery-types==0.26.0
+ + certifi==2026.10.23
+ + charset-normalizer==3.5.2
+ + click==8.5.1
+ + click-didyoumean==0.3.1
+ + click-plugins==1.1.1.2
+ + click-repl==0.4.1
+ + colorama==0.4.6
+ + cyclonedx-python-lib==11.12.0
+ + defusedxml==0.7.1
+ + fastapi==0.162.0
+ + filelock==4.2.9
+ + greenlet==3.5.6
+ + h11==0.16.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + idna==3.20
+ + iniconfig==2.3.1
+ + kombu==5.7.0
+ + librt==0.16.0
+ + license-expression==30.4.4
+ + mako==1.4.3
+ + markdown-it-py==4.2.0
+ + markupsafe==3.0.4
+ + mdurl==0.1.2
+ + msgpack==1.2.4
+ + mypy==1.20.2
+ + mypy-extensions==1.2.0
+ + opentelemetry-api==1.45.2
+ + packageurl-python==0.17.6
+ + packaging==26.3
+ + pathspec==1.1.1
+ + pip==26.3
+ + pip-api==0.0.35
+ + pip-audit==2.10.1
+ + pip-requirements-parser==32.0.1
+ + platformdirs==4.14.5
+ + pluggy==1.7.0
+ + prompt-toolkit==3.0.53
+ + psycopg==3.3.8
+ + psycopg-binary==3.3.8
+ + py-serializable==2.2.0
+ + pydantic==2.14.3
+ + pydantic-core==2.50.4
+ + pydantic-settings==2.16.2
+ + pygments==2.21.0
+ + pyparsing==3.3.3
+ + pytest==9.2.0
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.2.4
+ + redis==6.4.0
+ + requests==2.34.2
+ + rich==15.0.0
+ + ruff==0.17.4
+ + six==1.17.0
+ + sortedcontainers==2.4.0
+ + sqlalchemy==2.0.57
+ + starlette==1.10.0
+ + store-advisor-api==0.1.0 (from file:///C:/Users/ComputerWorld/Downloads/RAG/tmp/foundation-checkout-9fa9823b57/checkout/apps/api)
+ + tomli==2.5.0
+ + tomli-w==1.2.0
+ + typing-extensions==4.16.0
+ + typing-inspection==0.4.5
+ + tzdata==2026.6
+ + tzlocal==5.4.5
+ + urllib3==2.8.0
+ + uvicorn==0.54.0
+ + vine==5.1.0
+ + wcwidth==0.9.4
+Traceback (most recent call last):
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_clean_checkout.py", line 168, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_clean_checkout.py", line 135, in main
+    run(
+    ~~~^
+        [
+        ^
+    ...<9 lines>...
+        checkout,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_clean_checkout.py", line 48, in run
+    result = subprocess.run(
+        args,
+    ...<5 lines>...
+        stdout=subprocess.PIPE,
+    )
+  File "C:\Users\ComputerWorld\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\ComputerWorld\\Downloads\\RAG\\tmp\\foundation-checkout-9fa9823b57\\checkout\\apps\\api\\.venv\\Scripts\\python.exe', '-m', 'pytest', '-c', 'apps/api/pyproject.toml', 'tests/unit', 'tests/smoke', '-q']' returned non-zero exit status 1.

@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/celery.exe -A store_advisor.celery_app:app worker --help",
+  "exit_code": 0,
+  "time": "2026-11-06T20:54:22.599706+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/worker-import.txt",
+  "output_sha256": "7a9a43af10387990df6e02fb27b9ff24d920fa42f06caa54686960b7b39f7e49"
+}

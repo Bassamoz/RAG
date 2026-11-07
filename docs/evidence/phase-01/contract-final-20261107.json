@@ -1,0 +1,9 @@
+{
+  "command": ".tools/node_modules/pnpm/pnpm.exe contract:check",
+  "exit_code": 0,
+  "time": "2026-11-07T19:47:07.065734+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/contract-final-20261107.txt",
+  "output_sha256": "8a71f6122f18b57acb9803de38f297534201d7570a523ef09a2fe8459f927c02"
+}

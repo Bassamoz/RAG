@@ -1,0 +1,9 @@
+{
+  "command": "python -X utf8 scripts/diagnose_runtime.py",
+  "exit_code": 0,
+  "time": "2026-11-07T19:11:42.331081+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/runtime-identity-host-20261107.txt",
+  "output_sha256": "b4bd791770174f1d38a2b0fd764bfe1d451a98d79152710b0cb74c29cdd633ee"
+}

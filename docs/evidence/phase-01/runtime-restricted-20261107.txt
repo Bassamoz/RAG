@@ -1,0 +1,63 @@
+{
+  "execution_environment": {
+    "os": "Windows",
+    "python_bits": 64,
+    "wsl_process": false,
+    "docker_executable": "C:\\Users\\ComputerWorld\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.EXE",
+    "docker_host_override_present": false,
+    "docker_context_override_present": false
+  },
+  "checks": [
+    {
+      "command": [
+        "docker",
+        "version"
+      ],
+      "exit_code": 1,
+      "stdout": "Client:\n Version:           29.9.2\n API version:       1.56\n Go version:        go1.26.10\n Git commit:        a82e528\n Built:             Tue Oct 20 19:44:07 2026\n OS/Arch:           windows/amd64\n Context:           default",
+      "stderr": "WARNING: Error loading config file: open C:\\Users\\ComputerWorld\\.docker\\config.json: Access is denied.\npermission denied while trying to connect to the docker API at npipe:////./pipe/docker_engine"
+    },
+    {
+      "command": [
+        "docker",
+        "compose",
+        "version"
+      ],
+      "exit_code": 0,
+      "stdout": "Docker Compose version v5.6.1",
+      "stderr": "WARNING: Error loading config file: open C:\\Users\\ComputerWorld\\.docker\\config.json: Access is denied."
+    },
+    {
+      "command": [
+        "docker",
+        "context",
+        "show"
+      ],
+      "exit_code": 0,
+      "stdout": "default",
+      "stderr": "WARNING: Error loading config file: open C:\\Users\\ComputerWorld\\.docker\\config.json: Access is denied."
+    },
+    {
+      "command": [
+        "docker",
+        "info",
+        "--format",
+        "{{.ServerVersion}} {{.OSType}}"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "WARNING: Error loading config file: open C:\\Users\\ComputerWorld\\.docker\\config.json: Access is denied.\npermission denied while trying to connect to the docker API at npipe:////./pipe/docker_engine"
+    },
+    {
+      "command": [
+        "wsl",
+        "--list",
+        "--verbose"
+      ],
+      "exit_code": 4294967295,
+      "stdout": "Access is denied. \r\nError code: Wsl/EnumerateDistros/Service/E_ACCESSDENIED\r\nIf this error was unexpected, please consider searching for existing issues or filing a new issue at https://github.com/microsoft/WSL/issues.",
+      "stderr": ""
+    }
+  ],
+  "engine_and_compose_accessible": false
+}

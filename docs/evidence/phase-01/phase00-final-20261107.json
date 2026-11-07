@@ -1,0 +1,9 @@
+{
+  "command": "python -X utf8 scripts/validate_phase00.py",
+  "exit_code": 0,
+  "time": "2026-11-07T20:42:19.004480+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/phase00-final-20261107.txt",
+  "output_sha256": "400098892deff7dc7b3cb62aeeba7ed9d26f258085f012bc6a406a81185d2322"
+}

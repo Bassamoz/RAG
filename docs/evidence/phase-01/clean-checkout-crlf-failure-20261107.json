@@ -1,0 +1,11 @@
+{
+  "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_clean_checkout.py",
+  "exit_code": 1,
+  "time": "2026-11-07T19:04:56.545947+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/clean-checkout-crlf-failure-20261107.txt",
+  "output_sha256": "2bdcc8412053687410b016c024f6a3019f59d93f74565910938be09bd404afb9",
+  "original_artifact": "docs/evidence/phase-01/clean-checkout-20261107.txt",
+  "archive_note": "First attempt copied before the original clean-checkout label was reused after the autocrlf fix; original output and capture hash preserved."
+}

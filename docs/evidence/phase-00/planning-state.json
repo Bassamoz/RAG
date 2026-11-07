@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-06",
+  "scope": "phase_00_only",
+  "repository": {
+    "git": false,
+    "commit": null,
+    "existing_code": "y.py empty; preserved",
+    "working_tree": "uncommitted files; no git repository"
+  },
+  "phases": [
+    {
+      "id": "00",
+      "title": "تدقيق البحث والمستودع وخطة التنفيذ",
+      "status": "verified_local",
+      "scope_completed": "planning artifacts only",
+      "verification_scope": "planning integrity and source audit only; no application behavior verified"
+    },
+    {
+      "id": "01",
+      "title": "المستودع والبيئة وقاعدة البيانات والعقود",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "02",
+      "title": "البريد برمز تحقق والجلسات والصلاحيات والعزل",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "03",
+      "title": "نظام التصميم والواجهات والإعداد الأول",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "04",
+      "title": "الكتالوج والمتغيرات والسياسات والاستيراد",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "05",
+      "title": "الربط مع سلة وزد والمتجر الخاص والمزامنة",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "06",
+      "title": "مصادر المعرفة والاستخراج والتقسيم والإصدارات",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "07",
+      "title": "BM25 والبحث الدلالي وFAISS والدمج وإعادة الترتيب",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "08",
+      "title": "تنسيق RAG والأدوات والإجابة المسندة",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "09",
+      "title": "نافذة المحادثة والسياق والتحويل وتوقيت الرد",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "10",
+      "title": "WhatsApp Business والتحقق من رقم الاتصال",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "11",
+      "title": "مساحة الموظف والتذاكر والتنبيهات والإدارة",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "12",
+      "title": "التحليلات والتقارير والتقييم والاستهلاك",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "13",
+      "title": "دورة الحياة والحذف والاسترجاع والنسخ الاحتياطي",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "14",
+      "title": "بيانات البحث والمقارنة العلمية وجودة RAG",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "15",
+      "title": "الاختبارات الشاملة والحمل والتزامن والتعافي",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "16",
+      "title": "مراجعة الأمان وإصلاح الثغرات وإعادة الاختبار",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "17",
+      "title": "النشر والمراقبة والتوثيق والتراجع",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "18",
+      "title": "بوابة الإصدار والتدقيق النهائي",
+      "status": "planned",
+      "scope_completed": null
+    }
+  ],
+  "completed_requirements": [
+    "R01"
+  ],
+  "partial_requirements": {
+    "R02": "phase 00 state and handoff only",
+    "R44": "initial threat model only; exact ASVS item mapping due 16",
+    "R47": "phase 00 explanation only"
+  },
+  "actual_checks": [
+    {
+      "command": "python -X utf8 scripts/validate_phase00.py",
+      "exit_code": 0,
+      "time": "2026-11-06T20:06:17.178679+00:00",
+      "environment": "Windows 11; Python 3.14.2",
+      "commit": null,
+      "scope": "documentation integrity only; no application/provider tests",
+      "errors": [],
+      "result": "passed",
+      "validator_sha256": "8d1aa0755561072e37d871f515e64c87ea6eb093de383e0338319af770b98e45",
+      "evidence_path": "docs/evidence/phase-00/validation.json"
+    },
+    {
+      "command": "git status --short",
+      "exit_code": 128,
+      "evidence_path": "docs/evidence/phase-00/inventory.json",
+      "time": "2026-11-06T20:05:58.995632+00:00",
+      "environment": "Windows 11; Python 3.14.2",
+      "commit": null,
+      "result": "not_a_git_repository"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "EXT-01",
+      "service": "Supabase",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-02",
+      "service": "SMTP",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-03",
+      "service": "MFA",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-04",
+      "service": "Phone verification",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-05",
+      "service": "AI API",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-06",
+      "service": "Cross-Encoder",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-07",
+      "service": "Llama 3.1 8B",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-08",
+      "service": "Salla",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-09",
+      "service": "Zid",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-10",
+      "service": "Custom store",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-11",
+      "service": "Meta WhatsApp",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-12",
+      "service": "Hosting",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-13",
+      "service": "Backup",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-14",
+      "service": "Thmanyah font",
+      "status": "asset_required",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-15",
+      "service": "Dataset",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    }
+  ],
+  "migrations": [],
+  "index_versions": [],
+  "delivery": {
+    "code_complete": false,
+    "local_verified": false,
+    "staging_verified": false,
+    "external_integrations_verified": false,
+    "production_ready": false,
+    "deployed": false
+  },
+  "next_actions": [
+    "Wait for explicit phase 01 request",
+    "Read docs/NEXT_ACTIONS.md and phase 01 prompt"
+  ]
+}

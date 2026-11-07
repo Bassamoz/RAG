@@ -1,0 +1,9 @@
+{
+  "command": "python -X utf8 scripts/dev.py",
+  "exit_code": 1,
+  "time": "2026-11-06T20:30:50.904252+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/local-setup.txt",
+  "output_sha256": "00f8bae0e658370d9acfab77ad3a9d66907185a8c99836691c41bc9ecc7512cb"
+}

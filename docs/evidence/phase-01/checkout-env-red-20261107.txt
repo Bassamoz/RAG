@@ -1,0 +1,34 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+___________ test_checkout_commands_ignore_inherited_git_repository ____________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001E8162EB490>
+tmp_path = WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0')
+
+    def test_checkout_commands_ignore_inherited_git_repository(monkeypatch, tmp_path):
+        path = Path(__file__).resolve().parents[2] / "scripts/verify_clean_checkout.py"
+        spec = importlib.util.spec_from_file_location("verify_clean_checkout", path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        env = {key: value for key, value in os.environ.items() if not key.upper().startswith("GIT_")}
+        intended, unrelated = [tmp_path / name for name in ["intended", "unrelated"]]
+        for repository in [intended, unrelated]:
+            subprocess.run(["git", "init", str(repository)], env=env, check=True, capture_output=True)
+        monkeypatch.setenv("GIT_DIR", str(unrelated / ".git"))
+        monkeypatch.setenv("GIT_WORK_TREE", str(unrelated))
+        monkeypatch.setenv("GIT_INDEX_FILE", str(unrelated / "foreign-index"))
+        actual = module.run(["git", "rev-parse", "--absolute-git-dir"], intended)
+>       assert Path(actual).resolve() == (intended / ".git").resolve()
+E       AssertionError: assert WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/unrelated/.git') == WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/intended/.git')
+E        +  where WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/unrelated/.git') = resolve()
+E        +    where resolve = WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/unrelated/.git').resolve
+E        +      where WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/unrelated/.git') = Path('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/unrelated/.git')
+E        +  and   WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/intended/.git') = resolve()
+E        +    where resolve = (WindowsPath('C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/intended') / '.git').resolve
+
+tests\unit\test_verification_environment.py:22: AssertionError
+---------------------------- Captured stdout call -----------------------------
+C:/Users/ComputerWorld/AppData/Local/Temp/pytest-of-ComputerWorld/pytest-0/test_checkout_commands_ignore_0/unrelated/.git
+=========================== short test summary info ===========================
+FAILED apps\api::test_checkout_commands_ignore_inherited_git_repository - Ass...
+1 failed in 0.25s

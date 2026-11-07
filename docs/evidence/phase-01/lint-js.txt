@@ -1,0 +1,3 @@
+Checking formatting...
+All matched files use Prettier code style!
+$ eslint apps/web packages/api-client scripts/*.mjs && prettier --check apps/web packages/api-client package.json pnpm-workspace.yaml

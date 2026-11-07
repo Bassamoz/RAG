@@ -1,0 +1,10 @@
+
+ RUN  v4.1.12 C:/Users/ComputerWorld/Downloads/RAG
+
+
+ Test Files  1 passed (1)
+      Tests  5 passed (5)
+   Start at  23:59:12
+   Duration  361ms (transform 33ms, setup 0ms, import 82ms, tests 73ms, environment 0ms)
+
+$ vitest run

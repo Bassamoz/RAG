@@ -1,0 +1,15 @@
+Local setup failed at pnpm; exit=4294967295
+Traceback (most recent call last):
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_development.py", line 111, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_development.py", line 66, in main
+    start()
+    ~~~~~^^
+  File "C:\Users\ComputerWorld\Downloads\RAG\scripts\verify_development.py", line 26, in start
+    subprocess.run([sys.executable, "scripts/dev.py"], cwd=ROOT, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ComputerWorld\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\Users\\ComputerWorld\\Downloads\\RAG\\apps\\api\\.venv\\Scripts\\python.exe', 'scripts/dev.py']' returned non-zero exit status 1.

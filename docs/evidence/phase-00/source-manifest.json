@@ -1,0 +1,15 @@
+{
+  "source_pdf_sha256": "1392e040e6eafd7b06b194bbb1b46dd3fbe1f28f4712834ddea24cb2b1684481",
+  "expected_pdf_sha256": "1392e040e6eafd7b06b194bbb1b46dd3fbe1f28f4712834ddea24cb2b1684481",
+  "pages": 106,
+  "visually_reviewed_pdf_pages": [
+    48,
+    52,
+    53,
+    56,
+    64,
+    87,
+    99,
+    102
+  ]
+}

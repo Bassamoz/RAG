@@ -1,0 +1,9 @@
+{
+  "command": "apps/api/.venv/Scripts/ruff.exe format --check --config apps/api/pyproject.toml apps/api/src apps/api/migrations tests scripts/export_openapi.py scripts/provision_runtime.py scripts/dev.py scripts/ci-integration.py scripts/record_check.py scripts/smoke_local_http.py scripts/diagnose_runtime.py scripts/verify_development.py scripts/verify_clean_checkout.py",
+  "exit_code": 0,
+  "time": "2026-11-07T19:47:06.928797+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/format-final-20261107.txt",
+  "output_sha256": "cdd24684b33e5200a213c89093e8da4cb81a0de0085a4684d20923e852610123"
+}

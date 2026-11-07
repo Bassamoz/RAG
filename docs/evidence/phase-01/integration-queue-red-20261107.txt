@@ -1,0 +1,67 @@
+Local runtime login configured
+...F                                                                     [100%]
+================================== FAILURES ===================================
+______ test_worker_on_another_environment_queue_does_not_make_api_ready _______
+
+databases = (Engine(postgresql+psycopg://postgres:***@127.0.0.1:55432/store_advisor_test), Engine(postgresql+psycopg://app_runtime:***@127.0.0.1:55432/store_advisor_test))
+
+    def test_worker_on_another_environment_queue_does_not_make_api_ready(databases):
+        settings = load_settings()
+        assert settings.app_env == "test"
+        # The real worker consumes store_advisor.test; staging has no consumer on this broker.
+        wrong_queue = settings.model_copy(update={"app_env": "staging"})
+        with TestClient(create_app(wrong_queue)) as client:
+            assert client.get("/api/v1/health").status_code == 200
+>           assert client.get("/api/v1/ready").status_code == 503
+E           AssertionError: assert 200 == 503
+E            +  where 200 = <Response [200 OK]>.status_code
+E            +    where <Response [200 OK]> = get('/api/v1/ready')
+E            +      where get = <starlette.testclient.TestClient object at 0x000001584822B230>.get
+
+tests\integration\test_services.py:125: AssertionError
+---------------------------- Captured stdout call -----------------------------
+{"event": "http_request", "entryPoint": "api", "request_id": "0fdf9b5a-6f5f-4b7c-806e-0871b91d0f58", "method": "GET", "status": 200, "duration_ms": 6.58}
+{"event": "http_request", "entryPoint": "api", "request_id": "8e13a9e6-4754-4006-b42a-de19e36acaca", "method": "GET", "status": 200, "duration_ms": 1165.77}
+============================== warnings summary ===============================
+apps\api\.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\ComputerWorld\Downloads\RAG\apps\api\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+apps\api\.venv\Lib\site-packages\_pytest\cacheprovider.py:487
+  C:\Users\ComputerWorld\Downloads\RAG\apps\api\.venv\Lib\site-packages\_pytest\cacheprovider.py:487: PytestCacheWarning: could not create cache path C:\Users\ComputerWorld\Downloads\RAG\apps\api\.pytest_cache\v\cache\nodeids: [WinError 5] Access is denied: 'C:\\Users\\ComputerWorld\\Downloads\\RAG\\apps\\api\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/nodeids", sorted(str(n) for n in self.cached_nodeids))
+
+apps\api\.venv\Lib\site-packages\_pytest\cacheprovider.py:439
+  C:\Users\ComputerWorld\Downloads\RAG\apps\api\.venv\Lib\site-packages\_pytest\cacheprovider.py:439: PytestCacheWarning: could not create cache path C:\Users\ComputerWorld\Downloads\RAG\apps\api\.pytest_cache\v\cache\lastfailed: [WinError 5] Access is denied: 'C:\\Users\\ComputerWorld\\Downloads\\RAG\\apps\\api\\.pytest_cache\\v\\cache'
+    config.cache.set("cache/lastfailed", current_lastfailed)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED apps\api\test_services.py::test_worker_on_another_environment_queue_does_not_make_api_ready
+1 failed, 3 passed, 3 warnings in 10.25s
+ Network store-advisor-test_default Creating 
+ Network store-advisor-test_default Creating 
+ Network store-advisor-test_default Created 
+ Network store-advisor-test_default Created 
+ Container store-advisor-test-redis-1 Creating 
+ Container store-advisor-test-db-1 Creating 
+ Container store-advisor-test-redis-1 Created 
+ Container store-advisor-test-db-1 Created 
+ Container store-advisor-test-db-1 Starting 
+ Container store-advisor-test-redis-1 Starting 
+ Container store-advisor-test-db-1 Started 
+ Container store-advisor-test-redis-1 Started 
+ Container store-advisor-test-db-1 Waiting 
+ Container store-advisor-test-redis-1 Waiting 
+ Container store-advisor-test-redis-1 Healthy 
+ Container store-advisor-test-db-1 Healthy 
+ Container store-advisor-test-db-1 Stopping 
+ Container store-advisor-test-redis-1 Stopping 
+ Container store-advisor-test-redis-1 Stopped 
+ Container store-advisor-test-redis-1 Removing 
+ Container store-advisor-test-redis-1 Removed 
+ Container store-advisor-test-db-1 Stopped 
+ Container store-advisor-test-db-1 Removing 
+ Container store-advisor-test-db-1 Removed 
+ Network store-advisor-test_default Removing 
+ Network store-advisor-test_default Removed 

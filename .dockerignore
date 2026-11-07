@@ -1,0 +1,10 @@
+.git
+**/node_modules
+**/.next
+**/.venv
+.venv-app
+.tools
+**/.env*
+docs/evidence
+codex-plan
+**/__pycache__

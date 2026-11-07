@@ -1,0 +1,9 @@
+{
+  "command": "docker pull python:3.13-slim",
+  "exit_code": 0,
+  "time": "2026-11-07T19:32:23.403963+00:00",
+  "environment": "Windows 11; runner Python 3.14.2",
+  "commit": null,
+  "artifact": "docs/evidence/phase-01/base-python-pull-20261107.txt",
+  "output_sha256": "52dbb0cfa2cddc73bf389017cf4e9ba37f45aa6c167858553284e1d9dfaa573f"
+}

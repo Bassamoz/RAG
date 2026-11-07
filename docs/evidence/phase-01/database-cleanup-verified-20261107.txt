@@ -1,0 +1,1 @@
+{"foundation_rows_after_cleanup": {"users": 0, "tenants": 0, "memberships": 0, "stores": 0}, "alembic_revision": "0001", "pgvector_version": "0.8.2", "provider_schemas": ["auth", "storage"]}

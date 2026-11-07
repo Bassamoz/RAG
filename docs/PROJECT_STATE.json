@@ -1,0 +1,1176 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-07T23:50:09.819573+03:00",
+  "scope": "phase_01_only",
+  "repository": {
+    "git": false,
+    "commit": null,
+    "existing_code": "y.py empty; preserved",
+    "working_tree": "Source and documentation uncommitted; no Git repository initialized"
+  },
+  "phases": [
+    {
+      "id": "00",
+      "title": "تدقيق البحث والمستودع وخطة التنفيذ",
+      "status": "verified_local",
+      "scope_completed": "planning artifacts only",
+      "verification_scope": "planning integrity and source audit only; no application behavior verified"
+    },
+    {
+      "id": "01",
+      "title": "المستودع والبيئة وقاعدة البيانات والعقود",
+      "status": "verified_local",
+      "scope_completed": "Local foundation verified: 16 Python and 5 TypeScript cases, 4 real service integrations, both Docker builds, Supabase DB/Auth/Storage healthy, two documented starts with baseline/row preservation and sentinel cleanup.",
+      "implementation_status": "implemented",
+      "acceptance_gate": "passed",
+      "pending_checks": [],
+      "completed_at": "2026-11-07T23:49:10.776286+03:00",
+      "verification_scope": "Phase 01 local only; no hosted account, identity feature, staging or production readiness.",
+      "acceptance_evidence": "docs/evidence/phase-01/acceptance-20261107.json"
+    },
+    {
+      "id": "02",
+      "title": "البريد برمز تحقق والجلسات والصلاحيات والعزل",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "03",
+      "title": "نظام التصميم والواجهات والإعداد الأول",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "04",
+      "title": "الكتالوج والمتغيرات والسياسات والاستيراد",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "05",
+      "title": "الربط مع سلة وزد والمتجر الخاص والمزامنة",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "06",
+      "title": "مصادر المعرفة والاستخراج والتقسيم والإصدارات",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "07",
+      "title": "BM25 والبحث الدلالي وFAISS والدمج وإعادة الترتيب",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "08",
+      "title": "تنسيق RAG والأدوات والإجابة المسندة",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "09",
+      "title": "نافذة المحادثة والسياق والتحويل وتوقيت الرد",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "10",
+      "title": "WhatsApp Business والتحقق من رقم الاتصال",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "11",
+      "title": "مساحة الموظف والتذاكر والتنبيهات والإدارة",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "12",
+      "title": "التحليلات والتقارير والتقييم والاستهلاك",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "13",
+      "title": "دورة الحياة والحذف والاسترجاع والنسخ الاحتياطي",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "14",
+      "title": "بيانات البحث والمقارنة العلمية وجودة RAG",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "15",
+      "title": "الاختبارات الشاملة والحمل والتزامن والتعافي",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "16",
+      "title": "مراجعة الأمان وإصلاح الثغرات وإعادة الاختبار",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "17",
+      "title": "النشر والمراقبة والتوثيق والتراجع",
+      "status": "planned",
+      "scope_completed": null
+    },
+    {
+      "id": "18",
+      "title": "بوابة الإصدار والتدقيق النهائي",
+      "status": "planned",
+      "scope_completed": null
+    }
+  ],
+  "completed_requirements": [
+    "R01",
+    "R03"
+  ],
+  "partial_requirements": {
+    "R02": "Phase 00 and 01 documented and resumable; ongoing obligation; no root Git/commit",
+    "R44": "initial threat model only; exact ASVS item mapping due 16",
+    "R47": "Phase 00 and 01 Arabic explanation/reports updated; ongoing obligation",
+    "R07": "Real tenant/store PostgreSQL RLS and pool reset proven; complete identity and isolation belong to phase 02 and later"
+  },
+  "actual_checks": [
+    {
+      "command": "python -X utf8 scripts/validate_phase00.py",
+      "exit_code": 0,
+      "time": "2026-11-06T20:06:17.178679+00:00",
+      "environment": "Windows 11; Python 3.14.2",
+      "commit": null,
+      "scope": "documentation integrity only; no application/provider tests",
+      "errors": [],
+      "result": "passed",
+      "validator_sha256": "8d1aa0755561072e37d871f515e64c87ea6eb093de383e0338319af770b98e45",
+      "evidence_path": "docs/evidence/phase-00/validation.json"
+    },
+    {
+      "command": "git status --short",
+      "exit_code": 128,
+      "evidence_path": "docs/evidence/phase-00/inventory.json",
+      "time": "2026-11-06T20:05:58.995632+00:00",
+      "environment": "Windows 11; Python 3.14.2",
+      "commit": null,
+      "result": "not_a_git_repository"
+    },
+    {
+      "command": "pnpm.exe audit --json",
+      "exit_code": 1,
+      "time": "2026-11-06T21:03:00.688054+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/audit-js-detail.txt",
+      "output_sha256": "e70aa96fa35826159a3dd2281574970b53e6179d472647a8c8de7656d71ba098",
+      "phase": "01",
+      "result": "findings_moderate",
+      "evidence_path": "docs/evidence/phase-01/audit-js-detail.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe audit --audit-level=high",
+      "exit_code": 0,
+      "time": "2026-11-06T20:59:21.520297+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/audit-js.txt",
+      "output_sha256": "a05691eb6be454a073b1b30feddcb70f12cb1fcedab97b1ccfeb3284f34f50f8",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/audit-js.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/pip-audit.exe --skip-editable --format json",
+      "exit_code": 0,
+      "time": "2026-11-06T20:38:07.905659+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/audit-python.txt",
+      "output_sha256": "204a7600746ff86f96de0745b424fc235035659dbfa2f17ed9c197142230dce6",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/audit-python.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe build",
+      "exit_code": 0,
+      "time": "2026-11-06T20:59:45.551851+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/build-web.txt",
+      "output_sha256": "a7fb27d0bf0ebf845596da572a18346521a8c091f05022e0f11af950e8d33798",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/build-web.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe --dir tmp/phase01-clean-source install --frozen-lockfile --offline",
+      "exit_code": 0,
+      "time": "2026-11-06T20:59:50.946874+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/clean-js.txt",
+      "output_sha256": "9613936ce703496780425a402a233c97270dcd887ce99b7666c5b616d555b17d",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/clean-js.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": ".venv/Scripts/uv.exe sync --project tmp/phase01-clean-source/apps/api --frozen --offline",
+      "exit_code": 0,
+      "time": "2026-11-06T20:52:01.446756+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/clean-python.txt",
+      "output_sha256": "498a0c74415e1d818c8ff44a1c525746a7388e48063940d5cbe4f03e27687e90",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/clean-python.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe contract:check",
+      "exit_code": 0,
+      "time": "2026-11-06T20:55:16.053769+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/contract-check.txt",
+      "output_sha256": "38b0b86d2b9ea3b017050875e6b5e5a674b3b43923b1853ef6c801903a2a6b3d",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/contract-check.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe contract:generate",
+      "exit_code": 0,
+      "time": "2026-11-06T20:31:18.282299+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/contract-generate.txt",
+      "output_sha256": "28fbcde0b6c0b95090525e9685dec9b52e61482ddea728b43e11b407c564c605",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/contract-generate.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/ruff.exe format --check --config apps/api/pyproject.toml apps/api tests scripts/export_openapi.py scripts/provision_runtime.py scripts/dev.py scripts/ci-integration.py scripts/record_check.py scripts/smoke_local_http.py",
+      "exit_code": 0,
+      "time": "2026-11-06T21:06:03.702644+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/format-python.txt",
+      "output_sha256": "7b4549ac2e9820f695aa60c4695796689a11c0dce1a49f0b01a6250eca9f55aa",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/format-python.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/ci-integration.py",
+      "exit_code": 1,
+      "time": "2026-11-06T20:45:05.018817+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/integration-launch.txt",
+      "output_sha256": "fe9310c468af7b602bd85269cb5d9dd4e1dd50fe7538a6feb030babe6a9e25c5",
+      "phase": "01",
+      "result": "blocked_external",
+      "evidence_path": "docs/evidence/phase-01/integration-launch.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/integration -q",
+      "exit_code": 1,
+      "time": "2026-11-06T20:30:51.152791+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/integration.txt",
+      "output_sha256": "48d586ff51bacd950fc308c52a95aa15dc71c498141fd392b94e73969ed3b735",
+      "phase": "01",
+      "result": "blocked_external",
+      "evidence_path": "docs/evidence/phase-01/integration.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe lint",
+      "exit_code": 0,
+      "time": "2026-11-06T20:59:13.504861+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/lint-js.txt",
+      "output_sha256": "975520c3eddef0dea47e65ca2461d19587581b92fbf437787b729a01831edb82",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/lint-js.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/ruff.exe check --config apps/api/pyproject.toml apps/api tests scripts/export_openapi.py scripts/provision_runtime.py scripts/dev.py scripts/ci-integration.py scripts/record_check.py scripts/smoke_local_http.py",
+      "exit_code": 0,
+      "time": "2026-11-06T21:06:03.549510+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/lint-python.txt",
+      "output_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/lint-python.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "python -X utf8 scripts/smoke_local_http.py",
+      "exit_code": 0,
+      "time": "2026-11-06T21:02:05.787000+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/live-http.txt",
+      "output_sha256": "b63076f5ddae3e23d338063181afeeff21eab8df0f558c95b2aa433ab6571d9b",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/live-http.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "python -X utf8 scripts/dev.py",
+      "exit_code": 1,
+      "time": "2026-11-06T20:30:50.904252+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/local-setup.txt",
+      "output_sha256": "00f8bae0e658370d9acfab77ad3a9d66907185a8c99836691c41bc9ecc7512cb",
+      "phase": "01",
+      "result": "blocked_external",
+      "evidence_path": "docs/evidence/phase-01/local-setup.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe install --frozen-lockfile",
+      "exit_code": 0,
+      "time": "2026-11-06T20:55:46.516718+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/locked-js.txt",
+      "output_sha256": "490d9c78bc7c56c8dfc776228516cd584794aba94f1e80fd887c65c675bcf808",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/locked-js.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": ".venv/Scripts/uv.exe sync --project apps/api --frozen --offline",
+      "exit_code": 0,
+      "time": "2026-11-06T20:37:49.864326+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/locked-python.txt",
+      "output_sha256": "dca9b32a53e55bd513f79ccc38bc44fd2e20049e0a041438682ddab1781f234b",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/locked-python.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/alembic.exe -c apps/api/alembic.ini upgrade head --sql",
+      "exit_code": 0,
+      "time": "2026-11-06T20:45:03.959077+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/migration-sql.txt",
+      "output_sha256": "39f65859312269b42e280c0beadaf564822d9da2c6c4539aa69c9d744ce1ab14",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/migration-sql.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_phase00.py",
+      "exit_code": 0,
+      "time": "2026-11-06T20:49:20.967551+00:00",
+      "environment": "Windows 11; Python 3.14.2",
+      "commit": null,
+      "scope": "documentation integrity only; no application/provider tests",
+      "errors": [],
+      "result": "passed",
+      "validator_sha256": "c2551c7f09ff7a6765b5e75a9c798439dc0cb37f87a5ff0f5cb906a34ee91a8d",
+      "phase": "01",
+      "evidence_path": "docs/evidence/phase-01/phase00-recheck.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit/test_foundation.py -k malformed_dsn -q",
+      "exit_code": 1,
+      "time": "2026-11-06T20:39:23.985861+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/red-config-url.txt",
+      "output_sha256": "b71171b75e4271cc7f6f78014e2cf23bd4886f1b59f371d510d13536cabef21d",
+      "phase": "01",
+      "result": "failed_before_fix",
+      "evidence_path": "docs/evidence/phase-01/red-config-url.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit/test_migration_scope.py -k migration_startup -q",
+      "exit_code": 1,
+      "time": "2026-11-06T20:42:42.337348+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/red-migration-url.txt",
+      "output_sha256": "4c2ce3e57d7e7bb8d54d31767a871c31a921cf6faeef0f2036af8b5562f6f3dc",
+      "phase": "01",
+      "result": "failed_before_fix",
+      "evidence_path": "docs/evidence/phase-01/red-migration-url.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/smoke -q",
+      "exit_code": 0,
+      "time": "2026-11-06T20:34:00.219196+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/smoke-api.txt",
+      "output_sha256": "1c8fff6a226e568c7862a694a25dd4ba78080536e593700c97c6f1c18a4ea746",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/smoke-api.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe exec supabase status",
+      "exit_code": 1,
+      "time": "2026-11-06T21:03:05.319967+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/supabase-local.txt",
+      "output_sha256": "ae425e66c3038749d80443b12cd9da302f888ca332cdf0cf85f303788f2310dc",
+      "phase": "01",
+      "result": "blocked_external",
+      "evidence_path": "docs/evidence/phase-01/supabase-local.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe test",
+      "exit_code": 0,
+      "time": "2026-11-06T20:59:12.476785+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/test-js.txt",
+      "output_sha256": "a6219aa5db5f74b8cd04482768da90b54156558906decf50f0b65f5da7c712ea",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/test-js.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "pnpm.exe typecheck",
+      "exit_code": 0,
+      "time": "2026-11-06T21:03:08.204881+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/types-js.txt",
+      "output_sha256": "325deb44ce7bf577dfb17af9d2194859b3f3540ac700fe6abfc715ea056fea46",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/types-js.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/mypy.exe --config-file apps/api/pyproject.toml apps/api/src/store_advisor",
+      "exit_code": 0,
+      "time": "2026-11-06T20:46:13.725596+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/types-python.txt",
+      "output_sha256": "f645b10e21546f038559fbaaffb91f957d61ada15bed410cfd1fd85e15524598",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/types-python.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit tests/smoke -q",
+      "exit_code": 0,
+      "time": "2026-11-06T20:46:14.937171+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/unit-smoke.txt",
+      "output_sha256": "9f0b7c99c427141f4a1bfeee92e10c692f7992493d6ee36798e741c33ed05577",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/unit-smoke.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit -q",
+      "exit_code": 0,
+      "time": "2026-11-06T20:43:17.021026+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/unit.txt",
+      "output_sha256": "77a00470355c58705eea8647610cfe7007e00302e47c0828147223c064d72a2d",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/unit.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "python -X utf8 -c \"import runpy; module=runpy.run_path('scripts/dev.py'); print(module['run'](['pnpm','--version'],capture=True))\"",
+      "exit_code": 0,
+      "time": "2026-11-06T20:40:44.202459+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/windows-pnpm-shim.txt",
+      "output_sha256": "796f6bc718064d5d2ca2f3fe5ef7c4b09b791fb8607f7e4fbb3d94e0f9c0354e",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/windows-pnpm-shim.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/celery.exe -A store_advisor.celery_app:app worker --help",
+      "exit_code": 0,
+      "time": "2026-11-06T20:54:22.599706+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/worker-import.txt",
+      "output_sha256": "7a9a43af10387990df6e02fb27b9ff24d920fa42f06caa54686960b7b39f7e49",
+      "phase": "01",
+      "result": "passed",
+      "evidence_path": "docs/evidence/phase-01/worker-import.json",
+      "verification_scope": "foundation only; not external provider integration"
+    },
+    {
+      "command": "python -X utf8 scripts/diagnose_runtime.py",
+      "exit_code": 1,
+      "time": "2026-11-07T18:43:17.410957+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/runtime-restricted-20261107.txt",
+      "output_sha256": "12d23f5b230612ba28b50c230a84b829da935712bf1a3aa4c8b9ac51abd834b0",
+      "evidence_path": "docs/evidence/phase-01/runtime-restricted-20261107.json",
+      "phase": "01",
+      "result": "expected_sandbox_denial",
+      "verification_scope": "Foundation integration; no external provider account activation"
+    },
+    {
+      "command": "python -X utf8 scripts/diagnose_runtime.py",
+      "exit_code": 0,
+      "time": "2026-11-07T18:43:29.779190+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/runtime-host-20261107.txt",
+      "output_sha256": "558cee1330b2f5bc6ac83f70c1d829293d423ad0ace85c0a8921de8e0f9114a5",
+      "evidence_path": "docs/evidence/phase-01/runtime-host-20261107.json",
+      "phase": "01",
+      "result": "passed",
+      "verification_scope": "Foundation integration; no external provider account activation"
+    },
+    {
+      "command": "docker version",
+      "exit_code": 0,
+      "time": "2026-11-07T18:40:43.224819+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/docker-engine-20261107.txt",
+      "output_sha256": "bfc24afde06e56160efedaf1d2e0743837303e7fdba7e71813c36a0c92e5d381",
+      "evidence_path": "docs/evidence/phase-01/docker-engine-20261107.json",
+      "phase": "01",
+      "result": "passed",
+      "verification_scope": "Foundation integration; no external provider account activation"
+    },
+    {
+      "command": "docker compose version",
+      "exit_code": 0,
+      "time": "2026-11-07T18:40:43.449801+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/docker-compose-20261107.txt",
+      "output_sha256": "ebbb20c2e03752d965fb85dc16402270205c3f570a383bd3ace0c149c2ce5def",
+      "evidence_path": "docs/evidence/phase-01/docker-compose-20261107.json",
+      "phase": "01",
+      "result": "passed",
+      "verification_scope": "Foundation integration; no external provider account activation"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/ci-integration.py",
+      "exit_code": 0,
+      "time": "2026-11-07T18:40:43.738040+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/integration-live-first-20261107.txt",
+      "output_sha256": "2777bb7efaf3302c3231b948742cf4db0b39c2eedf11cdb299766166ed15536b",
+      "evidence_path": "docs/evidence/phase-01/integration-live-first-20261107.json",
+      "phase": "01",
+      "result": "passed",
+      "verification_scope": "Foundation integration; no external provider account activation"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/ci-integration.py",
+      "exit_code": 1,
+      "time": "2026-11-07T18:50:55.459897+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/integration-queue-red-20261107.txt",
+      "output_sha256": "f64c1e1a3e2ea07bf53c4c5bacfb6512648fb181d343b3e71aed176c8f970601",
+      "evidence_path": "docs/evidence/phase-01/integration-queue-red-20261107.json",
+      "phase": "01",
+      "result": "failed_before_fix",
+      "verification_scope": "Foundation integration; no external provider account activation"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/ci-integration.py",
+      "exit_code": 0,
+      "time": "2026-11-07T18:52:09.731411+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/integration-live-fixed-20261107.txt",
+      "output_sha256": "d98806723167107cccc21edb921fb83a1ba248e8da059c88fe9ffb67b42ef1a9",
+      "evidence_path": "docs/evidence/phase-01/integration-live-fixed-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_clean_checkout.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:06:19.238591+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/clean-checkout-20261107.txt",
+      "output_sha256": "f7477e106c25e83a78406fde7f849ffac692792e0364776779b39294e9034985",
+      "evidence_path": "docs/evidence/phase-01/clean-checkout-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit/test_verification_environment.py -q",
+      "exit_code": 1,
+      "time": "2026-11-07T19:38:54.878513+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/checkout-env-red-20261107.txt",
+      "output_sha256": "bd0cd232e770accff012f6cb0b177e336adf6875f9c4843f7550a11d687e4149",
+      "evidence_path": "docs/evidence/phase-01/checkout-env-red-20261107.json",
+      "phase": "01",
+      "result": "failed_before_fix"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -m pytest -c apps/api/pyproject.toml tests/unit/test_verification_environment.py -q",
+      "exit_code": 0,
+      "time": "2026-11-07T19:39:21.005870+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/checkout-env-green-20261107.txt",
+      "output_sha256": "a627885f4b9efaac136d48977c38ccc0cf413d2b07f0c2dca5d54f69518b7604",
+      "evidence_path": "docs/evidence/phase-01/checkout-env-green-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_clean_checkout.py",
+      "exit_code": 1,
+      "time": "2026-11-07T19:40:41.495391+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/clean-checkout-final-20261107.txt",
+      "output_sha256": "13bd48f1ec27f5b114a7975b1e24a5d10bac0d7c43c2fc98b924c967294409aa",
+      "evidence_path": "docs/evidence/phase-01/clean-checkout-final-20261107.json",
+      "phase": "01",
+      "result": "failed_before_fix"
+    },
+    {
+      "command": "tmp/foundation-checkout-9fa9823b57/checkout/apps/api/.venv/Scripts/python.exe -m pytest -c tmp/foundation-checkout-9fa9823b57/checkout/apps/api/pyproject.toml tmp/foundation-checkout-9fa9823b57/checkout/tests/unit tmp/foundation-checkout-9fa9823b57/checkout/tests/smoke -q",
+      "exit_code": 1,
+      "time": "2026-11-07T19:42:24.155669+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/checkout-failure-detail-20261107.txt",
+      "output_sha256": "8bcc20d0c86a2850f1525fbf35ef757cf12348f3e31451f244ccb557c7f7764f",
+      "evidence_path": "docs/evidence/phase-01/checkout-failure-detail-20261107.json",
+      "phase": "01",
+      "result": "failed_before_fix"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_development.py",
+      "exit_code": 1,
+      "time": "2026-11-07T18:53:33.430595+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/development-restart-first-20261107.txt",
+      "output_sha256": "8670e5040cb097acb19636f4a65c05fc09d675bbcacb16b45f00f69d72274f3f",
+      "evidence_path": "docs/evidence/phase-01/development-restart-first-20261107.json",
+      "phase": "01",
+      "result": "interrupted_by_agent",
+      "limitation": "Agent stopped the first image bootstrap to exclude optional Supabase services; not an application test result"
+    },
+    {
+      "command": "docker build -f infra/api.Dockerfile -t store-advisor-api:phase01 .",
+      "exit_code": 0,
+      "time": "2026-11-07T19:01:59.511106+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/container-api-build-20261107.txt",
+      "output_sha256": "567ea17245733e23397682739d4dd5007647555c910481c9b91b2a0086bab285",
+      "evidence_path": "docs/evidence/phase-01/container-api-build-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "docker pull python:3.13-slim",
+      "exit_code": 0,
+      "time": "2026-11-07T19:32:23.403963+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/base-python-pull-20261107.txt",
+      "output_sha256": "52dbb0cfa2cddc73bf389017cf4e9ba37f45aa6c167858553284e1d9dfaa573f",
+      "evidence_path": "docs/evidence/phase-01/base-python-pull-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/ruff.exe check --config apps/api/pyproject.toml apps/api/src apps/api/migrations tests scripts/diagnose_runtime.py scripts/verify_development.py scripts/verify_clean_checkout.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:27:05.508889+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/lint-followup-20261107.txt",
+      "output_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "evidence_path": "docs/evidence/phase-01/lint-followup-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/ruff.exe format --check --config apps/api/pyproject.toml apps/api/src apps/api/migrations tests scripts/diagnose_runtime.py scripts/verify_development.py scripts/verify_clean_checkout.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:27:05.720984+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/format-followup-20261107.txt",
+      "output_sha256": "a0a0f191878d553ae2b88299d5ead34d7a6367937ff1bd9e304fb73059c83f8a",
+      "evidence_path": "docs/evidence/phase-01/format-followup-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/mypy.exe --config-file apps/api/pyproject.toml apps/api/src/store_advisor",
+      "exit_code": 0,
+      "time": "2026-11-07T19:27:06.112476+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/types-followup-20261107.txt",
+      "output_sha256": "f645b10e21546f038559fbaaffb91f957d61ada15bed410cfd1fd85e15524598",
+      "evidence_path": "docs/evidence/phase-01/types-followup-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_phase00.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:32:11.816650+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/phase00-followup-20261107.txt",
+      "output_sha256": "a271ddb95ebdf3255edd51fbad024a753d938442e55265040209cd7e1d46ab01",
+      "evidence_path": "docs/evidence/phase-01/phase00-followup-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "python -X utf8 scripts/diagnose_runtime.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:11:42.331081+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/runtime-identity-host-20261107.txt",
+      "output_sha256": "b4bd791770174f1d38a2b0fd764bfe1d451a98d79152710b0cb74c29cdd633ee",
+      "evidence_path": "docs/evidence/phase-01/runtime-identity-host-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "python -X utf8 scripts/diagnose_runtime.py",
+      "exit_code": 1,
+      "time": "2026-11-07T19:11:27.066433+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/runtime-identity-restricted-20261107.txt",
+      "output_sha256": "ad09f4d35aa097f5b29a898f742554ea823f305cd65e6f0c2c7595d59a1f5756",
+      "evidence_path": "docs/evidence/phase-01/runtime-identity-restricted-20261107.json",
+      "phase": "01",
+      "result": "expected_sandbox_denial"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_clean_checkout.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:43:35.398916+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/clean-checkout-final-isolated-20261107.txt",
+      "output_sha256": "0a974c09be8f4f73f7bde18052883d7594e002cc1de8897dd0d779e22eeb8093",
+      "evidence_path": "docs/evidence/phase-01/clean-checkout-final-isolated-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/ruff.exe check --config apps/api/pyproject.toml apps/api/src apps/api/migrations tests scripts/export_openapi.py scripts/provision_runtime.py scripts/dev.py scripts/ci-integration.py scripts/record_check.py scripts/smoke_local_http.py scripts/diagnose_runtime.py scripts/verify_development.py scripts/verify_clean_checkout.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:47:06.789649+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/lint-final-20261107.txt",
+      "output_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "evidence_path": "docs/evidence/phase-01/lint-final-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/ruff.exe format --check --config apps/api/pyproject.toml apps/api/src apps/api/migrations tests scripts/export_openapi.py scripts/provision_runtime.py scripts/dev.py scripts/ci-integration.py scripts/record_check.py scripts/smoke_local_http.py scripts/diagnose_runtime.py scripts/verify_development.py scripts/verify_clean_checkout.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:47:06.928797+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/format-final-20261107.txt",
+      "output_sha256": "cdd24684b33e5200a213c89093e8da4cb81a0de0085a4684d20923e852610123",
+      "evidence_path": "docs/evidence/phase-01/format-final-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": ".tools/node_modules/pnpm/pnpm.exe contract:check",
+      "exit_code": 0,
+      "time": "2026-11-07T19:47:07.065734+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/contract-final-20261107.txt",
+      "output_sha256": "8a71f6122f18b57acb9803de38f297534201d7570a523ef09a2fe8459f927c02",
+      "evidence_path": "docs/evidence/phase-01/contract-final-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe scripts/export_openapi.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:47:27.421857+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/openapi-export-final-20261107.txt",
+      "output_sha256": "8c5fb82af27fc90990d09bcd228276acffc69c149a2327e9059d658f2aa358ba",
+      "evidence_path": "docs/evidence/phase-01/openapi-export-final-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": ".tools/node_modules/pnpm/pnpm.exe contract:check",
+      "exit_code": 0,
+      "time": "2026-11-07T19:47:28.778795+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/contract-after-export-20261107.txt",
+      "output_sha256": "ad37db1b05ef85a7a94cf37a57c918062f1135e3deb5293f4311b6d85d23f993",
+      "evidence_path": "docs/evidence/phase-01/contract-after-export-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "docker build -f infra/web.Dockerfile -t store-advisor-web:phase01 .",
+      "exit_code": 0,
+      "time": "2026-11-07T19:42:31.223641+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/container-web-build-20261107.txt",
+      "output_sha256": "1b4dca6f9dc007bc44a4cde399abf26ea3b3fbe960dca1268a4e52d86bbfce84",
+      "evidence_path": "docs/evidence/phase-01/container-web-build-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "docker image inspect --format \"{{.Id}} user={{.Config.User}} os={{.Os}} arch={{.Architecture}}\" store-advisor-api:phase01 store-advisor-web:phase01",
+      "exit_code": 0,
+      "time": "2026-11-07T20:35:11.963756+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/container-images-20261107.txt",
+      "output_sha256": "94fdb53d9bf5787f172366496fbef81007d352d076954022d607a31fb34726b8",
+      "evidence_path": "docs/evidence/phase-01/container-images-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_development.py",
+      "exit_code": 0,
+      "time": "2026-11-07T20:41:15.009098+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/development-restart-final-20261107.txt",
+      "output_sha256": "c3afb21ea5af5f4bc5d7e342e281204d14a4bb5d6bcaa9639ea07064918f5d4e",
+      "evidence_path": "docs/evidence/phase-01/development-restart-final-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe docs/evidence/phase-01/database-cleanup-probe-20261107.py",
+      "exit_code": 0,
+      "time": "2026-11-07T20:43:49.422494+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/database-cleanup-verified-20261107.txt",
+      "output_sha256": "7e39b4e397d84955a3a5796ec6b6f6c1832f6ce43be1ebda2a445fd685ac1fcc",
+      "evidence_path": "docs/evidence/phase-01/database-cleanup-verified-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "docker ps --format \"{{.Names}} | {{.Status}} | {{.Ports}}\"",
+      "exit_code": 0,
+      "time": "2026-11-07T20:43:18.938154+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/services-final-20261107.txt",
+      "output_sha256": "a35477781da87b4896b02689624877310ea696004733fa48695ec2e18038d0a8",
+      "evidence_path": "docs/evidence/phase-01/services-final-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_phase00.py",
+      "exit_code": 0,
+      "time": "2026-11-07T20:42:19.004480+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/phase00-final-20261107.txt",
+      "output_sha256": "400098892deff7dc7b3cb62aeeba7ed9d26f258085f012bc6a406a81185d2322",
+      "evidence_path": "docs/evidence/phase-01/phase00-final-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_development.py",
+      "exit_code": 0,
+      "time": "2026-11-07T19:35:54.999541+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/development-restart-minimal-20261107.txt",
+      "output_sha256": "9b8148fa7fbb93d54bf774788600e0a3d824ed87fdc2a2732ffac05939a6bcae",
+      "evidence_path": "docs/evidence/phase-01/development-restart-minimal-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -c \"import json\nfrom pathlib import Path\nfrom sqlalchemy import create_engine,text\nvalues=dict(line.split('=',1) for line in Path('.env.dev').read_text().splitlines() if '=' in line and not line.startswith('#'))\nengine=create_engine(values['MIGRATION_DATABASE_URL'],hide_parameters=True)\nwith engine.connect() as c:\n    counts={name:c.execute(text('SELECT count(*) FROM app.'+name)).scalar_one() for name in ['users','tenants','memberships','stores']}\n    result={'foundation_rows_after_cleanup':counts,'alembic_revision':c.execute(text('SELECT version_num FROM app.alembic_version')).scalar_one(),'pgvector_version':c.execute(text(SELECT\" extversion FROM pg_extension WHERE extname='vector')).scalar_one(),'provider_schemas':list(c.execute(text(SELECT schema_name FROM information_schema.schemata WHERE schema_name IN ('auth','storage') ORDER BY \"schema_name)).scalars())}\n    assert result['alembic_revision']=='0001'\n    assert all(value==0 for value in counts.values())\n    assert result['provider_schemas']==['auth','storage']\nengine.dispose()\nprint(json.dumps(result))\"",
+      "exit_code": 1,
+      "time": "2026-11-07T20:43:18.712243+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/database-final-cleanup-20261107.txt",
+      "output_sha256": "dafdd346c5b532321572331971078ff208d6a2de129b01eeab5909cfd30cc528",
+      "evidence_path": "docs/evidence/phase-01/database-final-cleanup-20261107.json",
+      "phase": "01",
+      "result": "failed_harness_quoting"
+    },
+    {
+      "command": "apps/api/.venv/Scripts/python.exe -X utf8 scripts/verify_clean_checkout.py",
+      "exit_code": 1,
+      "time": "2026-11-07T19:04:56.545947+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/clean-checkout-crlf-failure-20261107.txt",
+      "output_sha256": "2bdcc8412053687410b016c024f6a3019f59d93f74565910938be09bd404afb9",
+      "original_artifact": "docs/evidence/phase-01/clean-checkout-20261107.txt",
+      "archive_note": "First attempt copied before the original clean-checkout label was reused after the autocrlf fix; original output and capture hash preserved.",
+      "evidence_path": "docs/evidence/phase-01/clean-checkout-crlf-failure-20261107.json",
+      "phase": "01",
+      "result": "failed_before_fix"
+    },
+    {
+      "command": "python -X utf8 scripts/validate_phase00.py",
+      "exit_code": 0,
+      "time": "2026-11-07T20:50:02.856210+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/phase00-acceptance-check-20261107.txt",
+      "output_sha256": "7c184e76e4c617156837c62b740c360b6d00fa4c314a5fa87022d1c0694305f1",
+      "evidence_path": "docs/evidence/phase-01/phase00-acceptance-check-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    },
+    {
+      "command": "curl.exe --fail --silent --show-error --max-time 10 --output NUL --write-out http_status=%{http_code} http://127.0.0.1:8000/api/v1/ready",
+      "exit_code": 0,
+      "time": "2026-11-07T20:50:07.319780+00:00",
+      "environment": "Windows 11; runner Python 3.14.2",
+      "commit": null,
+      "artifact": "docs/evidence/phase-01/readiness-final-http-20261107.txt",
+      "output_sha256": "3ba3aa875b141f9f0bab057a3a1a2a7e3c03aa7c2ce385f7ea26982fb6f43a82",
+      "evidence_path": "docs/evidence/phase-01/readiness-final-http-20261107.json",
+      "phase": "01",
+      "result": "passed"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "EXT-01",
+      "service": "Supabase",
+      "status": "blocked_external",
+      "reason": "Hosted Supabase account/auth integration not verified; local development stack is a separate phase 01 check currently running"
+    },
+    {
+      "id": "EXT-02",
+      "service": "SMTP",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-03",
+      "service": "MFA",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-04",
+      "service": "Phone verification",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-05",
+      "service": "AI API",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-06",
+      "service": "Cross-Encoder",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-07",
+      "service": "Llama 3.1 8B",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-08",
+      "service": "Salla",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-09",
+      "service": "Zid",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-10",
+      "service": "Custom store",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-11",
+      "service": "Meta WhatsApp",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-12",
+      "service": "Hosting",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-13",
+      "service": "Backup",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-14",
+      "service": "Thmanyah font",
+      "status": "asset_required",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "EXT-15",
+      "service": "Dataset",
+      "status": "blocked_external",
+      "reason": "No configured account/runtime evidence in workspace; live check not run"
+    },
+    {
+      "id": "ENV-02",
+      "service": "Visual browser",
+      "status": "blocked_external",
+      "reason": "CUA getBrowser returned No browser is available; no DevTools MCP connected"
+    }
+  ],
+  "migrations": [
+    {
+      "revision": "0001",
+      "path": "apps/api/migrations/versions/0001_foundation.py",
+      "status": "implemented",
+      "offline_sql_verified": true,
+      "applied_to_live_database": true,
+      "verification_scope": "Disposable PostgreSQL17 test DB and Supabase local; not staging or production",
+      "applied_to_development_database": true,
+      "evidence": "docs/evidence/phase-01/database-cleanup-verified-20261107.json"
+    }
+  ],
+  "index_versions": [],
+  "delivery": {
+    "code_complete": false,
+    "local_verified": false,
+    "staging_verified": false,
+    "external_integrations_verified": false,
+    "production_ready": false,
+    "deployed": false,
+    "phase_01_local_verified": true
+  },
+  "next_actions": [
+    "Phase 01 complete locally; inspect running Docker services before relaunch",
+    "Do not start phase 02 automatically; on request read prompts/02_identity_tenancy.md and current state, then implement identity/session/authorization on existing app",
+    "Preserve dev data, y.py, source PDF and user files; keep external-provider/visual/security limitations explicit"
+  ],
+  "security_findings": [
+    {
+      "id": "GHSA-g3hv-75wg-m249",
+      "severity": "moderate",
+      "status": "open",
+      "scope": "development lint dependency minimatch 10.2.6; not an HTTP glob input path",
+      "evidence": "docs/evidence/phase-01/audit-js-detail.txt",
+      "owner": "operations/dependencies",
+      "required_before": "release review"
+    }
+  ],
+  "test_processes": "Disposable integration services stopped/removed; verification sentinels removed. Supabase local plus Redis/API/worker/web left running for development. Temporary checkout fixtures retained under ignored tmp/.",
+  "code_version": {
+    "commit": null,
+    "source_snapshot_sha256": "e735fe25df9c7af61c00f30becb84028b692577a25657e47f03146226abbbfb4",
+    "manifest": "docs/evidence/phase-01/artifact-manifest.json",
+    "working_source_modified": false
+  },
+  "resolved_blockers": [
+    {
+      "id": "ENV-01",
+      "service": "Docker/WSL2",
+      "status": "verified_local",
+      "reason": "Docker and Compose reachable through approved host execution; sandbox cannot read Docker context/config or access engine named pipe",
+      "resolved_at": "2026-11-07T21:58:18.783967+03:00",
+      "evidence": "docs/evidence/phase-01/runtime-host-20261107.json"
+    }
+  ]
+}

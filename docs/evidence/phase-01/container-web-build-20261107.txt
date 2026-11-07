@@ -1,0 +1,1293 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from web.Dockerfile
+#1 DONE 0.0s
+
+#1 [internal] load build definition from web.Dockerfile
+#1 transferring dockerfile: 545B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:24-slim
+#2 ...
+
+#3 [auth] library/node:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:24-slim
+#2 DONE 15.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 145B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 334.86kB 0.0s done
+#5 DONE 0.1s
+
+#6 [ 1/10] FROM docker.io/library/node:24-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9
+#6 resolve docker.io/library/node:24-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9 0.1s done
+#6 sha256:c0a93797ee78814ae6d32fcca2561fdbbe423149c3f5389aad32d86e9fd85bd4 1.93kB / 1.93kB done
+#6 sha256:280af3207172947339cc2e8c9d2efac585716fd906af49f57d6fdf0dbb829a73 6.71kB / 6.71kB done
+#6 sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9 3.93kB / 3.93kB done
+#6 ...
+
+#7 [auth] library/node:pull token for registry-1.docker.io
+#7 DONE 0.0s
+
+#6 [ 1/10] FROM docker.io/library/node:24-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 1071.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 1077.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 1082.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 1087.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0B / 28.25MB 1092.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 1.05MB / 28.25MB 1097.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 1.05MB / 28.25MB 1102.3s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 1.05MB / 28.25MB 1107.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 1.05MB / 28.25MB 1112.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 2.10MB / 28.25MB 1117.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 2.10MB / 28.25MB 1123.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 2.10MB / 28.25MB 1128.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 2.10MB / 28.25MB 1133.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 2.10MB / 28.25MB 1138.3s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 3.15MB / 28.25MB 1143.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 3.15MB / 28.25MB 1148.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 4.19MB / 28.25MB 1153.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 4.19MB / 28.25MB 1158.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 5.24MB / 28.25MB 1163.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 5.24MB / 28.25MB 1169.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 5.24MB / 28.25MB 1174.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 6.29MB / 28.25MB 1179.3s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 6.29MB / 28.25MB 1184.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 7.34MB / 28.25MB 1189.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 7.34MB / 28.25MB 1194.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 8.39MB / 28.25MB 1199.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 8.39MB / 28.25MB 1204.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 8.39MB / 28.25MB 1209.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 8.39MB / 28.25MB 1214.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 9.44MB / 28.25MB 1219.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 10.49MB / 28.25MB 1225.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 10.49MB / 28.25MB 1230.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 10.49MB / 28.25MB 1235.3s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 11.53MB / 28.25MB 1240.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 11.53MB / 28.25MB 1245.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 12.58MB / 28.25MB 1250.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 13.63MB / 28.25MB 1255.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 14.68MB / 28.25MB 1260.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 15.73MB / 28.25MB 1265.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 15.73MB / 28.25MB 1271.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 16.78MB / 28.25MB 1276.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 16.78MB / 28.25MB 1281.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 16.78MB / 28.25MB 1286.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 17.83MB / 28.25MB 1291.3s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 17.83MB / 28.25MB 1296.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 17.83MB / 28.25MB 1301.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 17.83MB / 28.25MB 1306.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 18.87MB / 28.25MB 1311.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 18.87MB / 28.25MB 1316.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 19.92MB / 28.25MB 1322.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 19.92MB / 28.25MB 1327.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 19.92MB / 28.25MB 1332.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 19.92MB / 28.25MB 1337.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 19.92MB / 28.25MB 1342.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 20.97MB / 28.25MB 1347.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 20.97MB / 28.25MB 1352.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 20.97MB / 28.25MB 1357.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 20.97MB / 28.25MB 1362.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 20.97MB / 28.25MB 1367.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 22.02MB / 28.25MB 1372.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 22.02MB / 28.25MB 1378.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 22.02MB / 28.25MB 1383.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 22.02MB / 28.25MB 1388.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 22.02MB / 28.25MB 1393.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 22.02MB / 28.25MB 1398.3s
+#6 ...
+
+#8 [auth] library/node:pull token for registry-1.docker.io
+#8 DONE 0.0s
+
+#6 [ 1/10] FROM docker.io/library/node:24-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9
+#6 sha256:67dd44e03538482c8d0ffbd8e50ba292c566a215d908905b94069c2cc0583590 0B / 3.31kB 1399.4s
+#6 sha256:67dd44e03538482c8d0ffbd8e50ba292c566a215d908905b94069c2cc0583590 3.31kB / 3.31kB 1402.5s done
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 0B / 51.08MB 1402.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 23.07MB / 28.25MB 1403.4s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 0B / 51.08MB 1407.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 23.07MB / 28.25MB 1408.6s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 0B / 51.08MB 1412.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 23.07MB / 28.25MB 1413.6s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 1.05MB / 51.08MB 1417.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 24.12MB / 28.25MB 1418.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 2.10MB / 51.08MB 1422.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 24.12MB / 28.25MB 1423.8s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 2.10MB / 51.08MB 1427.8s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 24.12MB / 28.25MB 1428.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 2.10MB / 51.08MB 1432.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 24.12MB / 28.25MB 1433.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 3.15MB / 51.08MB 1437.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 25.17MB / 28.25MB 1438.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 3.15MB / 51.08MB 1443.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 25.17MB / 28.25MB 1443.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 4.19MB / 51.08MB 1448.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 25.17MB / 28.25MB 1449.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 4.19MB / 51.08MB 1453.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 25.17MB / 28.25MB 1454.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 5.24MB / 51.08MB 1458.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 25.17MB / 28.25MB 1459.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 5.24MB / 51.08MB 1463.3s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 25.17MB / 28.25MB 1464.1s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 6.29MB / 51.08MB 1468.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1469.2s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 6.29MB / 51.08MB 1473.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1474.3s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 7.34MB / 51.08MB 1478.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1479.4s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 8.39MB / 51.08MB 1483.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1484.4s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 8.39MB / 51.08MB 1488.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1489.5s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 8.39MB / 51.08MB 1494.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1494.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 9.44MB / 51.08MB 1499.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1499.8s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 10.49MB / 51.08MB 1504.4s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1504.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 10.49MB / 51.08MB 1509.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1510.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 10.49MB / 51.08MB 1514.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1515.1s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 10.49MB / 51.08MB 1519.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 26.21MB / 28.25MB 1520.2s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 11.53MB / 51.08MB 1524.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1525.3s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 12.58MB / 51.08MB 1529.7s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1530.4s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 14.68MB / 51.08MB 1534.9s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1535.5s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 15.73MB / 51.08MB 1540.1s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1540.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 16.78MB / 51.08MB 1545.2s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1545.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 16.78MB / 51.08MB 1550.3s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1550.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 18.87MB / 51.08MB 1555.5s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1555.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 19.92MB / 51.08MB 1560.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1561.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 20.97MB / 51.08MB 1565.6s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 27.26MB / 28.25MB 1566.0s
+#6 sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 28.25MB / 28.25MB 1568.3s done
+#6 extracting sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 0.1s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1568.4s
+#6 extracting sha256:dd051e1b8c92ff101fa3071ab97ea4924885942f15644e01c3dc095764e863e3 1.8s done
+#6 extracting sha256:67dd44e03538482c8d0ffbd8e50ba292c566a215d908905b94069c2cc0583590
+#6 extracting sha256:67dd44e03538482c8d0ffbd8e50ba292c566a215d908905b94069c2cc0583590 done
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 22.02MB / 51.08MB 1570.8s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1573.6s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 22.02MB / 51.08MB 1576.0s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1578.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 23.07MB / 51.08MB 1581.1s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1583.8s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 24.12MB / 51.08MB 1586.1s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1588.8s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 24.12MB / 51.08MB 1591.3s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1593.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 25.17MB / 51.08MB 1596.3s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1599.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 25.17MB / 51.08MB 1601.4s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1604.1s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 25.17MB / 51.08MB 1606.5s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1609.2s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 26.21MB / 51.08MB 1611.5s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1614.2s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 26.21MB / 51.08MB 1616.7s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1619.2s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 26.21MB / 51.08MB 1621.8s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1624.2s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 27.26MB / 51.08MB 1627.0s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1629.4s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 27.26MB / 51.08MB 1632.1s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1634.5s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 27.26MB / 51.08MB 1637.2s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0B / 1.71MB 1639.6s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 1.05MB / 1.71MB 1641.6s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 28.31MB / 51.08MB 1642.3s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 1.05MB / 1.71MB 1646.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 28.31MB / 51.08MB 1647.4s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 1.05MB / 1.71MB 1651.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 29.36MB / 51.08MB 1652.5s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 1.05MB / 1.71MB 1657.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 29.36MB / 51.08MB 1657.6s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 1.05MB / 1.71MB 1662.1s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 30.41MB / 51.08MB 1662.7s
+#6 sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 1.71MB / 1.71MB 1664.9s done
+#6 sha256:f3db01672604e7946d0e84f5d03bcff2478a5aaff2852a87241a2a3fd9ddd13f 0B / 449B 1665.1s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 30.41MB / 51.08MB 1667.8s
+#6 sha256:f3db01672604e7946d0e84f5d03bcff2478a5aaff2852a87241a2a3fd9ddd13f 449B / 449B 1668.7s done
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 31.46MB / 51.08MB 1672.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 32.51MB / 51.08MB 1677.9s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 34.60MB / 51.08MB 1683.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 34.60MB / 51.08MB 1688.1s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 36.70MB / 51.08MB 1693.2s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 37.75MB / 51.08MB 1698.3s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 39.85MB / 51.08MB 1703.3s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 40.89MB / 51.08MB 1708.3s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 41.94MB / 51.08MB 1713.4s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 42.99MB / 51.08MB 1718.5s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 44.04MB / 51.08MB 1723.6s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 46.14MB / 51.08MB 1728.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 47.19MB / 51.08MB 1733.7s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 48.23MB / 51.08MB 1738.8s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 49.28MB / 51.08MB 1744.0s
+#6 sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 51.08MB / 51.08MB 1746.9s done
+#6 extracting sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 0.1s
+#6 extracting sha256:0485e61ce4657409e991d0f4164383df7d64c2b6b074b45324c8dae73935ba38 2.2s done
+#6 extracting sha256:ed61b9f2bb56ed1684866e971964fa114c1fcab4b4c671795f9eb91183282bb8 0.1s done
+#6 extracting sha256:f3db01672604e7946d0e84f5d03bcff2478a5aaff2852a87241a2a3fd9ddd13f done
+#6 DONE 1749.8s
+
+#9 [ 2/10] WORKDIR /app
+#9 DONE 0.2s
+
+#10 [ 3/10] RUN npm install --global pnpm@12.18.0
+#10 111.0 
+#10 111.0 added 2 packages in 2m
+#10 111.0 npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:
+#10 111.0 npm warn install-scripts   pnpm@12.18.0 (preinstall: node install.js; postinstall: node install.js)
+#10 111.0 npm warn install-scripts
+#10 111.0 npm warn install-scripts Run `npm install -g --allow-scripts=pnpm` to allow these scripts once, or `npm config set allow-scripts=pnpm --location=user` to allow them for all global installs.
+#10 111.0 npm notice
+#10 111.0 npm notice New major version of npm available! 11.19.1 -> 12.2.2
+#10 111.0 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+#10 111.0 npm notice To update run: npm install -g npm@12.2.2
+#10 111.0 npm notice
+#10 DONE 111.1s
+
+#11 [ 4/10] COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+#11 DONE 0.1s
+
+#12 [ 5/10] COPY apps/web/package.json ./apps/web/package.json
+#12 DONE 0.0s
+
+#13 [ 6/10] COPY packages/api-client/package.json ./packages/api-client/package.json
+#13 DONE 0.0s
+
+#14 [ 7/10] RUN pnpm install --frozen-lockfile
+#14 0.234 Scope: all 3 workspace projects
+#14 0.268 ? Verifying lockfile against supply-chain policies (514 entries)...
+#14 3.239 Progress: resolved 420, reused 0, downloaded 1, added 0
+#14 3.241 Packages are hard linked from the content-addressable store to the virtual store.
+#14 3.241   Content-addressable store is at: /root/.local/share/pnpm/store/v11
+#14 3.241   Virtual store is at:             node_modules/.pnpm
+#14 4.367 Progress: resolved 420, reused 0, downloaded 3, added 2
+#14 5.690 Progress: resolved 420, reused 0, downloaded 7, added 6
+#14 6.709 Progress: resolved 420, reused 0, downloaded 16, added 15
+#14 8.577 Progress: resolved 420, reused 0, downloaded 26, added 25
+#14 9.118 [WARN] Tarball download average speed 39 KiB/s (size 181 KiB) is below 50 KiB/s: https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.37.5.tgz (GET)
+#14 9.192 Downloading next@16.4.5: 0.00 B/43.65 MB
+#14 10.47 Downloading next@16.4.5: 61.43 kB/43.65 MB
+#14 11.09 [WARN] Tarball download average speed 20 KiB/s (size 77 KiB) is below 50 KiB/s: https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-8.72.1.tgz (GET)
+#14 12.40 [WARN] Tarball download average speed 4 KiB/s (size 26 KiB) is below 50 KiB/s: https://registry.npmjs.org/globals/-/globals-16.4.0.tgz (GET)
+#14 14.26 [WARN] Tarball download average speed 17 KiB/s (size 151 KiB) is below 50 KiB/s: https://registry.npmjs.org/@noble/hashes/-/hashes-1.8.0.tgz (GET)
+#14 14.26 [WARN] Tarball download average speed 35 KiB/s (size 44 KiB) is below 50 KiB/s: https://registry.npmjs.org/@vitest/utils/-/utils-4.1.12.tgz (GET)
+#14 14.28 [WARN] Tarball download average speed 1 KiB/s (size 7 KiB) is below 50 KiB/s: https://registry.npmjs.org/is-typed-array/-/is-typed-array-1.1.15.tgz (GET)
+#14 15.32 Progress: resolved 420, reused 0, downloaded 53, added 52
+#14 15.59 Downloading @supabase/cli-linux-x64@3.0.0: 0.00 B/65.04 MB
+#14 15.66 [WARN] Tarball download average speed 0 KiB/s (size 7 KiB) is below 50 KiB/s: https://registry.npmjs.org/@oxc-project/types/-/types-0.156.0.tgz (GET)
+#14 16.29 [WARN] Request took 10442ms: https://registry.npmjs.org/@supabase%2Fcli-linux-arm64-musl
+#14 16.69 [WARN] Tarball download average speed 28 KiB/s (size 436 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/parser/-/parser-7.29.13.tgz (GET)
+#14 16.80 [WARN] Tarball download average speed 9 KiB/s (size 55 KiB) is below 50 KiB/s: https://registry.npmjs.org/@vitest/mocker/-/mocker-4.1.12.tgz (GET)
+#14 18.12 Progress: resolved 420, reused 0, downloaded 67, added 66
+#14 18.80 [WARN] Tarball download average speed 3 KiB/s (size 29 KiB) is below 50 KiB/s: https://registry.npmjs.org/eslint-scope/-/eslint-scope-8.4.0.tgz (GET)
+#14 18.86 [WARN] Tarball download average speed 16 KiB/s (size 200 KiB) is below 50 KiB/s: https://registry.npmjs.org/rolldown/-/rolldown-1.2.16.tgz (GET)
+#14 19.48 [WARN] Request took 14879ms: https://registry.npmjs.org/@rolldown%2Fbinding-linux-x64-musl
+#14 19.79 [WARN] Tarball download average speed 6 KiB/s (size 14 KiB) is below 50 KiB/s: https://registry.npmjs.org/ignore/-/ignore-5.3.2.tgz (GET)
+#14 19.98 [WARN] Tarball download average speed 17 KiB/s (size 49 KiB) is below 50 KiB/s: https://registry.npmjs.org/json5/-/json5-2.2.3.tgz (GET)
+#14 20.57 [WARN] Tarball download average speed 6 KiB/s (size 14 KiB) is below 50 KiB/s: https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz (GET)
+#14 21.03 [WARN] Tarball download average speed 4 KiB/s (size 12 KiB) is below 50 KiB/s: https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz (GET)
+#14 21.33 [WARN] Request took 15888ms: https://registry.npmjs.org/@rolldown%2Fbinding-win32-x64-msvc
+#14 21.36 [WARN] Tarball download average speed 10 KiB/s (size 152 KiB) is below 50 KiB/s: https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz (GET)
+#14 21.47 [WARN] Tarball download average speed 2 KiB/s (size 8 KiB) is below 50 KiB/s: https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.3.4.tgz (GET)
+#14 21.47 [WARN] Tarball download average speed 5 KiB/s (size 15 KiB) is below 50 KiB/s: https://registry.npmjs.org/unrs-resolver/-/unrs-resolver-1.13.0.tgz (GET)
+#14 21.93 [WARN] Request took 16097ms: https://registry.npmjs.org/@supabase%2Fcli-darwin-arm64
+#14 21.95 [WARN] Request took 10849ms: https://registry.npmjs.org/@tailwindcss%2Foxide-linux-x64-musl
+#14 21.98 [WARN] Request took 16166ms: https://registry.npmjs.org/@supabase%2Fcli-darwin-x64
+#14 22.21 [WARN] Request took 16197ms: https://registry.npmjs.org/@supabase%2Fcli-linux-arm64
+#14 22.28 [WARN] Tarball download average speed 2 KiB/s (size 7 KiB) is below 50 KiB/s: https://registry.npmjs.org/is-set/-/is-set-2.0.3.tgz (GET)
+#14 23.00 [WARN] Tarball download average speed 11 KiB/s (size 43 KiB) is below 50 KiB/s: https://registry.npmjs.org/@typescript-eslint/utils/-/utils-8.72.1.tgz (GET)
+#14 24.04 [WARN] Request took 16033ms: https://registry.npmjs.org/@tailwindcss%2Foxide-android-arm64
+#14 24.24 [WARN] Request took 10752ms: https://registry.npmjs.org/@tailwindcss%2Foxide-win32-x64-msvc
+#14 24.29 [WARN] Tarball download average speed 18 KiB/s (size 128 KiB) is below 50 KiB/s: https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz (GET)
+#14 24.36 [WARN] Request took 15682ms: https://registry.npmjs.org/@tailwindcss%2Foxide-freebsd-x64
+#14 25.37 Downloading @supabase/cli-linux-x64@3.0.0: 499.70 kB/65.04 MB
+#14 26.45 Progress: resolved 420, reused 0, downloaded 108, added 107
+#14 28.13 Progress: resolved 420, reused 0, downloaded 110, added 109
+#14 28.77 [WARN] Request took 22298ms: https://registry.npmjs.org/@supabase%2Fcli-linux-x64-musl
+#14 29.18 [WARN] Request took 22289ms: https://registry.npmjs.org/@supabase%2Fcli-windows-x64
+#14 29.21 [WARN] Request took 22716ms: https://registry.npmjs.org/@supabase%2Fcli-windows-arm64
+#14 29.70 [WARN] Tarball download average speed 38 KiB/s (size 443 KiB) is below 50 KiB/s: https://registry.npmjs.org/@redocly/openapi-core/-/openapi-core-1.34.24.tgz (GET)
+#14 32.31 Progress: resolved 420, reused 0, downloaded 119, added 118
+#14 33.58 [WARN] Request took 30658ms: https://registry.npmjs.org/@next%2Fswc-linux-arm64-musl
+#14 34.85 [WARN] Request took 10464ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-android-arm64
+#14 35.02 [WARN] Tarball download average speed 34 KiB/s (size 353 KiB) is below 50 KiB/s: https://registry.npmjs.org/@noble/curves/-/curves-1.9.7.tgz (GET)
+#14 35.73 [WARN] Tarball download average speed 4 KiB/s (size 50 KiB) is below 50 KiB/s: https://registry.npmjs.org/postcss/-/postcss-8.5.23.tgz (GET)
+#14 35.98 [WARN] Tarball download average speed 1 KiB/s (size 19 KiB) is below 50 KiB/s: https://registry.npmjs.org/axobject-query/-/axobject-query-4.1.0.tgz (GET)
+#14 37.04 Downloading next@16.4.5: 294.09 kB/43.65 MB
+#14 37.40 [WARN] Tarball download average speed 18 KiB/s (size 286 KiB) is below 50 KiB/s: https://registry.npmjs.org/hermes-parser/-/hermes-parser-0.25.1.tgz (GET)
+#14 38.69 Downloading @supabase/cli-linux-x64@3.0.0: 909.30 kB/65.04 MB
+#14 39.28 [WARN] Request took 30119ms: https://registry.npmjs.org/@tailwindcss%2Foxide-linux-arm64-gnu
+#14 39.52 [WARN] Request took 12978ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-darwin-x64
+#14 39.57 [WARN] Request took 13172ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-darwin-arm64
+#14 39.75 [WARN] Request took 12995ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-freebsd-x64
+#14 39.92 [WARN] Request took 12293ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-arm-gnueabihf
+#14 40.18 [WARN] Request took 12262ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-arm-musleabihf
+#14 40.53 [WARN] Request took 12309ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-arm64-gnu
+#14 40.76 [WARN] Request took 12385ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-arm64-musl
+#14 41.58 [WARN] Request took 12813ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-loong64-gnu
+#14 42.44 [WARN] Request took 13271ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-loong64-musl
+#14 42.56 [WARN] Tarball download average speed 10 KiB/s (size 353 KiB) is below 50 KiB/s: https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001822.tgz (GET)
+#14 42.57 [WARN] Tarball download average speed 12 KiB/s (size 162 KiB) is below 50 KiB/s: https://registry.npmjs.org/esquery/-/esquery-1.7.0.tgz (GET)
+#14 42.85 [WARN] Request took 12748ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-s390x-gnu
+#14 44.02 Progress: resolved 420, reused 0, downloaded 137, added 136
+#14 44.14 [WARN] Request took 11013ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-x64-musl
+#14 44.22 [WARN] Request took 10675ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-openharmony-arm64
+#14 44.73 [WARN] Request took 40520ms: https://registry.npmjs.org/@rolldown%2Fbinding-freebsd-x64
+#14 45.17 [WARN] Tarball download average speed 11 KiB/s (size 209 KiB) is below 50 KiB/s: https://registry.npmjs.org/sharp/-/sharp-0.35.5.tgz (GET)
+#14 46.57 Progress: resolved 420, reused 0, downloaded 143, added 142
+#14 46.62 [WARN] Tarball download average speed 12 KiB/s (size 464 KiB) is below 50 KiB/s: https://registry.npmjs.org/vitest/-/vitest-4.1.12.tgz (GET)
+#14 46.71 [WARN] Tarball download average speed 23 KiB/s (size 118 KiB) is below 50 KiB/s: https://registry.npmjs.org/@noble/ciphers/-/ciphers-1.3.0.tgz (GET)
+#14 46.71 [WARN] Request took 17425ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-riscv64-gnu
+#14 46.73 [WARN] Request took 17525ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-ppc64-gnu
+#14 46.73 [WARN] Request took 17331ms: https://registry.npmjs.org/@unrs%2Fresolver-binding-linux-riscv64-musl
+#14 47.01 [WARN] Tarball download average speed 0 KiB/s (size 5 KiB) is below 50 KiB/s: https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz (GET)
+#14 47.01 [WARN] Request took 37985ms: https://registry.npmjs.org/@tailwindcss%2Foxide-linux-arm-gnueabihf
+#14 47.05 [WARN] Tarball download average speed 2 KiB/s (size 5 KiB) is below 50 KiB/s: https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz (GET)
+#14 47.05 [WARN] Tarball download average speed 18 KiB/s (size 212 KiB) is below 50 KiB/s: https://registry.npmjs.org/@redocly/ajv/-/ajv-8.11.2.tgz (GET)
+#14 48.19 Downloading @supabase/cli-linux-x64@3.0.0: 974.83 kB/65.04 MB
+#14 48.25 [WARN] Request took 39569ms: https://registry.npmjs.org/@tailwindcss%2Foxide-darwin-x64
+#14 49.25 Progress: resolved 420, reused 0, downloaded 157, added 156
+#14 49.37 [WARN] Tarball download average speed 2 KiB/s (size 73 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint/config-array/-/config-array-0.21.2.tgz (GET)
+#14 49.38 [WARN] Tarball download average speed 1 KiB/s (size 4 KiB) is below 50 KiB/s: https://registry.npmjs.org/balanced-match/-/balanced-match-4.0.4.tgz (GET)
+#14 50.19 [WARN] Tarball download average speed 7 KiB/s (size 164 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.13.tgz (GET)
+#14 50.41 [WARN] Tarball download average speed 20 KiB/s (size 75 KiB) is below 50 KiB/s: https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz (GET)
+#14 50.53 [WARN] Tarball download average speed 3 KiB/s (size 14 KiB) is below 50 KiB/s: https://registry.npmjs.org/eslint-import-resolver-typescript/-/eslint-import-resolver-typescript-3.10.1.tgz (GET)
+#14 53.24 Progress: resolved 420, reused 0, downloaded 171, added 170
+#14 53.29 [WARN] Tarball download average speed 10 KiB/s (size 135 KiB) is below 50 KiB/s: https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz (GET)
+#14 53.34 [WARN] Tarball download average speed 25 KiB/s (size 71 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint-community/regexpp/-/regexpp-4.12.2.tgz (GET)
+#14 57.72 Downloading @supabase/cli-linux-x64@3.0.0: 1.20 MB/65.04 MB
+#14 59.80 Downloading @supabase/cli-linux-x64@3.0.0: 1.22 MB/65.04 MB
+#14 60.19 [WARN] Tarball download average speed 1 KiB/s (size 29 KiB) is below 50 KiB/s: https://registry.npmjs.org/chai/-/chai-6.3.0.tgz (GET)
+#14 61.93 Downloading @supabase/cli-linux-x64@3.0.0: 1.23 MB/65.04 MB
+#14 63.41 Downloading @supabase/cli-linux-x64@3.0.0: 1.25 MB/65.04 MB
+#14 65.10 Downloading @supabase/cli-linux-x64@3.0.0: 1.28 MB/65.04 MB
+#14 66.32 Downloading @supabase/cli-linux-x64@3.0.0: 1.31 MB/65.04 MB
+#14 68.31 [WARN] Request took 59149ms: https://registry.npmjs.org/@tailwindcss%2Foxide-linux-arm64-musl
+#14 69.36 Progress: resolved 420, reused 0, downloaded 180, added 179
+#14 70.42 Progress: resolved 420, reused 0, downloaded 181, added 180
+#14 72.47 [WARN] Tarball download average speed 2 KiB/s (size 5 KiB) is below 50 KiB/s: https://registry.npmjs.org/@types/estree/-/estree-1.0.10.tgz (GET)
+#14 73.51 Progress: resolved 420, reused 0, downloaded 185, added 184
+#14 75.22 Progress: resolved 420, reused 0, downloaded 187, added 186
+#14 76.57 Progress: resolved 420, reused 0, downloaded 189, added 188
+#14 77.65 Progress: resolved 420, reused 0, downloaded 192, added 191
+#14 79.84 Progress: resolved 420, reused 0, downloaded 194, added 193
+#14 80.19 [WARN] Request took 62740ms: https://registry.npmjs.org/@next%2Fenv
+#14 83.40 Progress: resolved 420, reused 0, downloaded 201, added 200
+#14 84.79 Progress: resolved 420, reused 0, downloaded 206, added 205
+#14 84.94 [WARN] Request took 82069ms: https://registry.npmjs.org/@next%2Fswc-linux-arm64-gnu
+#14 86.37 Progress: resolved 420, reused 0, downloaded 211, added 210
+#14 87.79 Downloading next@16.4.5: 589.00 kB/43.65 MB
+#14 88.98 Progress: resolved 420, reused 0, downloaded 215, added 214
+#14 90.62 Progress: resolved 420, reused 0, downloaded 218, added 217
+#14 91.70 Downloading @next/swc-linux-x64-gnu@16.4.5: 0.00 B/35.23 MB
+#14 91.80 [WARN] Tarball download average speed 1 KiB/s (size 7 KiB) is below 50 KiB/s: https://registry.npmjs.org/is-weakset/-/is-weakset-2.0.4.tgz (GET)
+#14 93.66 [WARN] Tarball download average speed 21 KiB/s (size 176 KiB) is below 50 KiB/s: https://registry.npmjs.org/openapi-typescript/-/openapi-typescript-7.13.0.tgz (GET)
+#14 95.22 Progress: resolved 420, reused 0, downloaded 226, added 225
+#14 96.42 Downloading @supabase/cli-linux-x64@3.0.0: 1.48 MB/65.04 MB
+#14 96.57 [WARN] Tarball download average speed 23 KiB/s (size 1377 KiB) is below 50 KiB/s: https://registry.npmjs.org/react-dom/-/react-dom-19.3.1.tgz (GET)
+#14 97.89 [WARN] Tarball download average speed 11 KiB/s (size 188 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/core/-/core-7.29.13.tgz (GET)
+#14 98.07 [WARN] Tarball download average speed 6 KiB/s (size 65 KiB) is below 50 KiB/s: https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-8.72.1.tgz (GET)
+#14 99.74 Progress: resolved 420, reused 0, downloaded 237, added 236
+#14 100.5 [WARN] Tarball download average speed 15 KiB/s (size 1253 KiB) is below 50 KiB/s: https://registry.npmjs.org/@tailwindcss/oxide-linux-x64-gnu/-/oxide-linux-x64-gnu-4.3.4.tgz (GET)
+#14 101.6 [WARN] Request took 93321ms: https://registry.npmjs.org/@tailwindcss%2Foxide-darwin-arm64
+#14 103.5 Progress: resolved 420, reused 0, downloaded 246, added 245
+#14 104.6 Downloading @supabase/cli-linux-x64@3.0.0: 1.74 MB/65.04 MB
+#14 105.7 Progress: resolved 420, reused 0, downloaded 249, added 248
+#14 106.1 [WARN] Tarball download average speed 6 KiB/s (size 345 KiB) is below 50 KiB/s: https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.72.1.tgz (GET)
+#14 107.8 Progress: resolved 420, reused 0, downloaded 258, added 257
+#14 107.9 [WARN] Request took 89318ms: https://registry.npmjs.org/@next%2Fswc-linux-x64-gnu
+#14 108.4 [WARN] Request took 105425ms: https://registry.npmjs.org/@next%2Fswc-win32-arm64-msvc
+#14 108.5 [WARN] Request took 105612ms: https://registry.npmjs.org/@next%2Fswc-darwin-x64
+#14 108.7 [WARN] Tarball download average speed 1 KiB/s (size 4 KiB) is below 50 KiB/s: https://registry.npmjs.org/typed-array-buffer/-/typed-array-buffer-1.0.3.tgz (GET)
+#14 108.9 [WARN] Tarball download average speed 3 KiB/s (size 184 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.13.tgz (GET)
+#14 108.9 [WARN] Tarball download average speed 1 KiB/s (size 4 KiB) is below 50 KiB/s: https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.2.tgz (GET)
+#14 109.9 [WARN] Tarball download average speed 9 KiB/s (size 624 KiB) is below 50 KiB/s: https://registry.npmjs.org/eslint/-/eslint-9.39.5.tgz (GET)
+#14 110.0 [WARN] Request took 107207ms: https://registry.npmjs.org/@next%2Fswc-darwin-arm64
+#14 111.1 Progress: resolved 420, reused 0, downloaded 286, added 285
+#14 111.4 [WARN] Tarball download average speed 7 KiB/s (size 22 KiB) is below 50 KiB/s: https://registry.npmjs.org/picomatch/-/picomatch-2.3.2.tgz (GET)
+#14 111.6 [WARN] Tarball download average speed 28 KiB/s (size 78 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.9.1.tgz (GET)
+#14 112.7 Progress: resolved 420, reused 0, downloaded 293, added 292
+#14 113.8 Progress: resolved 420, reused 0, downloaded 297, added 296
+#14 114.9 Downloading next@16.4.5: 818.38 kB/43.65 MB
+#14 115.9 Progress: resolved 420, reused 0, downloaded 302, added 301
+#14 116.4 [WARN] Tarball download average speed 28 KiB/s (size 197 KiB) is below 50 KiB/s: https://registry.npmjs.org/ajv/-/ajv-6.15.0.tgz (GET)
+#14 117.5 Progress: resolved 420, reused 0, downloaded 308, added 307
+#14 119.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 368.64 kB/35.23 MB
+#14 119.3 [WARN] Tarball download average speed 9 KiB/s (size 121 KiB) is below 50 KiB/s: https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.26.1.tgz (GET)
+#14 120.2 [WARN] Tarball download average speed 13 KiB/s (size 463 KiB) is below 50 KiB/s: https://registry.npmjs.org/@types/node/-/node-24.19.2.tgz (GET)
+#14 121.4 [WARN] Tarball download average speed 8 KiB/s (size 294 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/types/-/types-7.29.11.tgz (GET)
+#14 122.6 Progress: resolved 420, reused 0, downloaded 323, added 322
+#14 123.8 Downloading @supabase/cli-linux-x64@3.0.0: 2.22 MB/65.04 MB
+#14 123.8 Downloading @img/sharp-libvips-linux-x64@1.3.4: 0.00 B/8.21 MB
+#14 125.1 Downloading @img/sharp-libvips-linux-x64@1.3.4: 97.46 kB/8.21 MB
+#14 126.1 [WARN] Request took 15202ms: https://registry.npmjs.org/lightningcss-win32-x64-msvc
+#14 126.8 [WARN] Tarball download average speed 15 KiB/s (size 132 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-3.3.7.tgz (GET)
+#14 127.0 [WARN] Tarball download average speed 8 KiB/s (size 114 KiB) is below 50 KiB/s: https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz (GET)
+#14 128.2 Progress: resolved 420, reused 0, downloaded 331, added 330
+#14 128.4 [WARN] Request took 125414ms: https://registry.npmjs.org/@next%2Fswc-linux-x64-musl
+#14 129.5 [WARN] Tarball download average speed 8 KiB/s (size 63 KiB) is below 50 KiB/s: https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.23.tgz (GET)
+#14 130.6 Progress: resolved 420, reused 0, downloaded 338, added 337
+#14 130.6 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 0.00 B/8.82 MB
+#14 131.6 [WARN] Tarball download average speed 1 KiB/s (size 30 KiB) is below 50 KiB/s: https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz (GET)
+#14 132.2 [WARN] Tarball download average speed 4 KiB/s (size 87 KiB) is below 50 KiB/s: https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz (GET)
+#14 133.9 Progress: resolved 420, reused 0, downloaded 346, added 345
+#14 136.1 Progress: resolved 420, reused 0, downloaded 347, added 346
+#14 138.1 Downloading next@16.4.5: 965.83 kB/43.65 MB
+#14 139.3 Progress: resolved 420, reused 0, downloaded 350, added 349
+#14 139.3 [WARN] Tarball download average speed 15 KiB/s (size 363 KiB) is below 50 KiB/s: https://registry.npmjs.org/@redocly/config/-/config-0.22.0.tgz (GET)
+#14 140.7 [WARN] Tarball download average speed 4 KiB/s (size 130 KiB) is below 50 KiB/s: https://registry.npmjs.org/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.10.2.tgz (GET)
+#14 142.1 Downloading @supabase/cli-linux-x64@3.0.0: 2.27 MB/65.04 MB
+#14 143.6 Downloading @img/sharp-libvips-linux-x64@1.3.4: 741.05 kB/8.21 MB
+#14 144.3 [WARN] Tarball download average speed 38 KiB/s (size 40 KiB) is below 50 KiB/s: https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.11.35.tgz (GET)
+#14 145.7 [WARN] Tarball download average speed 44 KiB/s (size 185 KiB) is below 50 KiB/s: https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.3.4.tgz (GET)
+#14 147.3 Progress: resolved 420, reused 0, downloaded 355, added 354
+#14 148.5 Progress: resolved 420, reused 0, downloaded 358, added 357
+#14 148.8 [WARN] Tarball download average speed 8 KiB/s (size 182 KiB) is below 50 KiB/s: https://registry.npmjs.org/@img/sharp-linux-x64/-/sharp-linux-x64-0.35.5.tgz (GET)
+#14 150.1 Downloading @supabase/cli-linux-x64@3.0.0: 2.37 MB/65.04 MB
+#14 152.1 Progress: resolved 420, reused 0, downloaded 361, added 360
+#14 153.6 [WARN] Tarball download average speed 7 KiB/s (size 194 KiB) is below 50 KiB/s: https://registry.npmjs.org/language-subtag-registry/-/language-subtag-registry-0.3.23.tgz (GET)
+#14 155.0 Progress: resolved 420, reused 0, downloaded 363, added 362
+#14 156.3 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 453.80 kB/8.82 MB
+#14 157.2 [WARN] Tarball download average speed 17 KiB/s (size 417 KiB) is below 50 KiB/s: https://registry.npmjs.org/jiti/-/jiti-2.7.0.tgz (GET)
+#14 158.3 [WARN] Request took 141745ms: https://registry.npmjs.org/@next%2Feslint-plugin-next
+#14 159.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 822.97 kB/8.21 MB
+#14 161.7 Progress: resolved 420, reused 0, downloaded 367, added 366
+#14 162.4 [WARN] Request took 159392ms: https://registry.npmjs.org/@next%2Fswc-win32-x64-msvc
+#14 162.4 [WARN] Tarball download average speed 6 KiB/s (size 85 KiB) is below 50 KiB/s: https://registry.npmjs.org/lightningcss/-/lightningcss-1.33.0.tgz (GET)
+#14 166.1 Progress: resolved 420, reused 0, downloaded 376, added 375
+#14 167.2 Progress: resolved 420, reused 0, downloaded 377, added 376
+#14 169.5 Downloading @supabase/cli-linux-x64@3.0.0: 2.68 MB/65.04 MB
+#14 170.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 598.01 kB/35.23 MB
+#14 171.7 Progress: resolved 420, reused 0, downloaded 383, added 382
+#14 173.1 [WARN] Tarball download average speed 20 KiB/s (size 230 KiB) is below 50 KiB/s: https://registry.npmjs.org/es-abstract/-/es-abstract-1.24.2.tgz (GET)
+#14 175.1 Progress: resolved 420, reused 0, downloaded 385, added 384
+#14 177.2 Progress: resolved 420, reused 0, downloaded 386, added 385
+#14 178.9 Progress: resolved 420, reused 0, downloaded 388, added 387
+#14 184.6 Progress: resolved 420, reused 0, downloaded 389, added 388
+#14 186.1 Progress: resolved 420, reused 0, downloaded 390, added 389
+#14 187.9 [WARN] Tarball download average speed 5 KiB/s (size 31 KiB) is below 50 KiB/s: https://registry.npmjs.org/expect-type/-/expect-type-1.4.0.tgz (GET)
+#14 187.9 [WARN] Tarball download average speed 42 KiB/s (size 45 KiB) is below 50 KiB/s: https://registry.npmjs.org/openapi-fetch/-/openapi-fetch-0.15.2.tgz (GET)
+#14 191.2 Downloading @img/sharp-libvips-linux-x64@1.3.4: 904.89 kB/8.21 MB
+#14 192.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.01 MB/8.21 MB
+#14 193.8 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 486.57 kB/8.82 MB
+#14 194.8 [WARN] Tarball download average speed 1 KiB/s (size 41 KiB) is below 50 KiB/s: https://registry.npmjs.org/hermes-estree/-/hermes-estree-0.25.1.tgz (GET)
+#14 196.0 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 519.34 kB/8.82 MB
+#14 198.1 Progress: resolved 420, reused 0, downloaded 397, added 396
+#14 199.2 Downloading @supabase/cli-linux-x64@3.0.0: 2.83 MB/65.04 MB
+#14 200.6 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 535.72 kB/8.82 MB
+#14 201.8 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 568.49 kB/8.82 MB
+#14 204.2 Progress: resolved 420, reused 0, downloaded 399, added 398
+#14 205.6 Downloading @supabase/cli-linux-x64@3.0.0: 2.96 MB/65.04 MB
+#14 207.2 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 617.64 kB/8.82 MB
+#14 208.3 [WARN] Tarball download average speed 2 KiB/s (size 222 KiB) is below 50 KiB/s: https://registry.npmjs.org/js-yaml/-/js-yaml-4.3.2.tgz (GET)
+#14 209.3 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 634.03 kB/8.82 MB
+#14 210.2 [WARN] Tarball download average speed 12 KiB/s (size 113 KiB) is below 50 KiB/s: https://registry.npmjs.org/@babel/generator/-/generator-7.29.13.tgz (GET)
+#14 211.0 [WARN] Tarball download average speed 0 KiB/s (size 11 KiB) is below 50 KiB/s: https://registry.npmjs.org/@eslint/config-helpers/-/config-helpers-0.4.2.tgz (GET)
+#14 211.1 [WARN] Tarball download average speed 10 KiB/s (size 1324 KiB) is below 50 KiB/s: https://registry.npmjs.org/@tailwindcss/oxide-wasm32-wasi/-/oxide-wasm32-wasi-4.3.4.tgz (GET)
+#14 213.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.16 MB/8.21 MB
+#14 214.7 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.26 MB/8.21 MB
+#14 215.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 761.85 kB/35.23 MB
+#14 221.8 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.42 MB/8.21 MB
+#14 223.2 Downloading @supabase/cli-linux-x64@3.0.0: 3.21 MB/65.04 MB
+#14 224.5 Downloading @supabase/cli-linux-x64@3.0.0: 3.24 MB/65.04 MB
+#14 226.1 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.60 MB/8.21 MB
+#14 226.4 [WARN] Tarball download average speed 6 KiB/s (size 401 KiB) is below 50 KiB/s: https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.32.0.tgz (GET)
+#14 227.8 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.64 MB/8.21 MB
+#14 228.9 Downloading @supabase/cli-linux-x64@3.0.0: 3.37 MB/65.04 MB
+#14 231.2 Downloading @supabase/cli-linux-x64@3.0.0: 3.39 MB/65.04 MB
+#14 231.6 [WARN] Request took 130044ms: https://registry.npmjs.org/eslint-config-next
+#14 233.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 892.92 kB/35.23 MB
+#14 236.4 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.74 MB/8.21 MB
+#14 237.5 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.75 MB/8.21 MB
+#14 239.1 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 830.64 kB/8.82 MB
+#14 239.4 [WARN] Tarball download average speed 6 KiB/s (size 585 KiB) is below 50 KiB/s: https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-7.1.1.tgz (GET)
+#14 241.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 1.05 MB/35.23 MB
+#14 241.8 [WARN] Request took 82872ms: https://registry.npmjs.org/typescript
+#14 242.0 [WARN] Tarball download average speed 6 KiB/s (size 824 KiB) is below 50 KiB/s: https://registry.npmjs.org/@unrs/resolver-binding-linux-x64-gnu/-/resolver-binding-linux-x64-gnu-1.13.0.tgz (GET)
+#14 243.1 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.82 MB/8.21 MB
+#14 246.0 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.83 MB/8.21 MB
+#14 249.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.85 MB/8.21 MB
+#14 250.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 1.26 MB/35.23 MB
+#14 251.4 [WARN] Request took 123755ms: https://registry.npmjs.org/next
+#14 251.5 [WARN] Tarball download average speed 8 KiB/s (size 574 KiB) is below 50 KiB/s: https://registry.npmjs.org/vite/-/vite-8.3.6.tgz (GET)
+#14 252.5 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.90 MB/8.21 MB
+#14 253.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 1.92 MB/8.21 MB
+#14 255.0 Downloading next@16.4.5: 1.39 MB/43.65 MB
+#14 256.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 1.40 MB/35.23 MB
+#14 257.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 1.46 MB/35.23 MB
+#14 261.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 1.48 MB/35.23 MB
+#14 262.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 1.49 MB/35.23 MB
+#14 263.5 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 1.01 MB/8.82 MB
+#14 264.3 [WARN] Tarball download average speed 5 KiB/s (size 690 KiB) is below 50 KiB/s: https://registry.npmjs.org/axe-core/-/axe-core-4.14.0.tgz (GET)
+#14 265.2 [WARN] Tarball download average speed 29 KiB/s (size 3765 KiB) is below 50 KiB/s: https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.33.0.tgz (GET)
+#14 266.4 Downloading @img/sharp-libvips-linux-x64@1.3.4: 2.06 MB/8.21 MB
+#14 267.6 Downloading @supabase/cli-linux-x64@3.0.0: 3.70 MB/65.04 MB
+#14 269.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 1.75 MB/35.23 MB
+#14 270.4 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 1.15 MB/8.82 MB
+#14 271.4 Downloading @img/sharp-libvips-linux-x64@1.3.4: 2.51 MB/8.21 MB
+#14 272.0 [WARN] Request took 29804ms: https://registry.npmjs.org/typescript
+#14 272.0 ✓ Lockfile passes supply-chain policies (514 entries in 4m 31.8s)
+#14 272.0 Lockfile is up to date, resolution step is skipped
+#14 273.1 Downloading next@16.4.5: 1.47 MB/43.65 MB
+#14 274.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 3.13 MB/8.21 MB
+#14 275.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 3.55 MB/8.21 MB
+#14 276.7 Downloading next@16.4.5: 1.52 MB/43.65 MB
+#14 278.1 Downloading @img/sharp-libvips-linux-x64@1.3.4: 3.90 MB/8.21 MB
+#14 279.7 Downloading @supabase/cli-linux-x64@3.0.0: 4.24 MB/65.04 MB
+#14 281.1 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 1.48 MB/8.82 MB
+#14 282.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 4.01 MB/8.21 MB
+#14 283.9 Downloading next@16.4.5: 1.53 MB/43.65 MB
+#14 286.6 Downloading @img/sharp-libvips-linux-x64@1.3.4: 4.22 MB/8.21 MB
+#14 287.1 [WARN] Tarball download average speed 5 KiB/s (size 1115 KiB) is below 50 KiB/s: https://registry.npmjs.org/zod/-/zod-4.6.7.tgz (GET)
+#14 288.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 2.81 MB/35.23 MB
+#14 289.7 Downloading @img/sharp-libvips-linux-x64@1.3.4: 4.45 MB/8.21 MB
+#14 290.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 2.93 MB/35.23 MB
+#14 291.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 4.52 MB/8.21 MB
+#14 294.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 4.60 MB/8.21 MB
+#14 295.5 Downloading @supabase/cli-linux-x64@3.0.0: 4.88 MB/65.04 MB
+#14 296.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 3.27 MB/35.23 MB
+#14 297.9 Downloading @supabase/cli-linux-x64@3.0.0: 5.11 MB/65.04 MB
+#14 298.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 4.73 MB/8.21 MB
+#14 300.2 Downloading @supabase/cli-linux-x64@3.0.0: 5.12 MB/65.04 MB
+#14 301.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 4.78 MB/8.21 MB
+#14 302.7 Downloading next@16.4.5: 1.65 MB/43.65 MB
+#14 303.8 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 1.87 MB/8.82 MB
+#14 303.8 [WARN] Tarball download average speed 9 KiB/s (size 2735 KiB) is below 50 KiB/s: https://registry.npmjs.org/prettier/-/prettier-3.9.10.tgz (GET)
+#14 304.9 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 1.91 MB/8.82 MB
+#14 306.2 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 1.97 MB/8.82 MB
+#14 307.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 3.53 MB/35.23 MB
+#14 308.4 Downloading @img/sharp-libvips-linux-x64@1.3.4: 5.07 MB/8.21 MB
+#14 310.5 Downloading @supabase/cli-linux-x64@3.0.0: 5.34 MB/65.04 MB
+#14 311.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 3.62 MB/35.23 MB
+#14 313.3 Downloading @supabase/cli-linux-x64@3.0.0: 5.53 MB/65.04 MB
+#14 314.7 Downloading @supabase/cli-linux-x64@3.0.0: 5.57 MB/65.04 MB
+#14 316.1 Downloading @supabase/cli-linux-x64@3.0.0: 5.68 MB/65.04 MB
+#14 317.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 3.88 MB/35.23 MB
+#14 318.4 Downloading next@16.4.5: 1.75 MB/43.65 MB
+#14 319.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 3.94 MB/35.23 MB
+#14 320.6 Downloading @supabase/cli-linux-x64@3.0.0: 6.07 MB/65.04 MB
+#14 322.7 Downloading @supabase/cli-linux-x64@3.0.0: 6.16 MB/65.04 MB
+#14 326.6 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 2.33 MB/8.82 MB
+#14 327.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 5.37 MB/8.21 MB
+#14 329.5 Downloading @img/sharp-libvips-linux-x64@1.3.4: 5.43 MB/8.21 MB
+#14 330.5 Downloading @img/sharp-libvips-linux-x64@1.3.4: 5.47 MB/8.21 MB
+#14 332.1 Downloading @supabase/cli-linux-x64@3.0.0: 6.35 MB/65.04 MB
+#14 333.5 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 2.51 MB/8.82 MB
+#14 335.2 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 2.55 MB/8.82 MB
+#14 336.6 Downloading @img/sharp-libvips-linux-x64@1.3.4: 5.61 MB/8.21 MB
+#14 337.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 4.25 MB/35.23 MB
+#14 340.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 4.50 MB/35.23 MB
+#14 341.6 Downloading next@16.4.5: 1.81 MB/43.65 MB
+#14 343.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 4.80 MB/35.23 MB
+#14 344.4 Downloading @supabase/cli-linux-x64@3.0.0: 6.50 MB/65.04 MB
+#14 345.9 Downloading @supabase/cli-linux-x64@3.0.0: 6.56 MB/65.04 MB
+#14 348.0 Downloading @supabase/cli-linux-x64@3.0.0: 6.63 MB/65.04 MB
+#14 350.0 Downloading @supabase/cli-linux-x64@3.0.0: 6.71 MB/65.04 MB
+#14 351.4 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 2.60 MB/8.82 MB
+#14 352.5 Downloading @supabase/cli-linux-x64@3.0.0: 6.75 MB/65.04 MB
+#14 353.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 5.78 MB/8.21 MB
+#14 355.3 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 2.61 MB/8.82 MB
+#14 356.5 Downloading @supabase/cli-linux-x64@3.0.0: 6.84 MB/65.04 MB
+#14 359.1 Downloading @supabase/cli-linux-x64@3.0.0: 6.86 MB/65.04 MB
+#14 360.2 Downloading @img/sharp-libvips-linux-x64@1.3.4: 5.96 MB/8.21 MB
+#14 361.2 Downloading @supabase/cli-linux-x64@3.0.0: 6.93 MB/65.04 MB
+#14 362.5 Downloading @img/sharp-libvips-linux-x64@1.3.4: 6.02 MB/8.21 MB
+#14 364.7 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 2.68 MB/8.82 MB
+#14 366.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 4.83 MB/35.23 MB
+#14 369.8 Downloading @supabase/cli-linux-x64@3.0.0: 7.02 MB/65.04 MB
+#14 372.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 4.89 MB/35.23 MB
+#14 374.7 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 2.79 MB/8.82 MB
+#14 375.7 Downloading @img/sharp-libvips-linux-x64@1.3.4: 6.04 MB/8.21 MB
+#14 376.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 5.09 MB/35.23 MB
+#14 377.9 Downloading @supabase/cli-linux-x64@3.0.0: 7.30 MB/65.04 MB
+#14 378.9 Downloading next@16.4.5: 1.93 MB/43.65 MB
+#14 380.4 Downloading @supabase/cli-linux-x64@3.0.0: 7.47 MB/65.04 MB
+#14 381.4 Downloading @supabase/cli-linux-x64@3.0.0: 7.55 MB/65.04 MB
+#14 382.7 Downloading @img/sharp-libvips-linux-x64@1.3.4: 6.37 MB/8.21 MB
+#14 383.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 6.42 MB/8.21 MB
+#14 384.9 Downloading @img/sharp-libvips-linux-x64@1.3.4: 6.43 MB/8.21 MB
+#14 386.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 6.06 MB/35.23 MB
+#14 387.7 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 3.05 MB/8.82 MB
+#14 388.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 6.37 MB/35.23 MB
+#14 390.1 Downloading @img/sharp-libvips-linux-x64@1.3.4: 6.70 MB/8.21 MB
+#14 392.0 Downloading @supabase/cli-linux-x64@3.0.0: 8.07 MB/65.04 MB
+#14 393.0 Downloading next@16.4.5: 2.06 MB/43.65 MB
+#14 394.2 Downloading @img/sharp-libvips-linux-x64@1.3.4: 6.76 MB/8.21 MB
+#14 395.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 6.59 MB/35.23 MB
+#14 396.7 Downloading @supabase/cli-linux-x64@3.0.0: 8.35 MB/65.04 MB
+#14 397.9 Downloading @supabase/cli-linux-x64@3.0.0: 8.56 MB/65.04 MB
+#14 398.9 Downloading next@16.4.5: 2.12 MB/43.65 MB
+#14 400.5 Downloading @img/sharp-libvips-linux-x64@1.3.4: 7.25 MB/8.21 MB
+#14 401.5 Downloading @img/sharp-libvips-linux-x64@1.3.4: 7.29 MB/8.21 MB
+#14 402.6 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 3.40 MB/8.82 MB
+#14 403.6 Downloading @img/sharp-libvips-linux-x64@1.3.4: 7.34 MB/8.21 MB
+#14 404.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 6.98 MB/35.23 MB
+#14 405.8 Downloading @img/sharp-libvips-linux-x64@1.3.4: 7.37 MB/8.21 MB
+#14 407.0 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 3.50 MB/8.82 MB
+#14 408.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 7.55 MB/8.21 MB
+#14 410.2 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 3.53 MB/8.82 MB
+#14 411.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 7.37 MB/35.23 MB
+#14 412.4 Downloading @supabase/cli-linux-x64@3.0.0: 9.30 MB/65.04 MB
+#14 414.1 Downloading @supabase/cli-linux-x64@3.0.0: 9.39 MB/65.04 MB
+#14 415.5 Downloading @supabase/cli-linux-x64@3.0.0: 9.47 MB/65.04 MB
+#14 416.6 Downloading @supabase/cli-linux-x64@3.0.0: 9.50 MB/65.04 MB
+#14 418.0 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 3.63 MB/8.82 MB
+#14 419.2 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 3.81 MB/8.82 MB
+#14 420.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 7.91 MB/35.23 MB
+#14 422.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 7.99 MB/35.23 MB
+#14 423.0 Downloading @supabase/cli-linux-x64@3.0.0: 9.78 MB/65.04 MB
+#14 424.3 Downloading @img/sharp-libvips-linux-x64@1.3.4: 7.99 MB/8.21 MB
+#14 425.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 8.09 MB/35.23 MB
+#14 426.6 Downloading @img/sharp-libvips-linux-x64@1.3.4: 8.07 MB/8.21 MB
+#14 427.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 8.31 MB/35.23 MB
+#14 428.8 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 4.00 MB/8.82 MB
+#14 429.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 8.45 MB/35.23 MB
+#14 429.9 [WARN] Tarball download average speed 26 KiB/s (size 8026 KiB) is below 50 KiB/s: https://registry.npmjs.org/@img/sharp-libvips-linux-x64/-/sharp-libvips-linux-x64-1.3.4.tgz (GET)
+#14 431.0 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 4.10 MB/8.82 MB
+#14 432.3 Downloading @supabase/cli-linux-x64@3.0.0: 10.48 MB/65.04 MB
+#14 433.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 8.76 MB/35.23 MB
+#14 434.5 Downloading @supabase/cli-linux-x64@3.0.0: 10.62 MB/65.04 MB
+#14 435.6 Downloading @supabase/cli-linux-x64@3.0.0: 10.65 MB/65.04 MB
+#14 437.6 Downloading @supabase/cli-linux-x64@3.0.0: 10.66 MB/65.04 MB
+#14 438.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.08 MB/35.23 MB
+#14 440.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.12 MB/35.23 MB
+#14 441.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.19 MB/35.23 MB
+#14 442.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.34 MB/35.23 MB
+#14 443.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.35 MB/35.23 MB
+#14 445.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.37 MB/35.23 MB
+#14 446.3 Downloading @supabase/cli-linux-x64@3.0.0: 11.24 MB/65.04 MB
+#14 447.7 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 4.51 MB/8.82 MB
+#14 448.8 Downloading @supabase/cli-linux-x64@3.0.0: 11.40 MB/65.04 MB
+#14 450.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.76 MB/35.23 MB
+#14 451.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 9.80 MB/35.23 MB
+#14 452.5 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 4.63 MB/8.82 MB
+#14 453.6 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 4.66 MB/8.82 MB
+#14 454.6 Downloading @supabase/cli-linux-x64@3.0.0: 11.86 MB/65.04 MB
+#14 456.4 Downloading @supabase/cli-linux-x64@3.0.0: 11.89 MB/65.04 MB
+#14 457.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 10.26 MB/35.23 MB
+#14 459.4 Downloading @supabase/cli-linux-x64@3.0.0: 11.99 MB/65.04 MB
+#14 461.0 Downloading @supabase/cli-linux-x64@3.0.0: 12.12 MB/65.04 MB
+#14 462.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 10.50 MB/35.23 MB
+#14 463.8 Downloading @supabase/cli-linux-x64@3.0.0: 12.27 MB/65.04 MB
+#14 464.9 Downloading @supabase/cli-linux-x64@3.0.0: 12.40 MB/65.04 MB
+#14 466.4 Downloading next@16.4.5: 2.99 MB/43.65 MB
+#14 468.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 10.80 MB/35.23 MB
+#14 470.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 10.91 MB/35.23 MB
+#14 471.6 Downloading next@16.4.5: 3.01 MB/43.65 MB
+#14 473.0 Downloading @supabase/cli-linux-x64@3.0.0: 12.76 MB/65.04 MB
+#14 474.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 10.96 MB/35.23 MB
+#14 475.6 Downloading next@16.4.5: 3.11 MB/43.65 MB
+#14 476.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 11.12 MB/35.23 MB
+#14 477.7 Downloading next@16.4.5: 3.12 MB/43.65 MB
+#14 478.8 Downloading next@16.4.5: 3.16 MB/43.65 MB
+#14 480.5 Downloading @supabase/cli-linux-x64@3.0.0: 13.56 MB/65.04 MB
+#14 481.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 11.34 MB/35.23 MB
+#14 482.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 11.35 MB/35.23 MB
+#14 484.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 11.50 MB/35.23 MB
+#14 485.8 Downloading @supabase/cli-linux-x64@3.0.0: 13.83 MB/65.04 MB
+#14 486.9 [WARN] Tarball download average speed 8 KiB/s (size 4274 KiB) is below 50 KiB/s: https://registry.npmjs.org/typescript/-/typescript-5.9.3.tgz (GET)
+#14 488.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 11.65 MB/35.23 MB
+#14 489.4 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 5.30 MB/8.82 MB
+#14 490.5 Downloading @supabase/cli-linux-x64@3.0.0: 14.09 MB/65.04 MB
+#14 492.3 Downloading @supabase/cli-linux-x64@3.0.0: 14.11 MB/65.04 MB
+#14 493.6 Downloading @supabase/cli-linux-x64@3.0.0: 14.18 MB/65.04 MB
+#14 495.0 Downloading @supabase/cli-linux-x64@3.0.0: 14.25 MB/65.04 MB
+#14 496.6 Downloading @supabase/cli-linux-x64@3.0.0: 14.33 MB/65.04 MB
+#14 497.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 11.91 MB/35.23 MB
+#14 499.1 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 5.45 MB/8.82 MB
+#14 500.8 Downloading @supabase/cli-linux-x64@3.0.0: 14.45 MB/65.04 MB
+#14 501.8 Downloading next@16.4.5: 3.48 MB/43.65 MB
+#14 503.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 12.30 MB/35.23 MB
+#14 504.6 Downloading next@16.4.5: 3.55 MB/43.65 MB
+#14 505.7 Downloading @supabase/cli-linux-x64@3.0.0: 14.77 MB/65.04 MB
+#14 507.8 Downloading @supabase/cli-linux-x64@3.0.0: 14.81 MB/65.04 MB
+#14 509.7 Downloading @supabase/cli-linux-x64@3.0.0: 14.95 MB/65.04 MB
+#14 510.7 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 5.68 MB/8.82 MB
+#14 511.8 Downloading @supabase/cli-linux-x64@3.0.0: 15.12 MB/65.04 MB
+#14 512.8 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 5.74 MB/8.82 MB
+#14 513.8 Downloading @supabase/cli-linux-x64@3.0.0: 15.31 MB/65.04 MB
+#14 514.9 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 5.81 MB/8.82 MB
+#14 516.6 Downloading @supabase/cli-linux-x64@3.0.0: 15.38 MB/65.04 MB
+#14 518.3 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 5.84 MB/8.82 MB
+#14 519.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 12.99 MB/35.23 MB
+#14 520.8 Downloading next@16.4.5: 3.88 MB/43.65 MB
+#14 522.6 Downloading @supabase/cli-linux-x64@3.0.0: 15.71 MB/65.04 MB
+#14 523.7 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 6.02 MB/8.82 MB
+#14 524.8 Downloading next@16.4.5: 3.96 MB/43.65 MB
+#14 525.9 Downloading next@16.4.5: 3.98 MB/43.65 MB
+#14 527.3 Downloading @supabase/cli-linux-x64@3.0.0: 15.90 MB/65.04 MB
+#14 528.6 Downloading @supabase/cli-linux-x64@3.0.0: 15.94 MB/65.04 MB
+#14 529.9 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 6.08 MB/8.82 MB
+#14 531.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.29 MB/35.23 MB
+#14 532.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.32 MB/35.23 MB
+#14 533.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.34 MB/35.23 MB
+#14 534.8 Downloading @supabase/cli-linux-x64@3.0.0: 16.05 MB/65.04 MB
+#14 536.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.38 MB/35.23 MB
+#14 537.3 Downloading @supabase/cli-linux-x64@3.0.0: 16.13 MB/65.04 MB
+#14 538.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.40 MB/35.23 MB
+#14 539.9 Downloading @supabase/cli-linux-x64@3.0.0: 16.28 MB/65.04 MB
+#14 541.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.45 MB/35.23 MB
+#14 542.4 Downloading next@16.4.5: 4.22 MB/43.65 MB
+#14 543.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.55 MB/35.23 MB
+#14 544.6 Downloading @supabase/cli-linux-x64@3.0.0: 16.64 MB/65.04 MB
+#14 545.9 Downloading @supabase/cli-linux-x64@3.0.0: 16.74 MB/65.04 MB
+#14 547.0 Downloading @supabase/cli-linux-x64@3.0.0: 16.77 MB/65.04 MB
+#14 548.4 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 6.56 MB/8.82 MB
+#14 550.0 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 6.66 MB/8.82 MB
+#14 551.7 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 6.67 MB/8.82 MB
+#14 553.0 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 6.69 MB/8.82 MB
+#14 554.1 Downloading next@16.4.5: 4.35 MB/43.65 MB
+#14 555.5 Downloading @supabase/cli-linux-x64@3.0.0: 16.80 MB/65.04 MB
+#14 556.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 13.88 MB/35.23 MB
+#14 557.6 Downloading @supabase/cli-linux-x64@3.0.0: 16.90 MB/65.04 MB
+#14 559.1 Downloading @supabase/cli-linux-x64@3.0.0: 16.94 MB/65.04 MB
+#14 560.5 Downloading @supabase/cli-linux-x64@3.0.0: 16.97 MB/65.04 MB
+#14 561.6 Downloading next@16.4.5: 4.37 MB/43.65 MB
+#14 563.2 Downloading @supabase/cli-linux-x64@3.0.0: 17.20 MB/65.04 MB
+#14 564.4 Downloading @supabase/cli-linux-x64@3.0.0: 17.38 MB/65.04 MB
+#14 565.6 Downloading next@16.4.5: 4.63 MB/43.65 MB
+#14 566.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 14.35 MB/35.23 MB
+#14 567.6 Downloading @supabase/cli-linux-x64@3.0.0: 17.79 MB/65.04 MB
+#14 568.8 Downloading next@16.4.5: 4.81 MB/43.65 MB
+#14 569.9 Downloading @supabase/cli-linux-x64@3.0.0: 17.90 MB/65.04 MB
+#14 571.2 Downloading @supabase/cli-linux-x64@3.0.0: 17.95 MB/65.04 MB
+#14 572.2 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 7.28 MB/8.82 MB
+#14 573.4 Downloading @supabase/cli-linux-x64@3.0.0: 18.15 MB/65.04 MB
+#14 574.5 Downloading @supabase/cli-linux-x64@3.0.0: 18.33 MB/65.04 MB
+#14 575.6 Downloading @supabase/cli-linux-x64@3.0.0: 18.54 MB/65.04 MB
+#14 576.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 14.76 MB/35.23 MB
+#14 577.9 Downloading @supabase/cli-linux-x64@3.0.0: 18.62 MB/65.04 MB
+#14 579.1 Downloading @supabase/cli-linux-x64@3.0.0: 18.67 MB/65.04 MB
+#14 580.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 14.86 MB/35.23 MB
+#14 581.5 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 7.76 MB/8.82 MB
+#14 582.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 14.94 MB/35.23 MB
+#14 584.4 Downloading next@16.4.5: 5.42 MB/43.65 MB
+#14 585.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.06 MB/35.23 MB
+#14 587.0 Downloading @supabase/cli-linux-x64@3.0.0: 19.34 MB/65.04 MB
+#14 588.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.10 MB/35.23 MB
+#14 589.3 Downloading @supabase/cli-linux-x64@3.0.0: 19.66 MB/65.04 MB
+#14 590.5 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 8.72 MB/8.82 MB
+#14 592.0 Downloading @rolldown/binding-linux-x64-gnu@1.2.16: 8.77 MB/8.82 MB
+#14 592.7 [WARN] Tarball download average speed 18 KiB/s (size 8614 KiB) is below 50 KiB/s: https://registry.npmjs.org/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.2.16.tgz (GET)
+#14 594.1 Downloading @supabase/cli-linux-x64@3.0.0: 19.95 MB/65.04 MB
+#14 595.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.37 MB/35.23 MB
+#14 597.3 Downloading next@16.4.5: 5.88 MB/43.65 MB
+#14 598.4 Downloading next@16.4.5: 5.90 MB/43.65 MB
+#14 599.6 Downloading @supabase/cli-linux-x64@3.0.0: 20.59 MB/65.04 MB
+#14 600.7 Downloading @supabase/cli-linux-x64@3.0.0: 20.72 MB/65.04 MB
+#14 601.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.63 MB/35.23 MB
+#14 603.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.66 MB/35.23 MB
+#14 604.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.68 MB/35.23 MB
+#14 605.9 Downloading @supabase/cli-linux-x64@3.0.0: 21.13 MB/65.04 MB
+#14 606.9 Downloading @supabase/cli-linux-x64@3.0.0: 21.20 MB/65.04 MB
+#14 608.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.79 MB/35.23 MB
+#14 609.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 15.86 MB/35.23 MB
+#14 610.7 Downloading @supabase/cli-linux-x64@3.0.0: 21.81 MB/65.04 MB
+#14 612.0 Downloading next@16.4.5: 6.58 MB/43.65 MB
+#14 613.1 Downloading next@16.4.5: 6.60 MB/43.65 MB
+#14 614.2 Downloading next@16.4.5: 6.65 MB/43.65 MB
+#14 615.5 Downloading @supabase/cli-linux-x64@3.0.0: 22.23 MB/65.04 MB
+#14 616.8 Downloading @supabase/cli-linux-x64@3.0.0: 22.38 MB/65.04 MB
+#14 618.0 Downloading @supabase/cli-linux-x64@3.0.0: 22.56 MB/65.04 MB
+#14 620.1 Downloading @supabase/cli-linux-x64@3.0.0: 22.67 MB/65.04 MB
+#14 621.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 16.38 MB/35.23 MB
+#14 622.2 Downloading @supabase/cli-linux-x64@3.0.0: 23.15 MB/65.04 MB
+#14 623.5 Downloading @supabase/cli-linux-x64@3.0.0: 23.20 MB/65.04 MB
+#14 624.5 Downloading next@16.4.5: 7.15 MB/43.65 MB
+#14 626.0 Downloading @supabase/cli-linux-x64@3.0.0: 23.48 MB/65.04 MB
+#14 627.2 Downloading @supabase/cli-linux-x64@3.0.0: 23.64 MB/65.04 MB
+#14 628.3 Downloading @supabase/cli-linux-x64@3.0.0: 23.87 MB/65.04 MB
+#14 629.4 Downloading @supabase/cli-linux-x64@3.0.0: 23.98 MB/65.04 MB
+#14 631.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 16.76 MB/35.23 MB
+#14 632.0 Downloading @supabase/cli-linux-x64@3.0.0: 24.16 MB/65.04 MB
+#14 633.3 Downloading @supabase/cli-linux-x64@3.0.0: 24.35 MB/65.04 MB
+#14 634.4 Downloading @supabase/cli-linux-x64@3.0.0: 24.51 MB/65.04 MB
+#14 635.5 Downloading next@16.4.5: 7.83 MB/43.65 MB
+#14 636.6 Downloading next@16.4.5: 7.96 MB/43.65 MB
+#14 637.7 Downloading @supabase/cli-linux-x64@3.0.0: 24.82 MB/65.04 MB
+#14 638.7 Downloading next@16.4.5: 8.15 MB/43.65 MB
+#14 639.9 Downloading @supabase/cli-linux-x64@3.0.0: 25.13 MB/65.04 MB
+#14 641.0 Downloading @supabase/cli-linux-x64@3.0.0: 25.25 MB/65.04 MB
+#14 642.1 Downloading @supabase/cli-linux-x64@3.0.0: 25.37 MB/65.04 MB
+#14 643.3 Downloading @supabase/cli-linux-x64@3.0.0: 25.41 MB/65.04 MB
+#14 644.5 Downloading @supabase/cli-linux-x64@3.0.0: 25.49 MB/65.04 MB
+#14 645.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 17.69 MB/35.23 MB
+#14 647.0 Downloading @supabase/cli-linux-x64@3.0.0: 25.73 MB/65.04 MB
+#14 648.5 Downloading next@16.4.5: 8.78 MB/43.65 MB
+#14 649.6 Downloading @supabase/cli-linux-x64@3.0.0: 25.82 MB/65.04 MB
+#14 652.8 Downloading next@16.4.5: 8.79 MB/43.65 MB
+#14 653.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 17.84 MB/35.23 MB
+#14 655.1 Downloading @supabase/cli-linux-x64@3.0.0: 26.00 MB/65.04 MB
+#14 656.1 Downloading next@16.4.5: 9.12 MB/43.65 MB
+#14 657.4 Downloading @supabase/cli-linux-x64@3.0.0: 26.14 MB/65.04 MB
+#14 658.6 Downloading next@16.4.5: 9.33 MB/43.65 MB
+#14 660.6 Downloading @supabase/cli-linux-x64@3.0.0: 26.24 MB/65.04 MB
+#14 661.6 Downloading @supabase/cli-linux-x64@3.0.0: 26.29 MB/65.04 MB
+#14 662.9 Downloading next@16.4.5: 9.63 MB/43.65 MB
+#14 664.2 Downloading next@16.4.5: 9.69 MB/43.65 MB
+#14 665.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 18.40 MB/35.23 MB
+#14 667.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 18.41 MB/35.23 MB
+#14 668.1 Downloading next@16.4.5: 9.99 MB/43.65 MB
+#14 669.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 18.56 MB/35.23 MB
+#14 670.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 18.59 MB/35.23 MB
+#14 672.8 Downloading @supabase/cli-linux-x64@3.0.0: 26.67 MB/65.04 MB
+#14 673.8 Downloading @supabase/cli-linux-x64@3.0.0: 26.70 MB/65.04 MB
+#14 675.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 18.74 MB/35.23 MB
+#14 677.5 Downloading @supabase/cli-linux-x64@3.0.0: 26.83 MB/65.04 MB
+#14 678.6 Downloading @supabase/cli-linux-x64@3.0.0: 26.86 MB/65.04 MB
+#14 680.1 Downloading next@16.4.5: 10.53 MB/43.65 MB
+#14 681.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 18.91 MB/35.23 MB
+#14 682.9 Downloading @supabase/cli-linux-x64@3.0.0: 27.09 MB/65.04 MB
+#14 684.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 19.02 MB/35.23 MB
+#14 685.2 Downloading @supabase/cli-linux-x64@3.0.0: 27.19 MB/65.04 MB
+#14 686.7 Downloading @supabase/cli-linux-x64@3.0.0: 27.32 MB/65.04 MB
+#14 687.9 Downloading next@16.4.5: 10.92 MB/43.65 MB
+#14 689.2 Downloading @supabase/cli-linux-x64@3.0.0: 27.60 MB/65.04 MB
+#14 691.3 Downloading @supabase/cli-linux-x64@3.0.0: 27.62 MB/65.04 MB
+#14 692.4 Downloading @supabase/cli-linux-x64@3.0.0: 27.65 MB/65.04 MB
+#14 693.8 Downloading @supabase/cli-linux-x64@3.0.0: 27.78 MB/65.04 MB
+#14 695.3 Downloading @supabase/cli-linux-x64@3.0.0: 27.91 MB/65.04 MB
+#14 696.4 Downloading next@16.4.5: 11.25 MB/43.65 MB
+#14 697.7 Downloading @supabase/cli-linux-x64@3.0.0: 28.06 MB/65.04 MB
+#14 698.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 19.66 MB/35.23 MB
+#14 700.1 Downloading @supabase/cli-linux-x64@3.0.0: 28.22 MB/65.04 MB
+#14 701.2 Downloading @supabase/cli-linux-x64@3.0.0: 28.27 MB/65.04 MB
+#14 703.0 Downloading @supabase/cli-linux-x64@3.0.0: 28.37 MB/65.04 MB
+#14 704.3 Downloading next@16.4.5: 11.58 MB/43.65 MB
+#14 705.6 Downloading next@16.4.5: 11.64 MB/43.65 MB
+#14 706.6 Downloading next@16.4.5: 11.66 MB/43.65 MB
+#14 707.8 Downloading @supabase/cli-linux-x64@3.0.0: 28.57 MB/65.04 MB
+#14 708.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 20.09 MB/35.23 MB
+#14 710.0 Downloading @supabase/cli-linux-x64@3.0.0: 28.62 MB/65.04 MB
+#14 711.5 Downloading @supabase/cli-linux-x64@3.0.0: 28.68 MB/65.04 MB
+#14 713.5 Downloading @supabase/cli-linux-x64@3.0.0: 28.72 MB/65.04 MB
+#14 714.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 20.37 MB/35.23 MB
+#14 716.1 Downloading @supabase/cli-linux-x64@3.0.0: 28.86 MB/65.04 MB
+#14 717.6 Downloading @supabase/cli-linux-x64@3.0.0: 28.96 MB/65.04 MB
+#14 719.0 Downloading @supabase/cli-linux-x64@3.0.0: 29.11 MB/65.04 MB
+#14 721.6 Downloading @supabase/cli-linux-x64@3.0.0: 29.15 MB/65.04 MB
+#14 722.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 20.86 MB/35.23 MB
+#14 723.9 Downloading @supabase/cli-linux-x64@3.0.0: 29.21 MB/65.04 MB
+#14 725.9 Downloading @supabase/cli-linux-x64@3.0.0: 29.23 MB/65.04 MB
+#14 727.1 Downloading @supabase/cli-linux-x64@3.0.0: 29.41 MB/65.04 MB
+#14 728.6 Downloading next@16.4.5: 12.38 MB/43.65 MB
+#14 730.5 Downloading @supabase/cli-linux-x64@3.0.0: 29.56 MB/65.04 MB
+#14 731.6 Downloading next@16.4.5: 12.46 MB/43.65 MB
+#14 732.6 Downloading next@16.4.5: 12.54 MB/43.65 MB
+#14 733.7 Downloading @supabase/cli-linux-x64@3.0.0: 29.80 MB/65.04 MB
+#14 735.6 Downloading @supabase/cli-linux-x64@3.0.0: 29.85 MB/65.04 MB
+#14 736.7 Downloading @supabase/cli-linux-x64@3.0.0: 29.96 MB/65.04 MB
+#14 737.9 Downloading @supabase/cli-linux-x64@3.0.0: 30.03 MB/65.04 MB
+#14 739.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 22.02 MB/35.23 MB
+#14 740.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 22.27 MB/35.23 MB
+#14 742.0 Downloading @supabase/cli-linux-x64@3.0.0: 30.33 MB/65.04 MB
+#14 743.3 Downloading @supabase/cli-linux-x64@3.0.0: 30.37 MB/65.04 MB
+#14 744.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 22.48 MB/35.23 MB
+#14 745.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 22.60 MB/35.23 MB
+#14 747.0 Downloading next@16.4.5: 13.15 MB/43.65 MB
+#14 748.4 Downloading next@16.4.5: 13.18 MB/43.65 MB
+#14 749.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 22.99 MB/35.23 MB
+#14 752.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 23.09 MB/35.23 MB
+#14 753.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 23.14 MB/35.23 MB
+#14 755.5 Downloading @supabase/cli-linux-x64@3.0.0: 30.82 MB/65.04 MB
+#14 756.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 23.27 MB/35.23 MB
+#14 758.3 Downloading next@16.4.5: 13.41 MB/43.65 MB
+#14 759.4 Downloading next@16.4.5: 13.43 MB/43.65 MB
+#14 760.5 Downloading next@16.4.5: 13.46 MB/43.65 MB
+#14 762.2 Downloading next@16.4.5: 13.56 MB/43.65 MB
+#14 763.7 Downloading next@16.4.5: 13.57 MB/43.65 MB
+#14 764.9 Downloading @supabase/cli-linux-x64@3.0.0: 31.18 MB/65.04 MB
+#14 765.9 Downloading @supabase/cli-linux-x64@3.0.0: 31.24 MB/65.04 MB
+#14 767.2 Downloading next@16.4.5: 13.62 MB/43.65 MB
+#14 768.4 Downloading @supabase/cli-linux-x64@3.0.0: 31.31 MB/65.04 MB
+#14 769.8 Downloading @supabase/cli-linux-x64@3.0.0: 31.44 MB/65.04 MB
+#14 771.2 Downloading @supabase/cli-linux-x64@3.0.0: 31.47 MB/65.04 MB
+#14 772.3 Downloading next@16.4.5: 13.82 MB/43.65 MB
+#14 773.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 23.71 MB/35.23 MB
+#14 774.7 Downloading next@16.4.5: 14.03 MB/43.65 MB
+#14 776.1 Downloading @supabase/cli-linux-x64@3.0.0: 32.00 MB/65.04 MB
+#14 777.6 Downloading @supabase/cli-linux-x64@3.0.0: 32.05 MB/65.04 MB
+#14 778.9 Downloading @supabase/cli-linux-x64@3.0.0: 32.13 MB/65.04 MB
+#14 780.2 Downloading next@16.4.5: 14.15 MB/43.65 MB
+#14 782.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 23.96 MB/35.23 MB
+#14 783.5 Downloading next@16.4.5: 14.20 MB/43.65 MB
+#14 784.5 Downloading @supabase/cli-linux-x64@3.0.0: 32.55 MB/65.04 MB
+#14 785.6 Downloading @supabase/cli-linux-x64@3.0.0: 32.80 MB/65.04 MB
+#14 786.9 Downloading @supabase/cli-linux-x64@3.0.0: 32.85 MB/65.04 MB
+#14 788.3 Downloading next@16.4.5: 14.51 MB/43.65 MB
+#14 789.3 Downloading @supabase/cli-linux-x64@3.0.0: 33.06 MB/65.04 MB
+#14 790.8 Downloading @supabase/cli-linux-x64@3.0.0: 33.09 MB/65.04 MB
+#14 792.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.17 MB/35.23 MB
+#14 793.3 Downloading @supabase/cli-linux-x64@3.0.0: 33.37 MB/65.04 MB
+#14 794.7 Downloading @supabase/cli-linux-x64@3.0.0: 33.54 MB/65.04 MB
+#14 795.8 Downloading @supabase/cli-linux-x64@3.0.0: 33.77 MB/65.04 MB
+#14 797.2 Downloading @supabase/cli-linux-x64@3.0.0: 33.86 MB/65.04 MB
+#14 798.4 Downloading @supabase/cli-linux-x64@3.0.0: 33.90 MB/65.04 MB
+#14 799.8 Downloading @supabase/cli-linux-x64@3.0.0: 33.98 MB/65.04 MB
+#14 801.1 Downloading @supabase/cli-linux-x64@3.0.0: 34.16 MB/65.04 MB
+#14 802.4 Downloading next@16.4.5: 15.15 MB/43.65 MB
+#14 804.0 Downloading @supabase/cli-linux-x64@3.0.0: 34.29 MB/65.04 MB
+#14 805.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.57 MB/35.23 MB
+#14 806.3 Downloading next@16.4.5: 15.28 MB/43.65 MB
+#14 807.7 Downloading @supabase/cli-linux-x64@3.0.0: 34.68 MB/65.04 MB
+#14 809.1 Downloading @supabase/cli-linux-x64@3.0.0: 34.75 MB/65.04 MB
+#14 810.5 Downloading @supabase/cli-linux-x64@3.0.0: 34.88 MB/65.04 MB
+#14 811.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.73 MB/35.23 MB
+#14 812.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.76 MB/35.23 MB
+#14 813.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.80 MB/35.23 MB
+#14 814.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.86 MB/35.23 MB
+#14 816.4 Downloading @supabase/cli-linux-x64@3.0.0: 35.32 MB/65.04 MB
+#14 817.6 Downloading @supabase/cli-linux-x64@3.0.0: 35.37 MB/65.04 MB
+#14 818.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.91 MB/35.23 MB
+#14 820.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 24.99 MB/35.23 MB
+#14 821.9 Downloading @supabase/cli-linux-x64@3.0.0: 35.83 MB/65.04 MB
+#14 823.2 Downloading next@16.4.5: 15.95 MB/43.65 MB
+#14 824.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 25.06 MB/35.23 MB
+#14 825.4 Downloading next@16.4.5: 16.11 MB/43.65 MB
+#14 826.7 Downloading @supabase/cli-linux-x64@3.0.0: 36.92 MB/65.04 MB
+#14 827.9 Downloading @supabase/cli-linux-x64@3.0.0: 36.97 MB/65.04 MB
+#14 829.0 Downloading @supabase/cli-linux-x64@3.0.0: 37.07 MB/65.04 MB
+#14 830.0 Downloading @supabase/cli-linux-x64@3.0.0: 37.40 MB/65.04 MB
+#14 831.1 Downloading @supabase/cli-linux-x64@3.0.0: 37.50 MB/65.04 MB
+#14 832.4 Downloading @supabase/cli-linux-x64@3.0.0: 37.61 MB/65.04 MB
+#14 833.9 Downloading @supabase/cli-linux-x64@3.0.0: 37.73 MB/65.04 MB
+#14 835.1 Downloading @supabase/cli-linux-x64@3.0.0: 37.84 MB/65.04 MB
+#14 836.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 25.42 MB/35.23 MB
+#14 837.5 Downloading next@16.4.5: 16.60 MB/43.65 MB
+#14 839.2 Downloading @supabase/cli-linux-x64@3.0.0: 38.27 MB/65.04 MB
+#14 840.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 25.53 MB/35.23 MB
+#14 842.5 Downloading @supabase/cli-linux-x64@3.0.0: 38.84 MB/65.04 MB
+#14 844.0 Downloading @supabase/cli-linux-x64@3.0.0: 38.92 MB/65.04 MB
+#14 845.2 Downloading @supabase/cli-linux-x64@3.0.0: 39.07 MB/65.04 MB
+#14 846.4 Downloading next@16.4.5: 16.90 MB/43.65 MB
+#14 847.9 Downloading next@16.4.5: 16.93 MB/43.65 MB
+#14 849.5 Downloading @supabase/cli-linux-x64@3.0.0: 39.38 MB/65.04 MB
+#14 850.7 Downloading @supabase/cli-linux-x64@3.0.0: 39.48 MB/65.04 MB
+#14 851.7 Downloading next@16.4.5: 17.00 MB/43.65 MB
+#14 853.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 25.78 MB/35.23 MB
+#14 854.3 Downloading next@16.4.5: 17.08 MB/43.65 MB
+#14 855.9 Downloading @supabase/cli-linux-x64@3.0.0: 40.14 MB/65.04 MB
+#14 857.1 Downloading @supabase/cli-linux-x64@3.0.0: 40.20 MB/65.04 MB
+#14 858.2 Downloading @supabase/cli-linux-x64@3.0.0: 40.38 MB/65.04 MB
+#14 859.5 Downloading @supabase/cli-linux-x64@3.0.0: 40.48 MB/65.04 MB
+#14 860.6 Downloading @supabase/cli-linux-x64@3.0.0: 40.59 MB/65.04 MB
+#14 861.6 Downloading @supabase/cli-linux-x64@3.0.0: 40.77 MB/65.04 MB
+#14 862.7 Downloading @supabase/cli-linux-x64@3.0.0: 40.91 MB/65.04 MB
+#14 863.7 Downloading next@16.4.5: 17.39 MB/43.65 MB
+#14 865.7 Downloading next@16.4.5: 17.46 MB/43.65 MB
+#14 867.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.07 MB/35.23 MB
+#14 869.2 Downloading @supabase/cli-linux-x64@3.0.0: 41.45 MB/65.04 MB
+#14 870.3 Downloading next@16.4.5: 17.59 MB/43.65 MB
+#14 871.8 Downloading @supabase/cli-linux-x64@3.0.0: 42.12 MB/65.04 MB
+#14 873.2 Downloading @supabase/cli-linux-x64@3.0.0: 42.23 MB/65.04 MB
+#14 874.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.22 MB/35.23 MB
+#14 875.5 Downloading @supabase/cli-linux-x64@3.0.0: 42.53 MB/65.04 MB
+#14 876.6 Downloading @supabase/cli-linux-x64@3.0.0: 42.56 MB/65.04 MB
+#14 877.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.27 MB/35.23 MB
+#14 879.1 Downloading next@16.4.5: 17.78 MB/43.65 MB
+#14 880.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.34 MB/35.23 MB
+#14 881.8 Downloading @supabase/cli-linux-x64@3.0.0: 43.26 MB/65.04 MB
+#14 882.8 Downloading @supabase/cli-linux-x64@3.0.0: 43.44 MB/65.04 MB
+#14 883.9 Downloading @supabase/cli-linux-x64@3.0.0: 43.54 MB/65.04 MB
+#14 885.1 Downloading @supabase/cli-linux-x64@3.0.0: 43.64 MB/65.04 MB
+#14 886.5 Downloading next@16.4.5: 18.29 MB/43.65 MB
+#14 887.7 Downloading @supabase/cli-linux-x64@3.0.0: 43.85 MB/65.04 MB
+#14 888.7 Downloading @supabase/cli-linux-x64@3.0.0: 44.10 MB/65.04 MB
+#14 889.8 Downloading @supabase/cli-linux-x64@3.0.0: 44.13 MB/65.04 MB
+#14 891.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.70 MB/35.23 MB
+#14 892.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.75 MB/35.23 MB
+#14 893.2 Downloading @supabase/cli-linux-x64@3.0.0: 44.48 MB/65.04 MB
+#14 894.4 Downloading next@16.4.5: 18.62 MB/43.65 MB
+#14 895.6 Downloading @supabase/cli-linux-x64@3.0.0: 44.61 MB/65.04 MB
+#14 896.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.88 MB/35.23 MB
+#14 897.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 26.96 MB/35.23 MB
+#14 899.6 Downloading @supabase/cli-linux-x64@3.0.0: 45.20 MB/65.04 MB
+#14 900.7 Downloading @supabase/cli-linux-x64@3.0.0: 45.53 MB/65.04 MB
+#14 901.7 Downloading @supabase/cli-linux-x64@3.0.0: 45.84 MB/65.04 MB
+#14 903.5 Downloading @supabase/cli-linux-x64@3.0.0: 45.97 MB/65.04 MB
+#14 904.7 Downloading @supabase/cli-linux-x64@3.0.0: 45.98 MB/65.04 MB
+#14 906.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 27.25 MB/35.23 MB
+#14 907.5 Downloading @supabase/cli-linux-x64@3.0.0: 46.05 MB/65.04 MB
+#14 908.7 Downloading @supabase/cli-linux-x64@3.0.0: 46.08 MB/65.04 MB
+#14 909.8 Downloading next@16.4.5: 19.86 MB/43.65 MB
+#14 911.6 Downloading @supabase/cli-linux-x64@3.0.0: 46.43 MB/65.04 MB
+#14 912.8 Downloading @supabase/cli-linux-x64@3.0.0: 46.51 MB/65.04 MB
+#14 914.8 Downloading @supabase/cli-linux-x64@3.0.0: 46.56 MB/65.04 MB
+#14 915.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 27.45 MB/35.23 MB
+#14 917.1 Downloading @supabase/cli-linux-x64@3.0.0: 46.74 MB/65.04 MB
+#14 918.5 Downloading @supabase/cli-linux-x64@3.0.0: 46.84 MB/65.04 MB
+#14 919.9 Downloading @supabase/cli-linux-x64@3.0.0: 46.92 MB/65.04 MB
+#14 920.9 Downloading @supabase/cli-linux-x64@3.0.0: 47.16 MB/65.04 MB
+#14 922.4 Downloading @supabase/cli-linux-x64@3.0.0: 47.20 MB/65.04 MB
+#14 923.5 Downloading @supabase/cli-linux-x64@3.0.0: 47.25 MB/65.04 MB
+#14 924.9 Downloading @supabase/cli-linux-x64@3.0.0: 47.28 MB/65.04 MB
+#14 926.3 Downloading @supabase/cli-linux-x64@3.0.0: 47.30 MB/65.04 MB
+#14 927.8 Downloading @supabase/cli-linux-x64@3.0.0: 47.36 MB/65.04 MB
+#14 929.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 27.71 MB/35.23 MB
+#14 930.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 27.74 MB/35.23 MB
+#14 931.1 Downloading next@16.4.5: 20.77 MB/43.65 MB
+#14 932.4 Downloading next@16.4.5: 20.90 MB/43.65 MB
+#14 934.0 Downloading next@16.4.5: 20.99 MB/43.65 MB
+#14 935.1 Downloading @supabase/cli-linux-x64@3.0.0: 48.00 MB/65.04 MB
+#14 936.2 Downloading @supabase/cli-linux-x64@3.0.0: 48.33 MB/65.04 MB
+#14 937.3 Downloading next@16.4.5: 21.18 MB/43.65 MB
+#14 938.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 27.99 MB/35.23 MB
+#14 939.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 28.02 MB/35.23 MB
+#14 940.9 Downloading next@16.4.5: 21.31 MB/43.65 MB
+#14 942.0 Downloading @supabase/cli-linux-x64@3.0.0: 49.06 MB/65.04 MB
+#14 943.4 Downloading @supabase/cli-linux-x64@3.0.0: 49.36 MB/65.04 MB
+#14 944.5 Downloading @supabase/cli-linux-x64@3.0.0: 49.80 MB/65.04 MB
+#14 945.5 Downloading @supabase/cli-linux-x64@3.0.0: 49.88 MB/65.04 MB
+#14 946.8 Downloading @supabase/cli-linux-x64@3.0.0: 50.01 MB/65.04 MB
+#14 948.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 28.48 MB/35.23 MB
+#14 949.3 Downloading @supabase/cli-linux-x64@3.0.0: 50.06 MB/65.04 MB
+#14 950.3 Downloading next@16.4.5: 21.74 MB/43.65 MB
+#14 952.1 Downloading next@16.4.5: 21.84 MB/43.65 MB
+#14 953.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 28.53 MB/35.23 MB
+#14 954.1 Downloading next@16.4.5: 21.97 MB/43.65 MB
+#14 955.3 Downloading next@16.4.5: 22.06 MB/43.65 MB
+#14 956.6 Downloading next@16.4.5: 22.16 MB/43.65 MB
+#14 957.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 28.97 MB/35.23 MB
+#14 959.6 Downloading next@16.4.5: 22.34 MB/43.65 MB
+#14 960.6 Downloading next@16.4.5: 22.39 MB/43.65 MB
+#14 962.8 Downloading @supabase/cli-linux-x64@3.0.0: 51.21 MB/65.04 MB
+#14 964.1 Downloading next@16.4.5: 22.57 MB/43.65 MB
+#14 965.2 Downloading @supabase/cli-linux-x64@3.0.0: 51.43 MB/65.04 MB
+#14 966.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 29.41 MB/35.23 MB
+#14 967.4 Downloading @supabase/cli-linux-x64@3.0.0: 52.05 MB/65.04 MB
+#14 968.5 Downloading @supabase/cli-linux-x64@3.0.0: 52.43 MB/65.04 MB
+#14 970.5 Downloading next@16.4.5: 23.15 MB/43.65 MB
+#14 971.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 29.77 MB/35.23 MB
+#14 973.1 Downloading @supabase/cli-linux-x64@3.0.0: 52.59 MB/65.04 MB
+#14 974.2 Downloading @supabase/cli-linux-x64@3.0.0: 52.64 MB/65.04 MB
+#14 975.4 Downloading @supabase/cli-linux-x64@3.0.0: 52.71 MB/65.04 MB
+#14 976.4 Downloading next@16.4.5: 23.19 MB/43.65 MB
+#14 977.8 Downloading @supabase/cli-linux-x64@3.0.0: 52.87 MB/65.04 MB
+#14 978.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 29.89 MB/35.23 MB
+#14 979.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 30.00 MB/35.23 MB
+#14 982.6 Downloading @supabase/cli-linux-x64@3.0.0: 53.26 MB/65.04 MB
+#14 983.9 Downloading @supabase/cli-linux-x64@3.0.0: 53.31 MB/65.04 MB
+#14 985.1 Downloading @supabase/cli-linux-x64@3.0.0: 53.36 MB/65.04 MB
+#14 986.8 Downloading @supabase/cli-linux-x64@3.0.0: 53.39 MB/65.04 MB
+#14 988.1 Downloading @supabase/cli-linux-x64@3.0.0: 53.48 MB/65.04 MB
+#14 989.8 Downloading @supabase/cli-linux-x64@3.0.0: 53.51 MB/65.04 MB
+#14 991.2 Downloading @supabase/cli-linux-x64@3.0.0: 53.52 MB/65.04 MB
+#14 992.4 Downloading @supabase/cli-linux-x64@3.0.0: 53.67 MB/65.04 MB
+#14 994.4 Downloading @supabase/cli-linux-x64@3.0.0: 53.77 MB/65.04 MB
+#14 996.0 Downloading @supabase/cli-linux-x64@3.0.0: 53.90 MB/65.04 MB
+#14 999.1 Downloading @supabase/cli-linux-x64@3.0.0: 54.03 MB/65.04 MB
+#14 1000.9 Downloading @supabase/cli-linux-x64@3.0.0: 54.13 MB/65.04 MB
+#14 1002.6 Downloading @supabase/cli-linux-x64@3.0.0: 54.18 MB/65.04 MB
+#14 1003.9 Downloading @supabase/cli-linux-x64@3.0.0: 54.24 MB/65.04 MB
+#14 1005.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 30.56 MB/35.23 MB
+#14 1006.2 Downloading @supabase/cli-linux-x64@3.0.0: 54.45 MB/65.04 MB
+#14 1007.8 Downloading @supabase/cli-linux-x64@3.0.0: 54.47 MB/65.04 MB
+#14 1009.1 Downloading next@16.4.5: 24.23 MB/43.65 MB
+#14 1010.2 Downloading @next/swc-linux-x64-gnu@16.4.5: 30.64 MB/35.23 MB
+#14 1011.4 Downloading next@16.4.5: 24.36 MB/43.65 MB
+#14 1013.6 Downloading @supabase/cli-linux-x64@3.0.0: 54.65 MB/65.04 MB
+#14 1015.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 30.66 MB/35.23 MB
+#14 1017.4 Downloading @supabase/cli-linux-x64@3.0.0: 54.77 MB/65.04 MB
+#14 1018.6 Downloading @supabase/cli-linux-x64@3.0.0: 54.86 MB/65.04 MB
+#14 1019.6 Downloading @next/swc-linux-x64-gnu@16.4.5: 30.85 MB/35.23 MB
+#14 1022.1 Downloading @next/swc-linux-x64-gnu@16.4.5: 30.92 MB/35.23 MB
+#14 1023.3 Downloading @supabase/cli-linux-x64@3.0.0: 55.24 MB/65.04 MB
+#14 1025.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 30.97 MB/35.23 MB
+#14 1026.5 Downloading @supabase/cli-linux-x64@3.0.0: 55.39 MB/65.04 MB
+#14 1028.9 Downloading next@16.4.5: 24.78 MB/43.65 MB
+#14 1030.1 Downloading next@16.4.5: 24.91 MB/43.65 MB
+#14 1031.2 Downloading @supabase/cli-linux-x64@3.0.0: 55.78 MB/65.04 MB
+#14 1032.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 31.12 MB/35.23 MB
+#14 1033.8 Downloading @supabase/cli-linux-x64@3.0.0: 55.88 MB/65.04 MB
+#14 1034.9 Downloading @supabase/cli-linux-x64@3.0.0: 55.97 MB/65.04 MB
+#14 1036.6 Downloading next@16.4.5: 25.14 MB/43.65 MB
+#14 1037.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 31.25 MB/35.23 MB
+#14 1038.8 Downloading @supabase/cli-linux-x64@3.0.0: 56.23 MB/65.04 MB
+#14 1039.8 Downloading @supabase/cli-linux-x64@3.0.0: 56.39 MB/65.04 MB
+#14 1040.9 Downloading @supabase/cli-linux-x64@3.0.0: 56.64 MB/65.04 MB
+#14 1041.9 Downloading @supabase/cli-linux-x64@3.0.0: 57.01 MB/65.04 MB
+#14 1043.4 Downloading @supabase/cli-linux-x64@3.0.0: 57.11 MB/65.04 MB
+#14 1045.2 Downloading @supabase/cli-linux-x64@3.0.0: 57.16 MB/65.04 MB
+#14 1046.7 Downloading @supabase/cli-linux-x64@3.0.0: 57.23 MB/65.04 MB
+#14 1047.8 Downloading @supabase/cli-linux-x64@3.0.0: 57.36 MB/65.04 MB
+#14 1048.9 Downloading next@16.4.5: 25.96 MB/43.65 MB
+#14 1050.0 Downloading @supabase/cli-linux-x64@3.0.0: 57.49 MB/65.04 MB
+#14 1051.4 Downloading @next/swc-linux-x64-gnu@16.4.5: 31.81 MB/35.23 MB
+#14 1052.7 Downloading @supabase/cli-linux-x64@3.0.0: 57.70 MB/65.04 MB
+#14 1053.7 Downloading @supabase/cli-linux-x64@3.0.0: 58.06 MB/65.04 MB
+#14 1058.3 Downloading @supabase/cli-linux-x64@3.0.0: 58.28 MB/65.04 MB
+#14 1059.6 Downloading @supabase/cli-linux-x64@3.0.0: 58.37 MB/65.04 MB
+#14 1060.8 Downloading @supabase/cli-linux-x64@3.0.0: 58.47 MB/65.04 MB
+#14 1062.3 Downloading @supabase/cli-linux-x64@3.0.0: 58.51 MB/65.04 MB
+#14 1064.0 Downloading next@16.4.5: 26.63 MB/43.65 MB
+#14 1065.2 Downloading @supabase/cli-linux-x64@3.0.0: 58.72 MB/65.04 MB
+#14 1067.0 Downloading next@16.4.5: 26.75 MB/43.65 MB
+#14 1068.4 Downloading @supabase/cli-linux-x64@3.0.0: 58.87 MB/65.04 MB
+#14 1069.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 32.20 MB/35.23 MB
+#14 1070.5 Downloading next@16.4.5: 26.85 MB/43.65 MB
+#14 1072.0 Downloading @supabase/cli-linux-x64@3.0.0: 58.95 MB/65.04 MB
+#14 1073.5 Downloading @supabase/cli-linux-x64@3.0.0: 58.98 MB/65.04 MB
+#14 1074.8 Downloading @supabase/cli-linux-x64@3.0.0: 59.08 MB/65.04 MB
+#14 1076.4 Downloading @supabase/cli-linux-x64@3.0.0: 59.11 MB/65.04 MB
+#14 1077.8 Downloading @supabase/cli-linux-x64@3.0.0: 59.21 MB/65.04 MB
+#14 1078.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 32.27 MB/35.23 MB
+#14 1080.4 Downloading @supabase/cli-linux-x64@3.0.0: 59.32 MB/65.04 MB
+#14 1081.7 Downloading @supabase/cli-linux-x64@3.0.0: 59.62 MB/65.04 MB
+#14 1082.8 Downloading next@16.4.5: 27.52 MB/43.65 MB
+#14 1084.3 Downloading @supabase/cli-linux-x64@3.0.0: 60.11 MB/65.04 MB
+#14 1085.4 Downloading @supabase/cli-linux-x64@3.0.0: 60.26 MB/65.04 MB
+#14 1086.7 Downloading @supabase/cli-linux-x64@3.0.0: 60.46 MB/65.04 MB
+#14 1087.7 Downloading @next/swc-linux-x64-gnu@16.4.5: 32.45 MB/35.23 MB
+#14 1088.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 32.46 MB/35.23 MB
+#14 1090.2 Downloading next@16.4.5: 27.77 MB/43.65 MB
+#14 1091.8 Downloading @supabase/cli-linux-x64@3.0.0: 60.94 MB/65.04 MB
+#14 1093.2 Downloading @supabase/cli-linux-x64@3.0.0: 61.14 MB/65.04 MB
+#14 1094.5 Downloading @supabase/cli-linux-x64@3.0.0: 61.22 MB/65.04 MB
+#14 1095.6 Downloading @supabase/cli-linux-x64@3.0.0: 61.55 MB/65.04 MB
+#14 1098.7 Downloading @supabase/cli-linux-x64@3.0.0: 62.14 MB/65.04 MB
+#14 1100.0 Downloading @supabase/cli-linux-x64@3.0.0: 62.29 MB/65.04 MB
+#14 1101.0 Downloading @supabase/cli-linux-x64@3.0.0: 62.42 MB/65.04 MB
+#14 1103.2 Downloading next@16.4.5: 28.68 MB/43.65 MB
+#14 1104.6 Downloading next@16.4.5: 28.76 MB/43.65 MB
+#14 1105.9 Downloading @supabase/cli-linux-x64@3.0.0: 62.71 MB/65.04 MB
+#14 1107.0 Downloading @supabase/cli-linux-x64@3.0.0: 63.01 MB/65.04 MB
+#14 1108.4 Downloading @supabase/cli-linux-x64@3.0.0: 63.09 MB/65.04 MB
+#14 1109.6 Downloading @supabase/cli-linux-x64@3.0.0: 63.20 MB/65.04 MB
+#14 1110.7 Downloading @supabase/cli-linux-x64@3.0.0: 63.58 MB/65.04 MB
+#14 1111.8 Downloading @supabase/cli-linux-x64@3.0.0: 63.89 MB/65.04 MB
+#14 1113.0 Downloading @supabase/cli-linux-x64@3.0.0: 64.08 MB/65.04 MB
+#14 1114.3 Downloading @supabase/cli-linux-x64@3.0.0: 64.39 MB/65.04 MB
+#14 1115.4 Downloading @supabase/cli-linux-x64@3.0.0: 64.71 MB/65.04 MB
+#14 1116.5 Downloading @supabase/cli-linux-x64@3.0.0: 64.86 MB/65.04 MB
+#14 1117.5 Downloading @supabase/cli-linux-x64@3.0.0: 65.04 MB/65.04 MB, done
+#14 1119.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 33.17 MB/35.23 MB
+#14 1120.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 33.25 MB/35.23 MB
+#14 1121.3 Downloading next@16.4.5: 30.35 MB/43.65 MB
+#14 1123.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 33.51 MB/35.23 MB
+#14 1125.0 Downloading @next/swc-linux-x64-gnu@16.4.5: 33.56 MB/35.23 MB
+#14 1126.0 Downloading next@16.4.5: 30.86 MB/43.65 MB
+#14 1127.3 Downloading @next/swc-linux-x64-gnu@16.4.5: 33.74 MB/35.23 MB
+#14 1128.5 Downloading next@16.4.5: 31.35 MB/43.65 MB
+#14 1130.1 Downloading next@16.4.5: 31.64 MB/43.65 MB
+#14 1131.1 Downloading next@16.4.5: 32.00 MB/43.65 MB
+#14 1132.3 Downloading next@16.4.5: 32.24 MB/43.65 MB
+#14 1133.6 Downloading next@16.4.5: 32.50 MB/43.65 MB
+#14 1134.7 Downloading next@16.4.5: 32.54 MB/43.65 MB
+#14 1135.8 Downloading next@16.4.5: 32.85 MB/43.65 MB
+#14 1136.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 34.69 MB/35.23 MB
+#14 1137.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 34.93 MB/35.23 MB
+#14 1139.8 Downloading @next/swc-linux-x64-gnu@16.4.5: 35.03 MB/35.23 MB
+#14 1141.9 Downloading @next/swc-linux-x64-gnu@16.4.5: 35.08 MB/35.23 MB
+#14 1143.6 Downloading next@16.4.5: 33.98 MB/43.65 MB
+#14 1145.3 Downloading next@16.4.5: 34.26 MB/43.65 MB
+#14 1146.5 Downloading @next/swc-linux-x64-gnu@16.4.5: 35.23 MB/35.23 MB
+#14 1146.5 [WARN] Tarball download average speed 32 KiB/s (size 34409 KiB) is below 50 KiB/s: https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-16.4.5.tgz (GET)
+#14 1148.2 Downloading next@16.4.5: 35.17 MB/43.65 MB
+#14 1149.5 Downloading next@16.4.5: 36.06 MB/43.65 MB
+#14 1152.2 Downloading next@16.4.5: 36.14 MB/43.65 MB
+#14 1153.9 Downloading next@16.4.5: 36.32 MB/43.65 MB
+#14 1155.2 Downloading next@16.4.5: 36.67 MB/43.65 MB
+#14 1159.1 Downloading next@16.4.5: 36.94 MB/43.65 MB
+#14 1160.6 Downloading next@16.4.5: 37.01 MB/43.65 MB
+#14 1162.0 Downloading next@16.4.5: 37.19 MB/43.65 MB
+#14 1163.5 Downloading next@16.4.5: 37.30 MB/43.65 MB
+#14 1165.4 Downloading next@16.4.5: 37.40 MB/43.65 MB
+#14 1175.5 Downloading next@16.4.5: 37.48 MB/43.65 MB
+#14 1180.3 Downloading next@16.4.5: 37.53 MB/43.65 MB
+#14 1190.0 Downloading next@16.4.5: 38.09 MB/43.65 MB
+#14 1200.0 Downloading next@16.4.5: 38.28 MB/43.65 MB
+#14 1202.0 Downloading next@16.4.5: 38.40 MB/43.65 MB
+#14 1203.2 Downloading next@16.4.5: 38.92 MB/43.65 MB
+#14 1204.6 Downloading next@16.4.5: 39.22 MB/43.65 MB
+#14 1205.8 Downloading next@16.4.5: 39.59 MB/43.65 MB
+#14 1206.8 Downloading next@16.4.5: 39.76 MB/43.65 MB
+#14 1208.7 Downloading next@16.4.5: 40.05 MB/43.65 MB
+#14 1209.9 Downloading next@16.4.5: 40.56 MB/43.65 MB
+#14 1211.1 Downloading next@16.4.5: 40.63 MB/43.65 MB
+#14 1213.3 Downloading next@16.4.5: 40.66 MB/43.65 MB
+#14 1214.9 Downloading next@16.4.5: 41.22 MB/43.65 MB
+#14 1216.3 Downloading next@16.4.5: 41.38 MB/43.65 MB
+#14 1217.5 Downloading next@16.4.5: 41.71 MB/43.65 MB
+#14 1222.4 Downloading next@16.4.5: 42.05 MB/43.65 MB
+#14 1224.5 Downloading next@16.4.5: 42.46 MB/43.65 MB
+#14 1225.9 Downloading next@16.4.5: 42.51 MB/43.65 MB
+#14 1227.6 Downloading next@16.4.5: 42.54 MB/43.65 MB
+#14 1228.7 Downloading next@16.4.5: 42.84 MB/43.65 MB
+#14 1232.4 Downloading next@16.4.5: 43.08 MB/43.65 MB
+#14 1235.2 Downloading next@16.4.5: 43.23 MB/43.65 MB
+#14 1239.2 Downloading next@16.4.5: 43.28 MB/43.65 MB
+#14 1240.2 Downloading next@16.4.5: 43.51 MB/43.65 MB
+#14 1240.2 [WARN] Tarball download average speed 34 KiB/s (size 42636 KiB) is below 50 KiB/s: https://registry.npmjs.org/next/-/next-16.4.5.tgz (GET)
+#14 1240.4 Packages: +420
+#14 1240.4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#14 1240.5 Progress: resolved 420, reused 0, downloaded 420, added 420, done
+#14 1240.5 
+#14 1240.5 devDependencies:
+#14 1240.5 + @types/node 24.19.2
+#14 1240.5 + eslint 9.39.5
+#14 1240.5 + eslint-config-next 16.4.5
+#14 1240.5 + openapi-typescript 7.13.0
+#14 1240.5 + prettier 3.9.10
+#14 1240.5 + supabase 3.0.0
+#14 1240.5 + typescript 5.9.3
+#14 1240.5 + vitest 4.1.12
+#14 1240.5 
+#14 1240.5 Done in 20m 40.3s using pnpm v12.18.0
+#14 DONE 1240.7s
+
+#15 [ 8/10] COPY apps/web ./apps/web
+#15 DONE 0.0s
+
+#16 [ 9/10] COPY packages/api-client ./packages/api-client
+#16 DONE 0.0s
+
+#17 [10/10] RUN pnpm build
+#17 0.212 $ pnpm --filter @store/web build
+#17 0.241 $ next build
+#17 0.585 ▲ Next.js 16.4.5 (Turbopack)
+#17 0.618 ✓ Running next.config.ts took 33ms
+#17 0.632 
+#17 0.659   Creating an optimized production build ...
+#17 2.458 ✓ Compiled successfully in 1796ms
+#17 2.461   Running TypeScript ...
+#17 4.076   Finished TypeScript in 1615ms ...
+#17 4.079   Collecting page data using 4 workers ...
+#17 4.466   Generating static pages using 4 workers (0/2) ...
+#17 4.801 ✓ Generating static pages using 4 workers (2/2) in 335ms
+#17 4.807   Finalizing page optimization ...
+#17 4.815 
+#17 4.817 Route (app)
+#17 4.817 ┌ ƒ /
+#17 4.817 └ ○ /_not-found
+#17 4.817 
+#17 4.817 
+#17 4.817 ○  (Static)   prerendered as static content
+#17 4.817 ƒ  (Dynamic)  server-rendered on demand
+#17 4.817 
+#17 DONE 4.9s
+
+#18 exporting to image
+#18 exporting layers
+#18 exporting layers 7.4s done
+#18 writing image sha256:40f3ba89b9c863b7a2dc754616aab0db5db9d51e4452dcbf723e325c6705c696 done
+#18 naming to docker.io/library/store-advisor-web:phase01 0.0s done
+#18 DONE 7.5s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/y89g9ud491kecjba3ffqe4s34

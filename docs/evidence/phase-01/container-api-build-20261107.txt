@@ -1,0 +1,350 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from api.Dockerfile
+#1 transferring dockerfile: 575B 0.0s done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for ghcr.io/astral-sh/uv:0.13.7
+#4 ...
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim
+#2 DONE 41.9s
+
+#4 [internal] load metadata for ghcr.io/astral-sh/uv:0.13.7
+#4 DONE 50.7s
+
+#5 [internal] load .dockerignore
+#5 transferring context:
+#5 transferring context: 145B 0.0s done
+#5 DONE 0.3s
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 resolve docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 ...
+
+#7 [internal] load build context
+#7 transferring context: 137.65kB 0.1s done
+#7 DONE 0.6s
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 resolve docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc 0.5s done
+#6 sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc 10.37kB / 10.37kB done
+#6 sha256:48d884813cf44e927cf64c5529dd630dd3b18338c6dc727991eef9b71e934a20 1.75kB / 1.75kB done
+#6 sha256:c0e8df9380519cf514d5fbb5aeaa7aa5de5f32c50330badcadc05cdabaae5566 5.66kB / 5.66kB done
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 resolve ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490 0.5s done
+#8 sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490 2.19kB / 2.19kB done
+#8 sha256:c7db1d63057f268a8b6da8af9077850a60461f98d23db23c676a82089a050c91 669B / 669B done
+#8 sha256:1ff6c2a573a5da512aabfaa7705a8827b3f460b2eff01a84b4b1641fbb1eb0b5 1.30kB / 1.30kB done
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 0B / 29.86MB 1971.6s
+#6 ...
+
+#9 [auth] library/python:pull token for registry-1.docker.io
+#9 DONE 0.0s
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498 0B / 1.29MB 1971.9s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 0B / 11.92MB 1972.3s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 0B / 29.86MB 1976.8s
+#6 sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498 0B / 1.29MB 1976.9s
+#6 sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498 1.05MB / 1.29MB 1977.2s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 1.05MB / 11.92MB 1977.4s
+#6 sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498 1.29MB / 1.29MB 1978.8s done
+#6 sha256:f7a79299dedd5c817d47e3f61cf6eecae73b92cb193a1ef52180a46b0161c50a 0B / 248B 1978.8s
+#6 sha256:f7a79299dedd5c817d47e3f61cf6eecae73b92cb193a1ef52180a46b0161c50a 248B / 248B 1979.4s done
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 1.05MB / 29.86MB 1982.0s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 1.05MB / 11.92MB 1982.6s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 2.10MB / 11.92MB 1982.7s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 3.15MB / 11.92MB 1986.0s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 3.15MB / 29.86MB 1986.5s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 0B / 19.34MB 1989.4s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 4.19MB / 11.92MB 1989.7s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 3.15MB / 29.86MB 1991.6s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 4.19MB / 11.92MB 1994.8s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 5.24MB / 11.92MB 1995.5s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 4.19MB / 29.86MB 1996.7s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 6.29MB / 11.92MB 1998.3s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 0B / 19.34MB 1999.6s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 5.24MB / 29.86MB 2001.7s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 6.29MB / 11.92MB 2003.3s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 7.34MB / 11.92MB 2004.9s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 6.29MB / 29.86MB 2006.8s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 7.34MB / 11.92MB 2009.9s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 1.05MB / 19.34MB 2009.8s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 8.39MB / 11.92MB 2011.3s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 7.34MB / 29.86MB 2011.8s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 8.39MB / 11.92MB 2016.4s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 7.34MB / 29.86MB 2016.9s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 3.15MB / 19.34MB 2020.1s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 8.39MB / 11.92MB 2021.4s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 7.34MB / 29.86MB 2022.0s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 9.44MB / 11.92MB 2024.5s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 7.34MB / 29.86MB 2027.0s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 9.44MB / 11.92MB 2029.5s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 4.19MB / 19.34MB 2030.3s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 8.39MB / 29.86MB 2032.1s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 9.44MB / 11.92MB 2034.5s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 8.39MB / 29.86MB 2037.2s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 9.44MB / 11.92MB 2039.6s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 5.24MB / 19.34MB 2040.5s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 8.39MB / 29.86MB 2042.2s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 9.44MB / 11.92MB 2044.7s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 9.44MB / 29.86MB 2047.4s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 10.49MB / 11.92MB 2048.6s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 6.29MB / 19.34MB 2050.8s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 9.44MB / 29.86MB 2052.5s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 10.49MB / 11.92MB 2053.7s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 9.44MB / 29.86MB 2057.6s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 10.49MB / 11.92MB 2058.8s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 8.39MB / 19.34MB 2061.1s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 9.44MB / 29.86MB 2062.6s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 10.49MB / 11.92MB 2063.9s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 10.49MB / 29.86MB 2067.6s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 10.49MB / 11.92MB 2069.0s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 11.53MB / 19.34MB 2071.3s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 10.49MB / 29.86MB 2072.7s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 11.53MB / 11.92MB 2073.0s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 10.49MB / 29.86MB 2077.8s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 11.53MB / 11.92MB 2078.2s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 12.58MB / 19.34MB 2081.6s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 10.49MB / 29.86MB 2083.0s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 11.53MB / 11.92MB 2083.2s
+#6 sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 11.92MB / 11.92MB 2084.0s done
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 10.49MB / 29.86MB 2088.1s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 13.63MB / 19.34MB 2090.4s
+#8 sha256:bdbfbf3496bcb9c5725b0509a7c4bb40674c6869416a79bc486e59f75ca10739 0B / 98B 2090.4s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 10.49MB / 29.86MB 2093.2s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 10.49MB / 29.86MB 2098.2s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 14.68MB / 19.34MB 2098.1s
+#8 sha256:bdbfbf3496bcb9c5725b0509a7c4bb40674c6869416a79bc486e59f75ca10739 0B / 98B 2098.1s
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 11.53MB / 29.86MB 2103.3s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 16.78MB / 19.34MB 2105.8s
+#8 sha256:bdbfbf3496bcb9c5725b0509a7c4bb40674c6869416a79bc486e59f75ca10739 0B / 98B 2105.8s
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 16.78MB / 19.34MB 2110.9s
+#8 sha256:bdbfbf3496bcb9c5725b0509a7c4bb40674c6869416a79bc486e59f75ca10739 0B / 98B 2110.9s
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 17.83MB / 19.34MB 2112.2s
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 18.87MB / 19.34MB 2114.5s
+#8 sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 19.34MB / 19.34MB 2115.4s done
+#8 extracting sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 0.1s
+#8 sha256:bdbfbf3496bcb9c5725b0509a7c4bb40674c6869416a79bc486e59f75ca10739 98B / 98B 2115.6s
+#8 sha256:bdbfbf3496bcb9c5725b0509a7c4bb40674c6869416a79bc486e59f75ca10739 98B / 98B 2115.7s done
+#8 ...
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 11.53MB / 29.86MB 2115.9s
+#6 ...
+
+#8 [uv 1/1] FROM ghcr.io/astral-sh/uv:0.13.7@sha256:96f40d3904aad8d0bd010539001d36c8e2188b981e1334471a90c4a1d93bb490
+#8 extracting sha256:ff982e30065956cc3e779acc221fc1002d5158bd1299e59b1e3e437abd2f60cc 0.8s done
+#8 extracting sha256:bdbfbf3496bcb9c5725b0509a7c4bb40674c6869416a79bc486e59f75ca10739 done
+#8 DONE 2117.2s
+
+#6 [stage-1 1/9] FROM docker.io/library/python:3.13-slim@sha256:09a17cad02668ae61ece136b4fd36ac3849e14f670ebedb637ea3e15580525bc
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 12.58MB / 29.86MB 2120.9s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 14.68MB / 29.86MB 2124.2s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 15.73MB / 29.86MB 2129.3s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 17.83MB / 29.86MB 2134.4s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 18.87MB / 29.86MB 2139.6s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 19.92MB / 29.86MB 2144.7s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 20.97MB / 29.86MB 2149.8s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 22.02MB / 29.86MB 2154.8s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 23.07MB / 29.86MB 2159.9s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 23.07MB / 29.86MB 2165.1s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 24.12MB / 29.86MB 2170.1s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 24.12MB / 29.86MB 2175.2s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 24.12MB / 29.86MB 2180.3s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 24.12MB / 29.86MB 2185.3s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 24.12MB / 29.86MB 2190.5s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 24.12MB / 29.86MB 2195.7s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 25.17MB / 29.86MB 2200.8s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 25.17MB / 29.86MB 2205.9s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 25.17MB / 29.86MB 2210.9s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 26.21MB / 29.86MB 2216.0s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 26.21MB / 29.86MB 2221.1s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 26.21MB / 29.86MB 2226.3s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 27.26MB / 29.86MB 2231.5s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 28.31MB / 29.86MB 2236.5s
+#6 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 29.86MB / 29.86MB 2239.8s done
+#6 extracting sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41
+#6 extracting sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 2.3s done
+#6 extracting sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498
+#6 extracting sha256:0069ea31add00b9f63dbb3f0bcee44990654c5e2c17ccfeaeae47e74edf44498 0.2s done
+#6 extracting sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565
+#6 extracting sha256:faa890a31e98e11bc3138d9549c86441024fdb24bd555bb0bca17dc9a6c5b565 1.2s done
+#6 extracting sha256:f7a79299dedd5c817d47e3f61cf6eecae73b92cb193a1ef52180a46b0161c50a
+#6 extracting sha256:f7a79299dedd5c817d47e3f61cf6eecae73b92cb193a1ef52180a46b0161c50a done
+#6 DONE 2245.0s
+
+#10 [stage-1 2/9] COPY --from=uv /uv /usr/local/bin/uv
+#10 DONE 0.3s
+
+#11 [stage-1 3/9] WORKDIR /app
+#11 DONE 0.0s
+
+#12 [stage-1 4/9] COPY apps/api/pyproject.toml apps/api/uv.lock ./
+#12 DONE 0.1s
+
+#13 [stage-1 5/9] RUN uv sync --frozen --no-dev --no-install-project
+#13 0.453 Using CPython 3.13.18 interpreter at: /usr/local/bin/python3
+#13 0.453 Creating virtual environment at: .venv
+#13 4.089 Downloading pydantic-core (2.2MiB)
+#13 4.222 Downloading sqlalchemy (3.3MiB)
+#13 4.255 Downloading psycopg-binary (5.0MiB)
+#13 82.42  Downloaded pydantic-core
+#13 101.4  Downloaded sqlalchemy
+#13 120.5  Downloaded psycopg-binary
+#13 120.5 Prepared 38 packages in 2m 00s
+#13 120.6 Installed 38 packages in 166ms
+#13 122.5 Bytecode compiled 1491 files in 1.88s
+#13 122.5  + alembic==1.20.1
+#13 122.5  + amqp==5.4.2
+#13 122.5  + annotated-doc==0.0.5
+#13 122.5  + annotated-types==0.8.0
+#13 122.5  + anyio==4.16.0
+#13 122.5  + billiard==4.3.2
+#13 122.5  + celery==5.7.0
+#13 122.5  + click==8.5.1
+#13 122.5  + click-didyoumean==0.3.1
+#13 122.5  + click-plugins==1.1.1.2
+#13 122.5  + click-repl==0.4.1
+#13 122.5  + fastapi==0.162.0
+#13 122.5  + greenlet==3.5.6
+#13 122.5  + h11==0.16.0
+#13 122.5  + idna==3.20
+#13 122.5  + kombu==5.7.0
+#13 122.5  + mako==1.4.3
+#13 122.5  + markupsafe==3.0.4
+#13 122.5  + opentelemetry-api==1.45.2
+#13 122.5  + packaging==26.3
+#13 122.5  + prompt-toolkit==3.0.53
+#13 122.5  + psycopg==3.3.8
+#13 122.5  + psycopg-binary==3.3.8
+#13 122.5  + pydantic==2.14.3
+#13 122.5  + pydantic-core==2.50.4
+#13 122.5  + pydantic-settings==2.16.2
+#13 122.5  + python-dateutil==2.9.0.post0
+#13 122.5  + python-dotenv==1.2.4
+#13 122.5  + redis==6.4.0
+#13 122.5  + six==1.17.0
+#13 122.5  + sqlalchemy==2.0.57
+#13 122.5  + starlette==1.10.0
+#13 122.5  + typing-extensions==4.16.0
+#13 122.5  + typing-inspection==0.4.5
+#13 122.5  + tzlocal==5.4.5
+#13 122.5  + uvicorn==0.54.0
+#13 122.5  + vine==5.1.0
+#13 122.5  + wcwidth==0.9.4
+#13 DONE 122.7s
+
+#14 [stage-1 6/9] COPY apps/api/src ./src
+#14 DONE 0.3s
+
+#15 [stage-1 7/9] COPY apps/api/migrations ./migrations
+#15 DONE 0.2s
+
+#16 [stage-1 8/9] COPY apps/api/alembic.ini ./
+#16 DONE 0.3s
+
+#17 [stage-1 9/9] RUN uv sync --frozen --no-dev && useradd --uid 10001 --create-home app
+#17 0.566    Building store-advisor-api @ file:///app
+#17 8.371       Built store-advisor-api @ file:///app
+#17 8.375 Prepared 1 package in 7.81s
+#17 8.378 Installed 1 package in 2ms
+#17 8.623 Bytecode compiled 1491 files in 244ms
+#17 8.623  + store-advisor-api==0.1.0 (from file:///app)
+#17 DONE 8.9s
+
+#18 exporting to image
+#18 exporting layers
+#18 exporting layers 1.4s done
+#18 writing image sha256:8dff7a54274ee2ae019c2a649b4c2d116f5deb1c302cca896fc88173c464fef5 done
+#18 naming to docker.io/library/store-advisor-api:phase01 0.0s done
+#18 DONE 1.5s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/nakfgt3t07dqvpb4b228nyhbb

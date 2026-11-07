@@ -1,0 +1,13 @@
+✨ openapi-typescript 7.13.0
+🚀 packages/api-client/openapi.json → packages/api-client/src/schema.d.ts [36.8ms]
+[WARN] Could not lock the dependency install at C:\Users\ComputerWorld\Downloads\RAG: Access is denied. (os error 5). Installing without it, which is unsafe if another pnpm is installing there concurrently.
+Scope: all 3 workspace projects
+Error: ERR_PNPM_STORE_DIR_OPEN_OPERATION_LOCK
+
+  × installing dependencies
+  ╰─▶ Failed to open the store operation lock at "C:\\Users\\ComputerWorld\
+      \AppData\\Local\\pnpm-store-operation-locks\\all-stores.lock": Access is
+      denied. (os error 5)
+
+[WARN] The install that runs before scripts failed, so your node_modules may be out of sync with your lockfile. Set "verifyDepsBeforeRun: false" to skip this install.
+$ openapi-typescript packages/api-client/openapi.json -o packages/api-client/src/schema.d.ts
